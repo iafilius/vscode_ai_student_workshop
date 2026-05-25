@@ -58,6 +58,26 @@ In Phase 5, we will generate network architecture drawings using AI. Why do we u
 
 ---
 
+## 6. System Storage Pathways for AI Agents
+
+To effectively manage your AI workspaces, it is helpful to know where the agent stores its data and specifications:
+
+*   **OpenSpec Data (`openspec/`):**
+    *   `openspec/config.yaml`: Defines developer workflows, project scope, and per-artifact rules.
+    *   `openspec/changes/<change-name>/`: Temporary directories housing active proposals, designs, specs, and checklists.
+    *   `openspec/specs/<capability>/spec.md`: Permanent specs reflecting the master state of the codebase.
+
+*   **Agent SKILLs (`.agent/skills/` & `~/.agent/skills/`):**
+    *   **Workspace-Local Skills:** Stored in `.agent/skills/<skill-name>/` at the root of your project. These are specific to this codebase and should be committed to Git.
+    *   **Global User Skills:** Stored in `~/.agent/skills/`. These are shared globally across all local projects for your user profile.
+    *   **Global Plugins:** Stored in `~/.agent/plugins/`. These are bundles of specialized subagents, tools, and configurations.
+
+*   **Knowledge Items (KIs):**
+    *   **Workspace Knowledge Directory:** Stored in `knowledge/`. Contains workspace-specific KIs (like your topology diagrams or IPAM tables) tied to the current codebase.
+    *   **Global Knowledge Directory:** Stored in `~/.agent/knowledge/`. Contains global KIs shared across all your projects.
+
+---
+
 > [!TIP]
 > **Your Golden Rule for the Workshop:**
 > If it feels like you are doing manual labor, you are doing it wrong. Stop typing, open a fresh chat session, provide better context (KIs), and tell the AI to do the work.
