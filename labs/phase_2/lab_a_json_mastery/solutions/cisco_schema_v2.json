@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "interface": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "switchport": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "access",
+            "trunk"
+          ]
+        },
+        "trunk_allowed_vlans": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "mtu": {
+      "type": "integer"
+    },
+    "vrf": {
+      "type": "string"
+    },
+    "ipv6_traffic_filter": {
+      "type": "string"
+    },
+    "lldp": {
+      "type": "object",
+      "properties": {
+        "transmit": {
+          "type": "boolean"
+        },
+        "receive": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "required": [
+    "interface"
+  ]
+}

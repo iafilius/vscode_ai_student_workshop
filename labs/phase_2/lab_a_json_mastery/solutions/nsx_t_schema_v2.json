@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "logical_switches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "transport_zone": {
+            "type": "string"
+          },
+          "vni": {
+            "type": "integer"
+          },
+          "admin_state": {
+            "type": "string",
+            "enum": [
+              "UP",
+              "DOWN"
+            ]
+          },
+          "replication_mode": {
+            "type": "string",
+            "enum": [
+              "MTEP",
+              "SOURCE"
+            ]
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "logical_routers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "TIER0",
+              "TIER1"
+            ]
+          },
+          "ha_mode": {
+            "type": "string"
+          },
+          "failover_mode": {
+            "type": "string"
+          },
+          "linked_tier0": {
+            "type": "string"
+          },
+          "linked_tier1": {
+            "type": "string"
+          },
+          "interfaces": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "ip": {
+                  "type": "string"
+                },
+                "logical_switch": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "ip"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "gateway_firewall_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "service": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "ALLOW",
+              "DROP",
+              "REJECT"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "action"
+        ]
+      }
+    },
+    "nat_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "SNAT",
+              "DNAT",
+              "NO_SNAT",
+              "NO_DNAT"
+            ]
+          },
+          "original_source": {
+            "type": "string"
+          },
+          "translated_source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    }
+  }
+}

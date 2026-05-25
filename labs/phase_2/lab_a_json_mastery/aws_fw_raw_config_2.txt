@@ -1,0 +1,16 @@
+Firewall: fw-perimeter
+  VPC: vpc-0abcd1234
+  Subnets: subnet-1111, subnet-2222
+  Policy: fw-policy-strict
+  Logging:
+    FlowLogs: ENABLED
+    AlertLogs: ENABLED
+  Rule Groups:
+    - Name: rg-block-malware
+      Priority: 100
+      Type: STATEFUL
+      Action: DROP
+    - Name: rg-allow-web
+      Priority: 200
+      Type: STATEFUL
+      Action: PASS

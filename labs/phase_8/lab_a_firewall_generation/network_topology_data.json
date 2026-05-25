@@ -1,0 +1,152 @@
+{
+  "devices": [
+    {
+      "name": "AMS-CORE-RTR-01",
+      "isFirewall": false,
+      "platform": "cisco_ios",
+      "environment": "on-premises",
+      "routingTable": {
+        "ipv4": [
+          {"destination": "0.0.0.0/0", "nextHop": "192.0.2.1", "protocol": "Static"},
+          {"destination": "10.100.10.0/24", "nextHop": "Vlan10", "protocol": "Connected"},
+          {"destination": "10.100.20.0/24", "nextHop": "Vlan20", "protocol": "Connected"},
+          {"destination": "172.16.0.0/16", "nextHop": "10.100.254.2", "protocol": "BGP"},
+          {"destination": "192.168.0.0/16", "nextHop": "10.100.254.3", "protocol": "BGP"}
+        ],
+        "ipv6": [
+          {"destination": "::/0", "nextHop": "2001:db8:ext::1", "protocol": "Static"},
+          {"destination": "2001:db8:100:10::/64", "nextHop": "Vlan10", "protocol": "Connected"},
+          {"destination": "2001:db8:100:20::/64", "nextHop": "Vlan20", "protocol": "Connected"},
+          {"destination": "2001:db8:abc::/48", "nextHop": "2001:db8:link::2", "protocol": "BGP"},
+          {"destination": "2001:db8:xyz::/48", "nextHop": "2001:db8:link::3", "protocol": "BGP"}
+        ]
+      }
+    },
+    {
+      "name": "AMS-SEC-FW-01",
+      "isFirewall": true,
+      "platform": "cisco_asa",
+      "environment": "on-premises",
+      "routingTable": {
+        "ipv4": [
+          {"destination": "10.100.10.0/24", "nextHop": "10.100.254.1", "protocol": "OSPF"},
+          {"destination": "10.100.20.0/24", "nextHop": "10.100.254.1", "protocol": "OSPF"}
+        ],
+        "ipv6": [
+          {"destination": "2001:db8:100:10::/64", "nextHop": "2001:db8:link::1", "protocol": "OSPF"},
+          {"destination": "2001:db8:100:20::/64", "nextHop": "2001:db8:link::1", "protocol": "OSPF"}
+        ]
+      }
+    },
+    {
+      "name": "AWS-SEC-GROUP-01",
+      "isFirewall": true,
+      "platform": "aws_security_group",
+      "environment": "aws_cloud",
+      "routingTable": {
+        "ipv4": [
+          {"destination": "172.16.1.0/24", "nextHop": "local", "protocol": "Connected"},
+          {"destination": "0.0.0.0/0", "nextHop": "igw-0987654321", "protocol": "Static"}
+        ],
+        "ipv6": [
+          {"destination": "2001:db8:abc:1::/64", "nextHop": "local", "protocol": "Connected"},
+          {"destination": "::/0", "nextHop": "igw-0987654321", "protocol": "Static"}
+        ]
+      }
+    },
+    {
+      "name": "AZURE-NSG-MGMT-01",
+      "isFirewall": true,
+      "platform": "azure_nsg",
+      "environment": "azure_cloud",
+      "routingTable": {
+        "ipv4": [
+          {"destination": "192.168.5.0/24", "nextHop": "VirtualNetwork", "protocol": "Connected"},
+          {"destination": "0.0.0.0/0", "nextHop": "Internet", "protocol": "Static"}
+        ],
+        "ipv6": [
+          {"destination": "2001:db8:xyz:5::/64", "nextHop": "VirtualNetwork", "protocol": "Connected"},
+          {"destination": "::/0", "nextHop": "Internet", "protocol": "Static"}
+        ]
+      }
+    },
+    {
+      "name": "NSXT-DFW-WEB-01",
+      "isFirewall": true,
+      "platform": "nsxt_dfw",
+      "environment": "on-premises_overlay",
+      "routingTable": {
+        "ipv4": [
+          {"destination": "10.200.10.0/24", "nextHop": "geneve_tunnel", "protocol": "GeneveOverlay"}
+        ],
+        "ipv6": [
+          {"destination": "2001:db8:200:10::/64", "nextHop": "geneve_tunnel", "protocol": "GeneveOverlay"}
+        ]
+      }
+    }
+  ],
+  "ipCard": {
+    "on-prem-web-tier": {
+      "ipv4": "10.100.10.0/24",
+      "ipv6": "2001:db8:100:10::/64",
+      "securityZone": "on-prem-dmz",
+      "platformReference": "AMS-SEC-FW-01"
+    },
+    "on-prem-db-tier": {
+      "ipv4": "10.100.20.0/24",
+      "ipv6": "2001:db8:100:20::/64",
+      "securityZone": "on-prem-secure",
+      "platformReference": "AMS-SEC-FW-01"
+    },
+    "aws-app-servers": {
+      "ipv4": "172.16.1.0/24",
+      "ipv6": "2001:db8:abc:1::/64",
+      "securityZone": "aws-vpc-app",
+      "platformReference": "AWS-SEC-GROUP-01"
+    },
+    "azure-mgmt-hosts": {
+      "ipv4": "192.168.5.0/24",
+      "ipv6": "2001:db8:xyz:5::/64",
+      "securityZone": "azure-vnet-mgmt",
+      "platformReference": "AZURE-NSG-MGMT-01"
+    },
+    "nsxt-overlay-web": {
+      "ipv4": "10.200.10.0/24",
+      "ipv6": "2001:db8:200:10::/64",
+      "securityZone": "overlay-dmz",
+      "platformReference": "NSXT-DFW-WEB-01"
+    }
+  },
+  "networkSecurityPolicy": {
+    "policies": [
+      {
+        "sourceZone": "on-prem-dmz",
+        "destinationZone": "on-prem-secure",
+        "allowedProtocols": ["TCP"],
+        "allowedPorts": [5432, 3306],
+        "action": "allow"
+      },
+      {
+        "sourceZone": "aws-vpc-app",
+        "destinationZone": "on-prem-secure",
+        "allowedProtocols": ["TCP"],
+        "allowedPorts": [5432],
+        "action": "allow"
+      },
+      {
+        "sourceZone": "azure-vnet-mgmt",
+        "destinationZone": "aws-vpc-app",
+        "allowedProtocols": ["TCP"],
+        "allowedPorts": [22, 3389],
+        "action": "allow"
+      },
+      {
+        "sourceZone": "overlay-dmz",
+        "destinationZone": "on-prem-dmz",
+        "allowedProtocols": ["TCP", "UDP"],
+        "allowedPorts": [80, 443, 53],
+        "action": "allow"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "networks": [
+    {
+      "network": "192.168.1.0/24",
+      "extensible_attributes": {
+        "Site": "Amsterdam-HQ",
+        "VLAN": "100"
+      }
+    },
+    {
+      "comment": "Guest Wi-Fi",
+      "dhcp_range": {
+        "start": "172.16.0.50"
+      }
+    }
+  ]
+}

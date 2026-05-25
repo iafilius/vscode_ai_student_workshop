@@ -1,0 +1,9 @@
+interface GigabitEthernet1/0/1
+  description uplink-to-core
+  switchport mode trunk
+  switchport trunk allowed vlan 10,20,30
+  mtu 9216
+  vrf forwarding PROD_VRF
+  ipv6 traffic-filter V6_ACL_IN in
+  lldp transmit
+  lldp receive

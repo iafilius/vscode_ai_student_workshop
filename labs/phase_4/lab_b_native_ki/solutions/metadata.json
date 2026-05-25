@@ -1,0 +1,8 @@
+{
+  "title": "Datacenter 1 Spine-Leaf Network Fabric",
+  "version": "1.0.0",
+  "owner": "Enterprise Network Engineering",
+  "references": [
+    "artifact.md"
+  ]
+}

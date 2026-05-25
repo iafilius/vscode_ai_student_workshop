@@ -1,0 +1,29 @@
+Logical Switch: ls-ams-dc1-prod-web
+  Transport Zone: tz-overlay-prod
+  VNI: 70010
+  Admin State: UP
+  Replication Mode: MTEP
+  Segment ID: 70010
+
+Logical Router: lr-ams-dc1-tier1
+  Type: TIER1
+  HA Mode: ACTIVE_STANDBY
+  Failover Mode: PREEMPTIVE
+  Linked Tier0: lr-ams-dc1-tier0
+  Linked Tier1: lr-ams-dc1-tier1-dr
+  Interfaces:
+    - Name: iface-web-uplink
+      IP: 10.20.10.1/24
+      Logical Switch: ls-ams-dc1-prod-web
+      State: UP
+
+Gateway Firewall Rule: gfw-allow-web
+  Source: Any
+  Destination: ls-ams-dc1-prod-web
+  Service: HTTPS
+  Action: ALLOW
+
+NAT Rule: nat-web-out
+  Action: SNAT
+  Original Source: ls-ams-dc1-prod-web
+  Translated Source: 198.51.100.1

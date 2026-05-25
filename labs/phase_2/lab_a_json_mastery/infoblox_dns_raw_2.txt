@@ -1,0 +1,21 @@
+Zone: example.com
+  View: Internal
+  A Records:
+    - Name: www
+      IP: 10.10.10.5
+      Comment: Main Website
+    - Name: api
+      IP: 10.10.10.6
+      Comment: Internal API
+  CNAME Records:
+    - Name: web
+      Target: www.example.com
+  TXT Records:
+    - Name: example.com
+      Text: "v=spf1 include:_spf.example.com ~all"
+  SRV Records:
+    - Name: _sip._tcp
+      Target: sip.example.com
+      Port: 5060
+      Priority: 10
+      Weight: 5

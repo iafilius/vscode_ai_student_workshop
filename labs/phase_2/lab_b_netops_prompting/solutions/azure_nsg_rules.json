@@ -1,0 +1,66 @@
+{
+  "properties": {
+    "securityRules": [
+      {
+        "name": "Allow_DMZ_HTTPS",
+        "properties": {
+          "protocol": "Tcp",
+          "sourcePortRange": "*",
+          "destinationPortRange": "443",
+          "sourceAddressPrefix": "192.168.45.0/24",
+          "destinationAddressPrefix": "10.10.200.50",
+          "access": "Allow",
+          "priority": 100,
+          "direction": "Inbound",
+          "_metadata": {
+            "owner": "YOU",
+            "requester": "current department",
+            "date_time": "2024-05-24T00:00:00Z",
+            "source_owner": "YOU",
+            "destination_owner": "YOU"
+          }
+        }
+      },
+      {
+        "name": "Allow_DMZ_PostgreSQL",
+        "properties": {
+          "protocol": "Tcp",
+          "sourcePortRange": "*",
+          "destinationPortRange": "5432",
+          "sourceAddressPrefix": "192.168.45.0/24",
+          "destinationAddressPrefix": "10.10.200.50",
+          "access": "Allow",
+          "priority": 110,
+          "direction": "Inbound",
+          "_metadata": {
+            "owner": "YOU",
+            "requester": "current department",
+            "date_time": "2024-05-24T00:00:00Z",
+            "source_owner": "YOU",
+            "destination_owner": "YOU"
+          }
+        }
+      },
+      {
+        "name": "Deny_DMZ_Other",
+        "properties": {
+          "protocol": "*",
+          "sourcePortRange": "*",
+          "destinationPortRange": "*",
+          "sourceAddressPrefix": "192.168.45.0/24",
+          "destinationAddressPrefix": "10.10.200.50",
+          "access": "Deny",
+          "priority": 4096,
+          "direction": "Inbound",
+          "_metadata": {
+            "owner": "YOU",
+            "requester": "current department",
+            "date_time": "2024-05-24T00:00:00Z",
+            "source_owner": "YOU",
+            "destination_owner": "YOU"
+          }
+        }
+      }
+    ]
+  }
+}

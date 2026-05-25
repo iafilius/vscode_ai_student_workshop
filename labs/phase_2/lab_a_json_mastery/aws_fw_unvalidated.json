@@ -1,0 +1,18 @@
+{
+  "firewall": "fw-perimeter",
+  "subnets": [
+    "subnet-1111",
+    "subnet-2222"
+  ],
+  "logging": {
+    "flow_logs": "ENABLED",
+    "alert_logs": true
+  },
+  "rule_groups": [
+    {
+      "priority": 100,
+      "type": "STATELESS",
+      "action": "DROP"
+    }
+  ]
+}

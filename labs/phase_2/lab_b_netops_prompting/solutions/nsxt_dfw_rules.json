@@ -1,0 +1,67 @@
+{
+  "rules": [
+    {
+      "display_name": "Allow_DMZ_HTTPS",
+      "action": "ALLOW",
+      "source_groups": [
+        "192.168.45.0/24"
+      ],
+      "destination_groups": [
+        "10.10.200.50"
+      ],
+      "services": [
+        "HTTPS"
+      ],
+      "logged": true,
+      "_metadata": {
+        "owner": "YOU",
+        "requester": "current department",
+        "date_time": "2024-05-24T00:00:00Z",
+        "source_owner": "YOU",
+        "destination_owner": "YOU"
+      }
+    },
+    {
+      "display_name": "Allow_DMZ_PostgreSQL",
+      "action": "ALLOW",
+      "source_groups": [
+        "192.168.45.0/24"
+      ],
+      "destination_groups": [
+        "10.10.200.50"
+      ],
+      "services": [
+        "TCP_5432"
+      ],
+      "logged": true,
+      "_metadata": {
+        "owner": "YOU",
+        "requester": "current department",
+        "date_time": "2024-05-24T00:00:00Z",
+        "source_owner": "YOU",
+        "destination_owner": "YOU"
+      }
+    },
+    {
+      "display_name": "Deny_DMZ_Other",
+      "action": "DROP",
+      "source_groups": [
+        "192.168.45.0/24"
+      ],
+      "destination_groups": [
+        "10.10.200.50"
+      ],
+      "services": [
+        "ANY"
+      ],
+      "logged": true,
+      "_metadata": {
+        "owner": "YOU",
+        "requester": "current department",
+        "date_time": "2024-05-24T00:00:00Z",
+        "source_owner": "YOU",
+        "destination_owner": "YOU"
+      }
+    }
+  ]
+}

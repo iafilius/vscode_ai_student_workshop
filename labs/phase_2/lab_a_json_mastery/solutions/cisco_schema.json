@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SwitchPortConfiguration",
+  "type": "object",
+  "properties": {
+    "interface": { "type": "string" },
+    "description": { "type": "string" },
+    "mode": { "type": "string", "enum": ["access", "trunk"] },
+    "allowed_vlans": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "VlanTaggingEnabled": { "type": "boolean" },
+    "MtuRange": {
+      "type": "integer",
+      "minimum": 1500,
+      "maximum": 9216
+    }
+  },
+  "required": ["interface", "mode", "VlanTaggingEnabled", "MtuRange"]
+}

@@ -1,0 +1,7 @@
+
+=== IPAM AUDIT CONFLICT REPORT ===
+# Owner: YOU | Requester: current department | Date_Time: 2024-05-24T00:00:00Z | Source_Owner: YOU | Destination_Owner: YOU
+- CONFLICT: 'subnet-b' (10.150.35.0/24) resides completely inside the range of 'subnet-a' (10.150.32.0/20: 10.150.32.0 - 10.150.47.255).
+# Owner: YOU | Requester: current department | Date_Time: 2024-05-24T00:00:00Z | Source_Owner: YOU | Destination_Owner: YOU
+- CONFLICT: 'subnet-d' (10.150.32.0/24) resides completely inside the range of 'subnet-a' (10.150.32.0/20) and overlaps with the base address of subnet-a.
+==================================

@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InfobloxDNSZoneConfiguration",
+  "type": "object",
+  "properties": {
+    "zone": {
+      "type": "object",
+      "properties": {
+        "name":       { "type": "string" },
+        "type":       { "type": "string", "enum": ["Authoritative", "Forward", "Stub"] },
+        "view":       { "type": "string" },
+        "fqdn":       { "type": "string" },
+        "primary_ns": { "type": "string" },
+        "soa_ttl":    { "type": "integer", "minimum": 60, "maximum": 86400 }
+      },
+      "required": ["name", "type", "fqdn", "primary_ns"]
+    },
+    "a_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fqdn":  { "type": "string" },
+          "ttl":   { "type": "integer", "minimum": 60 },
+          "type":  { "type": "string", "enum": ["A"] },
+          "value": { "type": "string" }
+        },
+        "required": ["fqdn", "type", "value"]
+      }
+    },
+    "cname_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fqdn":   { "type": "string" },
+          "ttl":    { "type": "integer", "minimum": 60 },
+          "type":   { "type": "string", "enum": ["CNAME"] },
+          "target": { "type": "string" }
+        },
+        "required": ["fqdn", "type", "target"]
+      }
+    },
+    "mx_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fqdn":       { "type": "string" },
+          "ttl":        { "type": "integer", "minimum": 60 },
+          "type":       { "type": "string", "enum": ["MX"] },
+          "priority":   { "type": "integer", "minimum": 0, "maximum": 65535 },
+          "mail_server": { "type": "string" }
+        },
+        "required": ["fqdn", "type", "priority", "mail_server"]
+      }
+    },
+    "ptr_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fqdn":   { "type": "string" },
+          "ttl":    { "type": "integer", "minimum": 60 },
+          "type":   { "type": "string", "enum": ["PTR"] },
+          "target": { "type": "string" }
+        },
+        "required": ["fqdn", "type", "target"]
+      }
+    }
+  },
+  "required": ["zone", "a_records"]
+}

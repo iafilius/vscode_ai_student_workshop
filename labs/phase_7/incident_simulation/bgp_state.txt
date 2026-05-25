@@ -1,0 +1,12 @@
+BGP router identifier 10.250.0.1, local AS number 65100
+BGP table version is 24, main routing table version 24
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.250.11.2     4        65101   24531   24530        24    0    0 12w3d     245
+10.250.12.2     4        65102     142     150        24    0    0 00:00:18  Active (Flapping)
+10.250.13.2     4        65103   34125   34110        24    0    0 05:12:45  150
+
+Interface Configuration State:
+GigabitEthernet1/0/11 - Status: UP, Protocol: UP, MTU: 9216, Mode: Trunk
+GigabitEthernet1/0/12 - Status: UP, Protocol: UP, MTU: 1500, Mode: Trunk  <-- WARNING: Peer ams-leaf-02 config is set to Jumbo Frame 9216!
+GigabitEthernet1/0/13 - Status: UP, Protocol: UP, MTU: 9216, Mode: Trunk

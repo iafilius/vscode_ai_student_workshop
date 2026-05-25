@@ -1,0 +1,17 @@
+{
+  "security_group": "sg-web-prod",
+  "description": "Production Web Tier",
+  "inbound_rules": [
+    {
+      "protocol": "TCP",
+      "port": -1,
+      "source": "0.0.0.0/0"
+    }
+  ],
+  "outbound_rules": [
+    {
+      "port": "ALL",
+      "destination": "0.0.0.0/0"
+    }
+  ]
+}

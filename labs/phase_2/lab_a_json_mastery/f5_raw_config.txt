@@ -1,0 +1,45 @@
+ltm virtual vs_web_app_443 {
+    destination 10.10.50.100:443
+    ip-protocol tcp
+    mask 255.255.255.255
+    pool pool_web_backend
+    profiles {
+        clientssl {
+            context clientside
+        }
+        http { }
+        tcp { }
+    }
+    source 0.0.0.0/0
+    source-address-translation {
+        type automap
+    }
+    translate-address enabled
+    translate-port enabled
+    vlans-enabled
+}
+
+ltm pool pool_web_backend {
+    members {
+        10.10.50.11:8080 {
+            address 10.10.50.11
+            session monitor-enabled
+            state up
+        }
+        10.10.50.12:8080 {
+            address 10.10.50.12
+            session monitor-enabled
+            state up
+        }
+    }
+    monitor http_head_f5
+    min-active-members 1
+}
+
+ltm monitor http http_head_f5 {
+    defaults-from http
+    interval 5
+    recv "200 OK"
+    send "HEAD /healthz HTTP/1.1\r\nHost: internal\r\n\r\n"
+    timeout 16
+}

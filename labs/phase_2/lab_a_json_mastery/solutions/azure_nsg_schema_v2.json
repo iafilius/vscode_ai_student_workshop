@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "network_security_group": {
+      "type": "string"
+    },
+    "resource_group": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "security_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 100,
+            "maximum": 4096
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "Inbound",
+              "Outbound"
+            ]
+          },
+          "access": {
+            "type": "string",
+            "enum": [
+              "Allow",
+              "Deny"
+            ]
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "Tcp",
+              "Udp",
+              "Icmp",
+              "*"
+            ]
+          },
+          "source_port_range": {
+            "type": "string"
+          },
+          "destination_port_range": {
+            "type": "string"
+          },
+          "source_address_prefix": {
+            "type": "string"
+          },
+          "destination_address_prefix": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "priority",
+          "direction",
+          "access"
+        ]
+      }
+    },
+    "tags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "network_security_group",
+    "resource_group",
+    "security_rules"
+  ]
+}

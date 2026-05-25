@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "azure_firewall": {
+      "type": "string"
+    },
+    "resource_group": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "threat_intel_mode": {
+      "type": "string",
+      "enum": [
+        "Alert",
+        "Deny",
+        "Off"
+      ]
+    },
+    "network_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "TCP",
+              "UDP",
+              "ICMP",
+              "Any"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "port": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "protocol",
+          "source",
+          "destination"
+        ]
+      }
+    }
+  },
+  "required": [
+    "azure_firewall",
+    "resource_group"
+  ]
+}

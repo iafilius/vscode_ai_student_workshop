@@ -1,0 +1,15 @@
+
+! Cisco ASA Firewall Rules - Reference Solution
+! DMZ (192.168.45.0/24) to Internal DB server (10.10.200.50) policy
+
+! Allow HTTPS (443) from DMZ to the internal database host
+! Owner: YOU | Requester: current department | Date_Time: 2024-05-24T00:00:00Z | Source_Owner: YOU | Destination_Owner: YOU
+access-list DMZ_TO_INTERNAL extended permit tcp 192.168.45.0 255.255.255.0 host 10.10.200.50 eq 443
+
+! Allow PostgreSQL (5432) from DMZ to the internal database host
+! Owner: YOU | Requester: current department | Date_Time: 2024-05-24T00:00:00Z | Source_Owner: YOU | Destination_Owner: YOU
+access-list DMZ_TO_INTERNAL extended permit tcp 192.168.45.0 255.255.255.0 host 10.10.200.50 eq 5432
+
+! Deny all other DMZ IP traffic to that specific host
+! Owner: YOU | Requester: current department | Date_Time: 2024-05-24T00:00:00Z | Source_Owner: YOU | Destination_Owner: YOU
+access-list DMZ_TO_INTERNAL extended deny ip 192.168.45.0 255.255.255.0 host 10.10.200.50

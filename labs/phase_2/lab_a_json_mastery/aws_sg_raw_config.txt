@@ -1,0 +1,16 @@
+Security Group: sg-web-prod
+  Description: Production Web Tier
+  VPC: vpc-0abcd1234
+  Inbound Rules:
+    - Protocol: TCP
+      Port: 443
+      Source: 0.0.0.0/0
+      Description: Allow HTTPS from Anywhere
+    - Protocol: TCP
+      Port: 80
+      Source: 0.0.0.0/0
+      Description: Allow HTTP from Anywhere
+  Outbound Rules:
+    - Protocol: ALL
+      Port: ALL
+      Destination: 0.0.0.0/0

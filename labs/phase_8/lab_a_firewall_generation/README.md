@@ -1,0 +1,110 @@
+# Phase 8 Lab A: Policy-as-Code & Automated Multi-Platform Firewall Generation
+
+## Objective
+Fabricate an OpenSpec specification and develop a Python rule generator that accepts logical connection requests, performs spatial and policy lookups against a pre-populated hybrid multi-cloud dataset (`network_topology_data.json`), and automatically constructs vendor-specific firewall rules with cryptographic trace tracking.
+
+## Online References
+- [Python JSON Library Documentation](https://docs.python.org/3/library/json.html)
+- [OpenSpec Change Specification and Design Compilation](https://github.com/Fission-AI/OpenSpec/blob/main/docs/compilation.md)
+
+---
+
+## Step-by-Step Lab Tasks
+
+### Task 1: Initialize the OpenSpec Change
+1. Open your terminal at the workspace root and initialize the firewall automation change:
+   ```bash
+   openspec new change "policy-based-firewall-automation"
+   ```
+2. Open `openspec/changes/policy-based-firewall-automation/proposal.md` and define the automation scope:
+   *   **Why:** Cloud-native and hybrid multi-cloud firewalls require programmatic policy compilation to guarantee that security zone boundaries are never violated.
+   *   **Capabilities:** Define `policy-based-firewall-compilation`.
+
+### Task 2: Design the Specification Requirements
+1. Open `openspec/changes/policy-based-firewall-automation/specs/policy-based-firewall-compilation/spec.md`.
+2. Write formal requirements indicating how the firewall generator must compile rules:
+   *   **Requirement:** The script MUST load `network_topology_data.json` dynamically from the filesystem.
+   *   **Requirement:** The script MUST accept name-based source and destination connectivity queries (e.g., `aws-app-servers` -> `on-prem-db-tier` on port `5432`).
+   *   **Requirement:** The script MUST perform lookups in the `ipCard` map to resolve logical names to their physical IPv4 and IPv6 prefixes, security zones, and protecting firewall platforms.
+   *   **Requirement:** The script MUST validate if the requested connection is explicitly allowed under the `networkSecurityPolicy` list. If the connection crosses zone boundaries without an explicit permit rule, it MUST return a status of `DENIED`.
+   *   **Requirement:** The script MUST output a single JSON telemetry block containing:
+       - `traceId`: a unique generated string (UUID v4 or SHA256 of the request context).
+       - `status`: `ALLOWED` or `DENIED`.
+       - `resolvedSourceIp`: resolved IP prefix.
+       - `resolvedDestinationIp`: resolved IP prefix.
+       - `enforcementPoints`: list of firewall device names (where `isFirewall` is true) guarding the source or destination IP spaces.
+       - `compiledRules`: a compiled vendor-specific rule block corresponding to the target platform (e.g., AWS Security Group inbound rule, Cisco ASA ACL command lines, or NSX-T segments).
+3. Validate and compile the spec:
+   ```bash
+   openspec status --change "policy-based-firewall-automation"
+   ```
+
+### Task 3: Generate the Rules Compiler Script
+1. Run the `/opsx-apply` command in your terminal to let the agent compile the Python utility `generate_rules.py` directly inside this lab directory:
+   ```bash
+   /opsx-apply "policy-based-firewall-automation"
+   ```
+2. Inspect the generated script `generate_rules.py`. Make sure the Python file handles parsing arguments or has high-quality mocked test executions.
+
+### Task 4: Test Multi-Cloud & Cross-Zone Connectivity Cases
+Verify that your firewall script handles all of the following scenarios:
+1.  **Scenario A (Intra-Zone Allowed):** On-prem web tier to On-prem DB tier (`on-prem-web-tier` -> `on-prem-db-tier`) on port `5432`.
+    *   *Result:* Resolves to `ALLOWED` because policy exists. Enforcement point should be `AMS-SEC-FW-01`.
+2.  **Scenario B (Inter-Zone Cloud-to-On-Prem):** AWS app servers to On-prem secure database (`aws-app-servers` -> `on-prem-db-tier`) on port `5432`.
+    *   *Result:* Resolves to `ALLOWED` based on multi-cloud transport policy. Enforcement points include `AWS-SEC-GROUP-01` and `AMS-SEC-FW-01`.
+3.  **Scenario C (Blocked / Denied Case):** On-prem web tier to Azure management hosts (`on-prem-web-tier` -> `azure-mgmt-hosts`) on port `22`.
+    *   *Result:* Resolves to `DENIED` since there is no explicit permit policy between these zones.
+
+---
+
+## Hints
+*   **Unique Trace ID:** In Python, import the standard `uuid` library and generate a unique trace context via `str(uuid.uuid4())`.
+*   **Argument Handling:** Make sure your Python script is executable via CLI, for example:
+    ```bash
+    python generate_rules.py --src aws-app-servers --dst on-prem-db-tier --port 5432
+    ```
+
+---
+
+## Expected Output
+
+### Expected JSON Telemetry Rule Output:
+```json
+{
+  "traceId": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+  "status": "ALLOWED",
+  "resolvedSource": {
+    "name": "aws-app-servers",
+    "ipv4": "172.16.1.0/24",
+    "ipv6": "2001:db8:abc:1::/64",
+    "zone": "aws-vpc-app"
+  },
+  "resolvedDestination": {
+    "name": "on-prem-db-tier",
+    "ipv4": "10.100.20.0/24",
+    "ipv6": "2001:db8:100:20::/64",
+    "zone": "on-prem-secure"
+  },
+  "enforcementPoints": [
+    "AWS-SEC-GROUP-01",
+    "AMS-SEC-FW-01"
+  ],
+  "compiledRules": [
+    {
+      "platform": "aws_security_group",
+      "targetDevice": "AWS-SEC-GROUP-01",
+      "rule": {
+        "IpProtocol": "tcp",
+        "FromPort": 5432,
+        "ToPort": 5432,
+        "IpRanges": [{"CidrIp": "172.16.1.0/24"}]
+      }
+    },
+    {
+      "platform": "cisco_asa",
+      "targetDevice": "AMS-SEC-FW-01",
+      "rule": "access-list outside_access_in extended permit tcp 172.16.1.0 255.255.255.0 host 10.100.20.0 eq 5432"
+    }
+  ]
+}
+```

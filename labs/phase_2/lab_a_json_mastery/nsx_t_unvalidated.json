@@ -1,0 +1,25 @@
+{
+  "logical_switches": [
+    {
+      "name": "ls-ams-dc1-prod-web",
+      "transport_zone": "tz-overlay-prod",
+      "vni": 70010,
+      "admin_state": "DOWN",
+      "replication_mode": "UNKNOWN"
+    }
+  ],
+  "logical_routers": [
+    {
+      "type": "TIER1",
+      "ha_mode": "ACTIVE_STANDBY",
+      "failover_mode": "PREEMPTIVE",
+      "interfaces": [
+        {
+          "name": "iface-web-uplink",
+          "logical_switch": "ls-ams-dc1-prod-web",
+          "state": "UP"
+        }
+      ]
+    }
+  ]
+}

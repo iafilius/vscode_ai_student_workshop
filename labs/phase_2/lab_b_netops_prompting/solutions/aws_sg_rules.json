@@ -1,0 +1,40 @@
+{
+  "SecurityGroupIngress": [
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 443,
+      "ToPort": 443,
+      "IpRanges": [
+        {
+          "CidrIp": "192.168.45.0/24",
+          "Description": "HTTPS from DMZ to 10.10.200.50"
+        }
+      ],
+      "_metadata": {
+        "owner": "YOU",
+        "requester": "current department",
+        "date_time": "2024-05-24T00:00:00Z",
+        "source_owner": "YOU",
+        "destination_owner": "YOU"
+      }
+    },
+    {
+      "IpProtocol": "tcp",
+      "FromPort": 5432,
+      "ToPort": 5432,
+      "IpRanges": [
+        {
+          "CidrIp": "192.168.45.0/24",
+          "Description": "PostgreSQL from DMZ"
+        }
+      ],
+      "_metadata": {
+        "owner": "YOU",
+        "requester": "current department",
+        "date_time": "2024-05-24T00:00:00Z",
+        "source_owner": "YOU",
+        "destination_owner": "YOU"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Zone: eu.internal
+  Type: Authoritative
+  View: Internal
+  FQDN: eu.internal.
+  Primary NS: ns1.eu.internal
+  SOA TTL: 3600
+
+  A Records:
+    ams-spine-01.eu.internal.     IN  A      10.150.32.1    TTL: 3600
+    ams-spine-02.eu.internal.     IN  A      10.150.32.2    TTL: 3600
+    ams-leaf-01.eu.internal.      IN  A      10.150.33.1    TTL: 3600
+    ams-db-primary.eu.internal.   IN  A      10.10.200.50   TTL: 300
+    ams-db-replica.eu.internal.   IN  A      10.10.200.51   TTL: 300
+
+  CNAME Records:
+    db.eu.internal.               IN  CNAME  ams-db-primary.eu.internal.  TTL: 300
+    monitoring.eu.internal.       IN  CNAME  ams-grafana.eu.internal.     TTL: 3600
+
+  MX Records:
+    eu.internal.                  IN  MX 10  mail-relay.eu.internal.      TTL: 86400
+
+  PTR Records (zone: 32.150.10.in-addr.arpa):
+    1.32.150.10.in-addr.arpa.     IN  PTR    ams-spine-01.eu.internal.
+    2.32.150.10.in-addr.arpa.     IN  PTR    ams-spine-02.eu.internal.

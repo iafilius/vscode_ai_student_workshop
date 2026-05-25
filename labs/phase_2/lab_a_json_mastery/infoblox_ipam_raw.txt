@@ -1,0 +1,41 @@
+Network: 10.150.32.0/20
+  Comment: AMS-DC1-CoreFabric
+  VLAN: VLAN_210_FABRIC
+  Site: AMS-DC1
+  Status: Active
+  Utilization: 67%
+
+  Host Record: ams-spine-01.eu.internal
+    IP: 10.150.32.1
+    MAC: aa:bb:cc:10:01:01
+    Status: Active
+    DHCP: Disabled
+
+  Host Record: ams-spine-02.eu.internal
+    IP: 10.150.32.2
+    MAC: aa:bb:cc:10:01:02
+    Status: Active
+    DHCP: Disabled
+
+  Host Record: ams-leaf-01.eu.internal
+    IP: 10.150.33.1
+    MAC: aa:bb:cc:10:02:01
+    Status: Active
+    DHCP: Disabled
+
+Network: 10.150.48.0/22
+  Comment: AMS-DC1-GuestWifi
+  VLAN: VLAN_300_GUEST
+  Site: AMS-DC1
+  Status: Active
+  Utilization: 12%
+
+  Fixed Address: guest-dhcp-range-start
+    IP: 10.150.48.10
+    MAC: 00:00:00:00:00:00
+    Status: Reserved
+
+  Fixed Address: guest-dhcp-range-end
+    IP: 10.150.51.254
+    MAC: 00:00:00:00:00:00
+    Status: Reserved

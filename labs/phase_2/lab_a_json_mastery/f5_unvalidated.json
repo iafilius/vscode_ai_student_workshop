@@ -1,0 +1,12 @@
+{
+  "virtual_servers": [
+    {
+      "destination": "10.10.10.5",
+      "pool": "pool_web_servers",
+      "profiles": {
+        "client": "clientssl_wildcard"
+      },
+      "snat": "Automap"
+    }
+  ]
+}

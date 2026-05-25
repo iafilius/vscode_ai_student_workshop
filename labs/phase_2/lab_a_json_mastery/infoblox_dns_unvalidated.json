@@ -1,0 +1,23 @@
+{
+  "zone": "example.com",
+  "a_records": [
+    {
+      "name": "www",
+      "ip": "10.10.10.5"
+    }
+  ],
+  "txt_records": [
+    {
+      "text": "v=spf1 include:_spf.example.com ~all"
+    }
+  ],
+  "srv_records": [
+    {
+      "name": "_sip._tcp",
+      "target": "sip.example.com",
+      "port": 70000,
+      "priority": "10",
+      "weight": 5
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Azure Firewall: azfw-hub
+  Resource Group: rg-hub
+  Location: westeurope
+  Threat Intel Mode: Alert
+  Network Rules:
+    - Name: rule-allow-dns
+      Protocol: UDP
+      Source: 10.0.0.0/8
+      Destination: 8.8.8.8
+      Port: 53

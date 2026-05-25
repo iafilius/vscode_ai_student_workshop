@@ -1,0 +1,152 @@
+%%{init: {'theme': 'dark', 'flowchart': {'curve': 'linear'}}}%%
+flowchart TB
+
+  %% ═══════════════════════════════════════════════════════════════
+  %% CLASS DEFINITIONS  —  Tier-based color coding
+  %% ═══════════════════════════════════════════════════════════════
+  classDef spine    fill:#4A148C,stroke:#CE93D8,stroke-width:3px,color:#fff,font-weight:bold
+  classDef leafComp fill:#01579B,stroke:#4FC3F7,stroke-width:3px,color:#fff,font-weight:bold
+  classDef leafDCI  fill:#BF360C,stroke:#FFAB40,stroke-width:4px,color:#fff,font-weight:bold
+  classDef esxi     fill:#1B5E20,stroke:#81C784,stroke-width:2px,color:#E8F5E9
+
+  %% ── ROW 1: All Spine Switches — DC1 left, DC2 right ───────────
+  subgraph SPINE_ROW["Spine Layer"]
+    direction LR
+    subgraph DC1_SP["DC1 — Spine"]
+      direction LR
+      D1SP1["DC1-SP-01"]:::spine
+      D1SP2["DC1-SP-02"]:::spine
+    end
+    subgraph DC2_SP["DC2 — Spine"]
+      direction LR
+      D2SP1["DC2-SP-01"]:::spine
+      D2SP2["DC2-SP-02"]:::spine
+    end
+  end
+
+  %% ── ROW 2: All DCI Leaf Switches — DCI backbone in between ────
+  subgraph DCI_ROW["DCI Gateway Leaf Layer"]
+    direction LR
+    subgraph DC1_DCI["DC1 — DCI Leaves"]
+      direction LR
+      D1DCI1{{"DC1-DCI-LF-01"}}:::leafDCI
+      D1DCI2{{"DC1-DCI-LF-02"}}:::leafDCI
+    end
+    subgraph DC2_DCI["DC2 — DCI Leaves"]
+      direction LR
+      D2DCI1{{"DC2-DCI-LF-01"}}:::leafDCI
+      D2DCI2{{"DC2-DCI-LF-02"}}:::leafDCI
+    end
+  end
+
+  %% ── ROW 3: All Compute Leaf Switches ───────────────────────────
+  subgraph LEAF_ROW["Compute Leaf Layer"]
+    direction LR
+    subgraph DC1_LF["DC1 — Compute Leaves"]
+      direction LR
+      D1LF3["DC1-LF-03"]:::leafComp
+      D1LF4["DC1-LF-04"]:::leafComp
+      D1LF5["DC1-LF-05"]:::leafComp
+      D1LF6["DC1-LF-06"]:::leafComp
+    end
+    subgraph DC2_LF["DC2 — Compute Leaves"]
+      direction LR
+      D2LF3["DC2-LF-03"]:::leafComp
+      D2LF4["DC2-LF-04"]:::leafComp
+      D2LF5["DC2-LF-05"]:::leafComp
+      D2LF6["DC2-LF-06"]:::leafComp
+    end
+  end
+
+  %% ── ROW 4: All VMware ESXi Compute ─────────────────────────────
+  subgraph COMPUTE_ROW["VMware vSphere Compute"]
+    direction LR
+    subgraph DC1_VM["DC1 — VMware vSphere"]
+      direction LR
+      subgraph VA["vCluster A  |  VLAN 100-109"]
+        direction LR
+        D1E1[("ESXi-01")]:::esxi
+        D1E2[("ESXi-02")]:::esxi
+        D1E3[("ESXi-03")]:::esxi
+        D1E4[("ESXi-04")]:::esxi
+      end
+      subgraph VB["vCluster B  |  VLAN 110-119"]
+        direction LR
+        D1E5[("ESXi-05")]:::esxi
+        D1E6[("ESXi-06")]:::esxi
+        D1E7[("ESXi-07")]:::esxi
+        D1E8[("ESXi-08")]:::esxi
+      end
+    end
+    subgraph DC2_VM["DC2 — VMware vSphere"]
+      direction LR
+      subgraph VC["vCluster C  |  VLAN 200-209"]
+        direction LR
+        D2E1[("ESXi-09")]:::esxi
+        D2E2[("ESXi-10")]:::esxi
+        D2E3[("ESXi-11")]:::esxi
+        D2E4[("ESXi-12")]:::esxi
+      end
+      subgraph VD["vCluster D  |  VLAN 210-219"]
+        direction LR
+        D2E5[("ESXi-13")]:::esxi
+        D2E6[("ESXi-14")]:::esxi
+        D2E7[("ESXi-15")]:::esxi
+        D2E8[("ESXi-16")]:::esxi
+      end
+    end
+  end
+
+  %% ── DC1: Spine → All Leaves ────────────────────────────────────
+  %% Links 0-3:  Spine → DCI leaves
+  %% Links 4-11: Spine → Compute leaves
+  D1SP1 & D1SP2 --> D1DCI1 & D1DCI2
+  D1SP1 & D1SP2 --> D1LF3 & D1LF4 & D1LF5 & D1LF6
+
+  %% ── DC1: Leaf → ESXi ───────────────────────────────────────────
+  %% Links 12-19: LF-03/04 → Cluster A
+  %% Links 20-27: LF-05/06 → Cluster B
+  D1LF3 & D1LF4 --> D1E1 & D1E2 & D1E3 & D1E4
+  D1LF5 & D1LF6 --> D1E5 & D1E6 & D1E7 & D1E8
+
+  %% ── DC2: Spine → All Leaves ────────────────────────────────────
+  %% Links 28-31:  Spine → DCI leaves
+  %% Links 32-39:  Spine → Compute leaves
+  D2SP1 & D2SP2 --> D2DCI1 & D2DCI2
+  D2SP1 & D2SP2 --> D2LF3 & D2LF4 & D2LF5 & D2LF6
+
+  %% ── DC2: Leaf → ESXi ───────────────────────────────────────────
+  %% Links 40-47: LF-03/04 → Cluster C
+  %% Links 48-55: LF-05/06 → Cluster D
+  D2LF3 & D2LF4 --> D2E1 & D2E2 & D2E3 & D2E4
+  D2LF5 & D2LF6 --> D2E5 & D2E6 & D2E7 & D2E8
+
+  %% ── Datacenter Interconnect — links 56–59 ──────────────────────
+  D1DCI1 == " DCI Backbone " ==> D2DCI1
+  D1DCI1 == " DCI Backbone " ==> D2DCI2
+  D1DCI2 == " DCI Backbone " ==> D2DCI1
+  D1DCI2 == " DCI Backbone " ==> D2DCI2
+
+  %% ── Tier row container styling ─────────────────────────────────
+  style SPINE_ROW    fill:#0A0118,stroke:#9C27B0,stroke-width:2px,color:#CE93D8
+  style DCI_ROW      fill:#180500,stroke:#FF6D00,stroke-width:2px,color:#FFD54F
+  style LEAF_ROW     fill:#001020,stroke:#0288D1,stroke-width:2px,color:#81D4FA
+  style COMPUTE_ROW  fill:#001000,stroke:#43A047,stroke-width:2px,color:#A5D6A7
+
+  %% ── DC-split inner subgraph styling ────────────────────────────
+  style DC1_SP   fill:#150025,stroke:#CE93D8,stroke-width:1px,color:#E1BEE7
+  style DC2_SP   fill:#150025,stroke:#CE93D8,stroke-width:1px,color:#E1BEE7
+  style DC1_DCI  fill:#200600,stroke:#FFAB40,stroke-width:1px,color:#FFD54F
+  style DC2_DCI  fill:#200600,stroke:#FFAB40,stroke-width:1px,color:#FFD54F
+  style DC1_LF   fill:#001828,stroke:#29B6F6,stroke-width:1px,color:#81D4FA
+  style DC2_LF   fill:#001828,stroke:#29B6F6,stroke-width:1px,color:#81D4FA
+  style DC1_VM   fill:#001800,stroke:#66BB6A,stroke-width:1px,color:#A5D6A7
+  style DC2_VM   fill:#001800,stroke:#66BB6A,stroke-width:1px,color:#A5D6A7
+  style VA       fill:#001A00,stroke:#2E7D32,stroke-width:1px,color:#C8E6C9
+  style VB       fill:#001A00,stroke:#2E7D32,stroke-width:1px,color:#C8E6C9
+  style VC       fill:#001A00,stroke:#2E7D32,stroke-width:1px,color:#C8E6C9
+  style VD       fill:#001A00,stroke:#2E7D32,stroke-width:1px,color:#C8E6C9
+
+  %% ── Link styling ───────────────────────────────────────────────
+  linkStyle default stroke:#37474F,stroke-width:3px
+  linkStyle 56,57,58,59 stroke:#FF6D00,stroke-width:6px,fill:none

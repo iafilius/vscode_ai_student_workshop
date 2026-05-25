@@ -1,0 +1,19 @@
+Network: 192.168.1.0/24
+  Comment: Corporate LAN
+  Extensible Attributes:
+    Site: Amsterdam-HQ
+    VLAN: 100
+
+Network: 10.10.10.0/24
+  Comment: DMZ Web Servers
+  Extensible Attributes:
+    Site: Amsterdam-HQ
+    VLAN: 200
+
+Network: 172.16.0.0/24
+  Comment: Guest Wi-Fi
+  DHCP Range: 172.16.0.50 - 172.16.0.200
+  Fixed Addresses:
+    - IP: 172.16.0.10
+      MAC: 00:1A:2B:3C:4D:5E
+      Comment: Guest Printer

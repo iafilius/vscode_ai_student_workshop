@@ -1,0 +1,24 @@
+DATACENTER 1 - SPINE-LEAF IPAM ALLOCATION TABLE
+-------------------------------------------------
+Status: APPROVED
+Owner: Enterprise Network Engineering
+Last Updated: 2026-05-25
+
+# Spine Layer (Transport Network)
+Spine-01    Loopback0: 10.250.0.1/32
+Spine-02    Loopback0: 10.250.0.2/32
+Spine Transit Subnet: 10.250.0.0/24
+
+# Leaf Layer (User/VM Networks)
+Leaf-01     Loopback0: 10.250.1.1/32
+Leaf-02     Loopback0: 10.250.1.2/32
+Leaf-01 VM Subnet: 10.250.10.0/24
+Leaf-02 VM Subnet: 10.250.11.0/24
+
+# Interconnect DCI (Datacenter Interconnect)
+DCI-Router-1 Transit: 10.255.1.0/30
+DCI-Router-2 Transit: 10.255.1.4/30
+
+# External Peers
+BGP Peer 1 (Primary): 10.255.1.2 (ASN 65001)
+BGP Peer 2 (Backup): 10.255.1.6 (ASN 65002)

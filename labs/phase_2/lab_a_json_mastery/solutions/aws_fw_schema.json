@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "firewall": {
+      "type": "string"
+    },
+    "vpc": {
+      "type": "string"
+    },
+    "subnets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "policy": {
+      "type": "string"
+    },
+    "rule_groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "STATEFUL",
+              "STATELESS"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "priority",
+          "type"
+        ]
+      }
+    }
+  },
+  "required": [
+    "firewall",
+    "vpc",
+    "subnets"
+  ]
+}

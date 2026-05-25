@@ -1,0 +1,1851 @@
+; Bind9 Zone File - Reference Solution
+; Generated from dns_legacy.txt legacy records
+
+; Owner: YOU | Requester: current department
+ams-switch-01.eu.internal.  3600  IN  A      10.240.10.5
+
+; Owner: alice.smith | Requester: current department
+db-primary.eu.internal.     1800  IN  CNAME  ams-db-srv.eu.internal.
+
+; Owner: YOU | Requester: current department
+@                           86400 IN  MX 10  mail-relay.eu.internal.
+
+; Owner: edward.teach | Requester: devops
+stage-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: fiona.gallagher | Requester: dba
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: bob.jones | Requester: netops
+prod-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.corp.local.       1800  IN  SRV    10 10 5061 sip-server-nyc.corp.local.
+
+; Owner: alice.smith | Requester: dba
+lon-app-43.eu.internal.     86400  IN  A      167.254.78.72
+
+; Owner: alice.smith | Requester: netops
+mail-dev.eu.internal.       86400  IN  CNAME  lon-mail-srv.eu.internal.
+
+; Owner: charlie.brown | Requester: netops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: charlie.brown | Requester: netops
+
+; Owner: alice.smith | Requester: current department
+switch-stage.eu.internal.   86400  IN  CNAME  sgp-switch-srv.eu.internal.
+
+; Owner: diana.prince | Requester: current department
+_sip._tcp.eu.internal.      1800  IN  SRV    10 10 5061 sip-server-tok.eu.internal.
+
+; Owner: diana.prince | Requester: current department
+@                           86400 IN  MX 50  mail-relay-ams.ap.internal.
+
+; Owner: YOU | Requester: sysadmin
+mail-stage.eu.internal.     300  IN  CNAME  lon-mail-srv.corp.local.
+
+; Owner: alice.smith | Requester: current department
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5060 sip-server-sgp.corp.local.
+
+; Owner: diana.prince | Requester: secops
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: diana.prince | Requester: devops
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5061 sip-server-syd.corp.local.
+
+; Owner: bob.jones | Requester: devops
+app-dev.eu.internal.        86400  IN  CNAME  nyc-app-srv.eu.internal.
+
+; Owner: YOU | Requester: current department
+
+; Owner: charlie.brown | Requester: secops
+lon-web-47.eu.internal.     300  IN  A      29.197.95.61
+
+; Owner: bob.jones | Requester: secops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: alice.smith | Requester: dba
+@                           1800 IN  MX 50  mail-relay-lon.global.net.
+
+; Owner: edward.teach | Requester: current department
+web-prod.eu.internal.       300  IN  CNAME  nyc-web-srv.global.net.
+
+; Owner: alice.smith | Requester: current department
+internal-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: YOU | Requester: sysadmin
+sgp-mail-28.eu.internal.    86400  IN  A      11.66.132.179
+
+; Owner: YOU | Requester: current department
+
+; Owner: alice.smith | Requester: secops
+app-prod.eu.internal.       300  IN  CNAME  syd-app-srv.global.net.
+
+; Owner: charlie.brown | Requester: netops
+@                           1800 IN  MX 50  mail-relay-fra.eu.internal.
+
+; Owner: alice.smith | Requester: netops
+nyc-db-66.eu.internal.      86400  IN  A      22.168.57.165
+
+; Owner: charlie.brown | Requester: secops
+proxy-dev.eu.internal.      300  IN  CNAME  ams-proxy-srv.eu.internal.
+
+; Owner: YOU | Requester: dba
+cache-stage.eu.internal.    3600  IN  CNAME  ams-cache-srv.global.net.
+
+; Owner: charlie.brown | Requester: current department
+@                           3600 IN  MX 10  mail-relay-ams.us.internal.
+
+; Owner: bob.jones | Requester: devops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5060 sip-server-sgp.corp.local.
+
+; Owner: bob.jones | Requester: secops
+@                           3600 IN  MX 10  mail-relay-ams.ap.internal.
+
+; Owner: diana.prince | Requester: current department
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5060 sip-server-fra.eu.internal.
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: YOU | Requester: netops
+switch-stage.eu.internal.   3600  IN  CNAME  nyc-switch-srv.global.net.
+
+; Owner: charlie.brown | Requester: current department
+test-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: fiona.gallagher | Requester: sysadmin
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: charlie.brown | Requester: current department
+tok-db-87.eu.internal.      1800  IN  A      71.141.172.127
+
+; Owner: diana.prince | Requester: secops
+@                           300 IN  MX 10  mail-relay-lon.corp.local.
+
+; Owner: diana.prince | Requester: secops
+ams-db-03.eu.internal.      300  IN  A      170.153.156.112
+
+; Owner: charlie.brown | Requester: devops
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: bob.jones | Requester: current department
+@                           86400 IN  MX 50  mail-relay-fra.us.internal.
+
+; Owner: charlie.brown | Requester: netops
+web-stage.eu.internal.      86400  IN  CNAME  fra-web-srv.eu.internal.
+
+; Owner: charlie.brown | Requester: dba
+nyc-proxy-05.eu.internal.   1800  IN  A      183.216.158.50
+
+; Owner: YOU | Requester: devops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: charlie.brown | Requester: secops
+@                           86400 IN  MX 20  mail-relay-ams.eu.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+app-internal.eu.internal.   300  IN  CNAME  nyc-app-srv.eu.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+cache-test.eu.internal.     300  IN  CNAME  ams-cache-srv.eu.internal.
+
+; Owner: alice.smith | Requester: current department
+@                           86400 IN  MX 10  mail-relay-ams.ap.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+fra-web-71.eu.internal.     300  IN  A      147.41.94.136
+
+; Owner: fiona.gallagher | Requester: devops
+dev-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: edward.teach | Requester: netops
+switch-dev.eu.internal.     3600  IN  CNAME  fra-switch-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: dba
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: charlie.brown | Requester: current department
+@                           3600 IN  MX 10  mail-relay-tok.us.internal.
+
+; Owner: diana.prince | Requester: current department
+sgp-cache-79.eu.internal.   86400  IN  A      112.223.215.226
+
+; Owner: charlie.brown | Requester: netops
+mail-prod.eu.internal.      86400  IN  CNAME  sgp-mail-srv.eu.internal.
+
+; Owner: edward.teach | Requester: current department
+internal-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: diana.prince | Requester: current department
+@                           1800 IN  MX 50  mail-relay-fra.global.net.
+
+; Owner: diana.prince | Requester: dba
+_sip._tcp.global.net.       1800  IN  SRV    10 10 5061 sip-server-syd.global.net.
+
+; Owner: diana.prince | Requester: netops
+@                           300 IN  MX 20  mail-relay-sgp.ap.internal.
+
+; Owner: charlie.brown | Requester: secops
+_sip._tcp.global.net.       300  IN  SRV    10 10 5061 sip-server-fra.global.net.
+
+; Owner: diana.prince | Requester: current department
+web-dev.eu.internal.        86400  IN  CNAME  lon-web-srv.eu.internal.
+
+; Owner: edward.teach | Requester: secops
+_sip._tcp.global.net.       3600  IN  SRV    10 10 5060 sip-server-syd.global.net.
+
+; Owner: alice.smith | Requester: netops
+@                           3600 IN  MX 10  mail-relay-sgp.eu.internal.
+
+; Owner: YOU | Requester: dba
+
+; Owner: bob.jones | Requester: dba
+@                           86400 IN  MX 10  mail-relay-fra.us.internal.
+
+; Owner: edward.teach | Requester: netops
+app-stage.eu.internal.      86400  IN  CNAME  tok-app-srv.global.net.
+
+; Owner: fiona.gallagher | Requester: current department
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: YOU | Requester: sysadmin
+app-internal.eu.internal.   1800  IN  CNAME  fra-app-srv.corp.local.
+
+; Owner: diana.prince | Requester: current department
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: bob.jones | Requester: netops
+@                           86400 IN  MX 20  mail-relay-tok.global.net.
+
+; Owner: charlie.brown | Requester: devops
+_sip._tcp.ap.internal.      1800  IN  SRV    10 10 5061 sip-server-sgp.ap.internal.
+
+; Owner: diana.prince | Requester: current department
+lon-cache-28.eu.internal.   3600  IN  A      185.210.74.194
+
+; Owner: YOU | Requester: netops
+
+; Owner: bob.jones | Requester: secops
+@                           86400 IN  MX 50  mail-relay-syd.us.internal.
+
+; Owner: bob.jones | Requester: dba
+@                           86400 IN  MX 20  mail-relay-ams.us.internal.
+
+; Owner: charlie.brown | Requester: dba
+tok-proxy-83.eu.internal.   3600  IN  A      149.252.112.11
+
+; Owner: alice.smith | Requester: secops
+tok-app-43.eu.internal.     3600  IN  A      60.23.135.178
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: alice.smith | Requester: sysadmin
+
+; Owner: YOU | Requester: current department
+@                           3600 IN  MX 20  mail-relay-nyc.eu.internal.
+
+; Owner: edward.teach | Requester: netops
+@                           86400 IN  MX 20  mail-relay-nyc.corp.local.
+
+; Owner: YOU | Requester: sysadmin
+_sip._tcp.us.internal.      1800  IN  SRV    10 10 5060 sip-server-ams.us.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+
+; Owner: bob.jones | Requester: netops
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: YOU | Requester: devops
+db-prod.eu.internal.        1800  IN  CNAME  lon-db-srv.eu.internal.
+
+; Owner: YOU | Requester: devops
+fra-mail-89.eu.internal.    86400  IN  A      173.34.213.170
+
+; Owner: alice.smith | Requester: current department
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: YOU | Requester: sysadmin
+@                           1800 IN  MX 20  mail-relay-ams.global.net.
+
+; Owner: alice.smith | Requester: dba
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: bob.jones | Requester: netops
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: bob.jones | Requester: current department
+ams-proxy-77.eu.internal.   300  IN  A      183.129.1.41
+
+; Owner: diana.prince | Requester: devops
+nyc-switch-80.eu.internal.  3600  IN  A      23.182.88.131
+
+; Owner: charlie.brown | Requester: dba
+_sip._tcp.global.net.       86400  IN  SRV    10 10 5060 sip-server-tok.global.net.
+
+; Owner: edward.teach | Requester: secops
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: charlie.brown | Requester: devops
+
+; Owner: edward.teach | Requester: secops
+switch-test.eu.internal.    3600  IN  CNAME  ams-switch-srv.global.net.
+
+; Owner: bob.jones | Requester: netops
+sgp-app-02.eu.internal.     86400  IN  A      36.169.167.5
+
+; Owner: alice.smith | Requester: netops
+
+; Owner: fiona.gallagher | Requester: current department
+app-stage.eu.internal.      1800  IN  CNAME  syd-app-srv.corp.local.
+
+; Owner: YOU | Requester: secops
+
+; Owner: diana.prince | Requester: current department
+dev-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: YOU | Requester: dba
+_sip._tcp.global.net.       1800  IN  SRV    10 10 5060 sip-server-tok.global.net.
+
+; Owner: bob.jones | Requester: current department
+_sip._tcp.ap.internal.      300  IN  SRV    10 10 5060 sip-server-tok.ap.internal.
+
+; Owner: diana.prince | Requester: current department
+stage-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: diana.prince | Requester: netops
+
+; Owner: charlie.brown | Requester: secops
+syd-cache-98.eu.internal.   300  IN  A      152.228.174.105
+
+; Owner: bob.jones | Requester: devops
+@                           300 IN  MX 10  mail-relay-nyc.corp.local.
+
+; Owner: YOU | Requester: current department
+mail-prod.eu.internal.      1800  IN  CNAME  nyc-mail-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: dba
+
+; Owner: YOU | Requester: dba
+tok-proxy-74.eu.internal.   1800  IN  A      36.33.81.232
+
+; Owner: YOU | Requester: current department
+mail-stage.eu.internal.     3600  IN  CNAME  fra-mail-srv.us.internal.
+
+; Owner: charlie.brown | Requester: current department
+@                           3600 IN  MX 10  mail-relay-fra.us.internal.
+
+; Owner: YOU | Requester: sysadmin
+db-test.eu.internal.        86400  IN  CNAME  sgp-db-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5061 sip-server-nyc.eu.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+proxy-prod.eu.internal.     300  IN  CNAME  syd-proxy-srv.global.net.
+
+; Owner: bob.jones | Requester: devops
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5060 sip-server-fra.eu.internal.
+
+; Owner: bob.jones | Requester: current department
+@                           86400 IN  MX 20  mail-relay-ams.global.net.
+
+; Owner: edward.teach | Requester: devops
+ams-cache-91.eu.internal.   3600  IN  A      73.107.179.173
+
+; Owner: alice.smith | Requester: current department
+@                           86400 IN  MX 50  mail-relay-syd.ap.internal.
+
+; Owner: diana.prince | Requester: dba
+lon-db-30.eu.internal.      300  IN  A      117.164.41.104
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: alice.smith | Requester: devops
+@                           3600 IN  MX 10  mail-relay-tok.us.internal.
+
+; Owner: YOU | Requester: current department
+@                           300 IN  MX 50  mail-relay-tok.global.net.
+
+; Owner: edward.teach | Requester: current department
+app-stage.eu.internal.      86400  IN  CNAME  nyc-app-srv.global.net.
+
+; Owner: bob.jones | Requester: secops
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: netops
+cache-dev.eu.internal.      1800  IN  CNAME  nyc-cache-srv.global.net.
+
+; Owner: edward.teach | Requester: devops
+@                           86400 IN  MX 50  mail-relay-tok.global.net.
+
+; Owner: YOU | Requester: current department
+
+; Owner: charlie.brown | Requester: netops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5060 sip-server-ams.corp.local.
+
+; Owner: diana.prince | Requester: sysadmin
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5061 sip-server-sgp.us.internal.
+
+; Owner: charlie.brown | Requester: netops
+ams-app-49.eu.internal.     1800  IN  A      97.117.90.170
+
+; Owner: alice.smith | Requester: devops
+mail-stage.eu.internal.     1800  IN  CNAME  lon-mail-srv.us.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+
+; Owner: charlie.brown | Requester: current department
+proxy-prod.eu.internal.     300  IN  CNAME  lon-proxy-srv.corp.local.
+
+; Owner: YOU | Requester: netops
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5060 sip-server-tok.eu.internal.
+
+; Owner: charlie.brown | Requester: sysadmin
+cache-test.eu.internal.     3600  IN  CNAME  syd-cache-srv.global.net.
+
+; Owner: bob.jones | Requester: current department
+
+; Owner: diana.prince | Requester: netops
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: YOU | Requester: secops
+app-prod.eu.internal.       300  IN  CNAME  fra-app-srv.global.net.
+
+; Owner: alice.smith | Requester: secops
+db-test.eu.internal.        300  IN  CNAME  tok-db-srv.global.net.
+
+; Owner: fiona.gallagher | Requester: current department
+switch-prod.eu.internal.    1800  IN  CNAME  syd-switch-srv.us.internal.
+
+; Owner: charlie.brown | Requester: netops
+ams-cache-55.eu.internal.   1800  IN  A      172.189.169.5
+
+; Owner: fiona.gallagher | Requester: netops
+tok-cache-25.eu.internal.   1800  IN  A      54.249.86.71
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: YOU | Requester: dba
+sgp-switch-25.eu.internal.  3600  IN  A      44.230.232.96
+
+; Owner: charlie.brown | Requester: devops
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: alice.smith | Requester: dba
+@                           86400 IN  MX 50  mail-relay-lon.ap.internal.
+
+; Owner: YOU | Requester: current department
+@                           3600 IN  MX 20  mail-relay-fra.ap.internal.
+
+; Owner: edward.teach | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: netops
+@                           1800 IN  MX 20  mail-relay-nyc.ap.internal.
+
+; Owner: YOU | Requester: netops
+proxy-internal.eu.internal. 300  IN  CNAME  ams-proxy-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: devops
+mail-prod.eu.internal.      1800  IN  CNAME  syd-mail-srv.us.internal.
+
+; Owner: YOU | Requester: current department
+nyc-cache-52.eu.internal.   300  IN  A      73.179.224.219
+
+; Owner: fiona.gallagher | Requester: secops
+proxy-stage.eu.internal.    86400  IN  CNAME  tok-proxy-srv.eu.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+syd-mail-36.eu.internal.    1800  IN  A      174.151.112.238
+
+; Owner: charlie.brown | Requester: dba
+@                           1800 IN  MX 20  mail-relay-syd.us.internal.
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: YOU | Requester: devops
+@                           3600 IN  MX 20  mail-relay-lon.corp.local.
+
+; Owner: YOU | Requester: current department
+_sip._tcp.global.net.       86400  IN  SRV    10 10 5060 sip-server-fra.global.net.
+
+; Owner: YOU | Requester: secops
+@                           3600 IN  MX 10  mail-relay-syd.global.net.
+
+; Owner: diana.prince | Requester: current department
+prod-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: alice.smith | Requester: secops
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5060 sip-server-fra.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: current department
+_sip._tcp.us.internal.      1800  IN  SRV    10 10 5060 sip-server-lon.us.internal.
+
+; Owner: YOU | Requester: current department
+
+; Owner: edward.teach | Requester: netops
+@                           300 IN  MX 20  mail-relay-ams.eu.internal.
+
+; Owner: charlie.brown | Requester: secops
+sgp-app-56.eu.internal.     1800  IN  A      98.156.146.197
+
+; Owner: diana.prince | Requester: dba
+syd-switch-94.eu.internal.  86400  IN  A      22.131.176.131
+
+; Owner: charlie.brown | Requester: secops
+
+; Owner: bob.jones | Requester: devops
+stage-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: alice.smith | Requester: secops
+
+; Owner: alice.smith | Requester: netops
+db-stage.eu.internal.       86400  IN  CNAME  syd-db-srv.global.net.
+
+; Owner: fiona.gallagher | Requester: netops
+syd-web-09.eu.internal.     3600  IN  A      187.54.234.122
+
+; Owner: alice.smith | Requester: dba
+cache-test.eu.internal.     1800  IN  CNAME  ams-cache-srv.global.net.
+
+; Owner: alice.smith | Requester: current department
+
+; Owner: charlie.brown | Requester: sysadmin
+fra-app-43.eu.internal.     86400  IN  A      24.107.60.31
+
+; Owner: YOU | Requester: devops
+@                           1800 IN  MX 10  mail-relay-nyc.eu.internal.
+
+; Owner: edward.teach | Requester: secops
+switch-prod.eu.internal.    3600  IN  CNAME  tok-switch-srv.corp.local.
+
+; Owner: YOU | Requester: secops
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: bob.jones | Requester: current department
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: diana.prince | Requester: netops
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: alice.smith | Requester: netops
+web-prod.eu.internal.       86400  IN  CNAME  syd-web-srv.us.internal.
+
+; Owner: bob.jones | Requester: secops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5061 sip-server-fra.corp.local.
+
+; Owner: fiona.gallagher | Requester: secops
+lon-mail-39.eu.internal.    3600  IN  A      19.81.230.34
+
+; Owner: charlie.brown | Requester: devops
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5060 sip-server-tok.us.internal.
+
+; Owner: alice.smith | Requester: devops
+switch-test.eu.internal.    1800  IN  CNAME  nyc-switch-srv.ap.internal.
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5061 sip-server-syd.corp.local.
+
+; Owner: bob.jones | Requester: current department
+
+; Owner: YOU | Requester: netops
+@                           3600 IN  MX 50  mail-relay-lon.us.internal.
+
+; Owner: YOU | Requester: sysadmin
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: diana.prince | Requester: current department
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5060 sip-server-sgp.eu.internal.
+
+; Owner: YOU | Requester: current department
+
+; Owner: YOU | Requester: netops
+mail-test.eu.internal.      1800  IN  CNAME  fra-mail-srv.global.net.
+
+; Owner: edward.teach | Requester: secops
+_sip._tcp.global.net.       300  IN  SRV    10 10 5061 sip-server-syd.global.net.
+
+; Owner: edward.teach | Requester: dba
+
+; Owner: bob.jones | Requester: secops
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: YOU | Requester: sysadmin
+web-stage.eu.internal.      3600  IN  CNAME  sgp-web-srv.eu.internal.
+
+; Owner: YOU | Requester: netops
+tok-db-66.eu.internal.      300  IN  A      78.80.229.161
+
+; Owner: YOU | Requester: devops
+proxy-internal.eu.internal. 1800  IN  CNAME  sgp-proxy-srv.eu.internal.
+
+; Owner: charlie.brown | Requester: dba
+nyc-db-48.eu.internal.      86400  IN  A      126.12.131.65
+
+; Owner: fiona.gallagher | Requester: secops
+@                           300 IN  MX 20  mail-relay-lon.us.internal.
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.global.net.       300  IN  SRV    10 10 5061 sip-server-nyc.global.net.
+
+; Owner: alice.smith | Requester: devops
+tok-web-23.eu.internal.     300  IN  A      146.17.195.73
+
+; Owner: edward.teach | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: sysadmin
+syd-app-33.eu.internal.     86400  IN  A      182.76.156.244
+
+; Owner: diana.prince | Requester: dba
+@                           1800 IN  MX 50  mail-relay-fra.corp.local.
+
+; Owner: bob.jones | Requester: current department
+tok-switch-13.eu.internal.  1800  IN  A      170.73.142.117
+
+; Owner: charlie.brown | Requester: secops
+@                           300 IN  MX 20  mail-relay-sgp.eu.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+stage-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: YOU | Requester: netops
+
+; Owner: YOU | Requester: sysadmin
+@                           3600 IN  MX 10  mail-relay-nyc.global.net.
+
+; Owner: YOU | Requester: secops
+@                           300 IN  MX 10  mail-relay-fra.eu.internal.
+
+; Owner: YOU | Requester: current department
+_sip._tcp.ap.internal.      3600  IN  SRV    10 10 5061 sip-server-syd.ap.internal.
+
+; Owner: alice.smith | Requester: current department
+tok-cache-20.eu.internal.   300  IN  A      158.192.166.18
+
+; Owner: alice.smith | Requester: current department
+@                           3600 IN  MX 50  mail-relay-nyc.us.internal.
+
+; Owner: YOU | Requester: netops
+syd-web-37.eu.internal.     3600  IN  A      155.177.197.9
+
+; Owner: bob.jones | Requester: devops
+syd-switch-86.eu.internal.  300  IN  A      104.52.85.143
+
+; Owner: diana.prince | Requester: dba
+
+; Owner: alice.smith | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: secops
+@                           86400 IN  MX 10  mail-relay-lon.eu.internal.
+
+; Owner: YOU | Requester: current department
+@                           1800 IN  MX 20  mail-relay-fra.us.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+
+; Owner: edward.teach | Requester: sysadmin
+ams-cache-70.eu.internal.   3600  IN  A      43.113.253.210
+
+; Owner: bob.jones | Requester: current department
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: diana.prince | Requester: devops
+@                           1800 IN  MX 50  mail-relay-tok.corp.local.
+
+; Owner: bob.jones | Requester: current department
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5061 sip-server-tok.corp.local.
+
+; Owner: bob.jones | Requester: secops
+
+; Owner: bob.jones | Requester: sysadmin
+syd-web-88.eu.internal.     86400  IN  A      170.236.218.191
+
+; Owner: YOU | Requester: current department
+@                           300 IN  MX 10  mail-relay-syd.corp.local.
+
+; Owner: YOU | Requester: secops
+@                           1800 IN  MX 10  mail-relay-nyc.global.net.
+
+; Owner: alice.smith | Requester: current department
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: YOU | Requester: netops
+stage-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: edward.teach | Requester: secops
+web-stage.eu.internal.      3600  IN  CNAME  fra-web-srv.eu.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+
+; Owner: alice.smith | Requester: devops
+_sip._tcp.corp.local.       1800  IN  SRV    10 10 5061 sip-server-sgp.corp.local.
+
+; Owner: bob.jones | Requester: dba
+@                           3600 IN  MX 10  mail-relay-fra.corp.local.
+
+; Owner: fiona.gallagher | Requester: devops
+
+; Owner: fiona.gallagher | Requester: current department
+
+; Owner: YOU | Requester: secops
+
+; Owner: diana.prince | Requester: current department
+db-stage.eu.internal.       1800  IN  CNAME  nyc-db-srv.ap.internal.
+
+; Owner: charlie.brown | Requester: netops
+app-prod.eu.internal.       3600  IN  CNAME  fra-app-srv.us.internal.
+
+; Owner: bob.jones | Requester: sysadmin
+lon-db-64.eu.internal.      1800  IN  A      47.210.53.181
+
+; Owner: fiona.gallagher | Requester: current department
+tok-db-65.eu.internal.      3600  IN  A      14.204.158.231
+
+; Owner: alice.smith | Requester: current department
+sgp-cache-34.eu.internal.   1800  IN  A      162.15.104.169
+
+; Owner: edward.teach | Requester: devops
+web-prod.eu.internal.       1800  IN  CNAME  syd-web-srv.ap.internal.
+
+; Owner: bob.jones | Requester: dba
+@                           1800 IN  MX 50  mail-relay-sgp.us.internal.
+
+; Owner: diana.prince | Requester: netops
+_sip._tcp.ap.internal.      300  IN  SRV    10 10 5061 sip-server-syd.ap.internal.
+
+; Owner: diana.prince | Requester: secops
+
+; Owner: bob.jones | Requester: secops
+_sip._tcp.us.internal.      300  IN  SRV    10 10 5061 sip-server-ams.us.internal.
+
+; Owner: YOU | Requester: sysadmin
+app-stage.eu.internal.      300  IN  CNAME  syd-app-srv.corp.local.
+
+; Owner: YOU | Requester: devops
+@                           86400 IN  MX 20  mail-relay-sgp.ap.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: diana.prince | Requester: sysadmin
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: alice.smith | Requester: secops
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.ap.internal.      86400  IN  SRV    10 10 5060 sip-server-fra.ap.internal.
+
+; Owner: charlie.brown | Requester: current department
+_sip._tcp.global.net.       300  IN  SRV    10 10 5060 sip-server-ams.global.net.
+
+; Owner: bob.jones | Requester: dba
+db-internal.eu.internal.    300  IN  CNAME  tok-db-srv.global.net.
+
+; Owner: YOU | Requester: devops
+cache-test.eu.internal.     1800  IN  CNAME  nyc-cache-srv.corp.local.
+
+; Owner: YOU | Requester: current department
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: alice.smith | Requester: dba
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: fiona.gallagher | Requester: dba
+
+; Owner: charlie.brown | Requester: sysadmin
+_sip._tcp.us.internal.      86400  IN  SRV    10 10 5061 sip-server-fra.us.internal.
+
+; Owner: alice.smith | Requester: netops
+
+; Owner: bob.jones | Requester: secops
+
+; Owner: diana.prince | Requester: netops
+syd-app-43.eu.internal.     3600  IN  A      141.130.32.31
+
+; Owner: diana.prince | Requester: netops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5060 sip-server-lon.corp.local.
+
+; Owner: edward.teach | Requester: sysadmin
+cache-dev.eu.internal.      1800  IN  CNAME  lon-cache-srv.ap.internal.
+
+; Owner: YOU | Requester: netops
+db-internal.eu.internal.    86400  IN  CNAME  nyc-db-srv.global.net.
+
+; Owner: bob.jones | Requester: devops
+_sip._tcp.global.net.       86400  IN  SRV    10 10 5060 sip-server-sgp.global.net.
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: alice.smith | Requester: dba
+dev-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: fiona.gallagher | Requester: secops
+mail-internal.eu.internal.  3600  IN  CNAME  sgp-mail-srv.us.internal.
+
+; Owner: YOU | Requester: secops
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: YOU | Requester: current department
+switch-stage.eu.internal.   1800  IN  CNAME  tok-switch-srv.eu.internal.
+
+; Owner: YOU | Requester: secops
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: alice.smith | Requester: dba
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: charlie.brown | Requester: sysadmin
+@                           1800 IN  MX 20  mail-relay-syd.global.net.
+
+; Owner: YOU | Requester: current department
+@                           300 IN  MX 50  mail-relay-nyc.global.net.
+
+; Owner: charlie.brown | Requester: netops
+fra-cache-61.eu.internal.   300  IN  A      28.155.112.112
+
+; Owner: edward.teach | Requester: netops
+
+; Owner: fiona.gallagher | Requester: secops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: fiona.gallagher | Requester: devops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5060 sip-server-tok.corp.local.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5061 sip-server-lon.corp.local.
+
+; Owner: edward.teach | Requester: dba
+web-dev.eu.internal.        300  IN  CNAME  fra-web-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+stage-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: edward.teach | Requester: dba
+app-stage.eu.internal.      3600  IN  CNAME  ams-app-srv.eu.internal.
+
+; Owner: YOU | Requester: secops
+
+; Owner: fiona.gallagher | Requester: netops
+_sip._tcp.eu.internal.      3600  IN  SRV    10 10 5060 sip-server-tok.eu.internal.
+
+; Owner: diana.prince | Requester: current department
+
+; Owner: diana.prince | Requester: sysadmin
+@                           86400 IN  MX 50  mail-relay-ams.us.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+db-prod.eu.internal.        86400  IN  CNAME  lon-db-srv.eu.internal.
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: edward.teach | Requester: current department
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: charlie.brown | Requester: current department
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5061 sip-server-nyc.corp.local.
+
+; Owner: edward.teach | Requester: current department
+@                           300 IN  MX 20  mail-relay-fra.eu.internal.
+
+; Owner: YOU | Requester: dba
+nyc-proxy-39.eu.internal.   300  IN  A      50.75.246.169
+
+; Owner: YOU | Requester: devops
+
+; Owner: YOU | Requester: current department
+sgp-app-96.eu.internal.     1800  IN  A      75.108.209.216
+
+; Owner: bob.jones | Requester: current department
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: edward.teach | Requester: secops
+dev-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: YOU | Requester: netops
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5060 sip-server-tok.corp.local.
+
+; Owner: edward.teach | Requester: sysadmin
+nyc-cache-55.eu.internal.   86400  IN  A      106.58.124.103
+
+; Owner: YOU | Requester: netops
+internal-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: diana.prince | Requester: secops
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: alice.smith | Requester: secops
+
+; Owner: charlie.brown | Requester: current department
+cache-dev.eu.internal.      300  IN  CNAME  tok-cache-srv.us.internal.
+
+; Owner: diana.prince | Requester: dba
+@                           3600 IN  MX 20  mail-relay-fra.global.net.
+
+; Owner: bob.jones | Requester: current department
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: fiona.gallagher | Requester: secops
+syd-db-71.eu.internal.      86400  IN  A      137.148.119.149
+
+; Owner: edward.teach | Requester: secops
+@                           300 IN  MX 10  mail-relay-syd.us.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+fra-db-59.eu.internal.      300  IN  A      75.205.112.248
+
+; Owner: alice.smith | Requester: secops
+ams-web-63.eu.internal.     300  IN  A      72.42.65.48
+
+; Owner: YOU | Requester: netops
+cache-test.eu.internal.     86400  IN  CNAME  syd-cache-srv.eu.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+dev-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: charlie.brown | Requester: devops
+cache-test.eu.internal.     3600  IN  CNAME  tok-cache-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+
+; Owner: bob.jones | Requester: dba
+@                           300 IN  MX 20  mail-relay-nyc.us.internal.
+
+; Owner: YOU | Requester: netops
+
+; Owner: alice.smith | Requester: devops
+nyc-mail-45.eu.internal.    300  IN  A      89.67.27.243
+
+; Owner: bob.jones | Requester: current department
+syd-cache-47.eu.internal.   1800  IN  A      171.178.172.132
+
+; Owner: diana.prince | Requester: netops
+_sip._tcp.eu.internal.      1800  IN  SRV    10 10 5060 sip-server-tok.eu.internal.
+
+; Owner: YOU | Requester: dba
+
+; Owner: bob.jones | Requester: dba
+@                           86400 IN  MX 20  mail-relay-ams.global.net.
+
+; Owner: fiona.gallagher | Requester: secops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: fiona.gallagher | Requester: netops
+@                           300 IN  MX 50  mail-relay-syd.eu.internal.
+
+; Owner: YOU | Requester: secops
+internal-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: fiona.gallagher | Requester: devops
+_sip._tcp.eu.internal.      3600  IN  SRV    10 10 5060 sip-server-syd.eu.internal.
+
+; Owner: edward.teach | Requester: dba
+_sip._tcp.global.net.       1800  IN  SRV    10 10 5060 sip-server-syd.global.net.
+
+; Owner: YOU | Requester: current department
+proxy-test.eu.internal.     3600  IN  CNAME  syd-proxy-srv.ap.internal.
+
+; Owner: diana.prince | Requester: current department
+syd-mail-44.eu.internal.    1800  IN  A      128.221.139.99
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: charlie.brown | Requester: current department
+@                           300 IN  MX 50  mail-relay-ams.ap.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+db-dev.eu.internal.         86400  IN  CNAME  tok-db-srv.eu.internal.
+
+; Owner: alice.smith | Requester: current department
+@                           1800 IN  MX 20  mail-relay-fra.eu.internal.
+
+; Owner: alice.smith | Requester: devops
+@                           1800 IN  MX 20  mail-relay-nyc.corp.local.
+
+; Owner: diana.prince | Requester: secops
+nyc-web-28.eu.internal.     3600  IN  A      137.131.38.199
+
+; Owner: bob.jones | Requester: secops
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: YOU | Requester: netops
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5060 sip-server-ams.eu.internal.
+
+; Owner: YOU | Requester: dba
+
+; Owner: charlie.brown | Requester: netops
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5060 sip-server-sgp.corp.local.
+
+; Owner: fiona.gallagher | Requester: netops
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5061 sip-server-nyc.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+switch-stage.eu.internal.   300  IN  CNAME  syd-switch-srv.global.net.
+
+; Owner: charlie.brown | Requester: current department
+switch-test.eu.internal.    3600  IN  CNAME  nyc-switch-srv.us.internal.
+
+; Owner: YOU | Requester: netops
+
+; Owner: edward.teach | Requester: current department
+fra-web-23.eu.internal.     86400  IN  A      47.75.78.216
+
+; Owner: edward.teach | Requester: dba
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: fiona.gallagher | Requester: dba
+_sip._tcp.us.internal.      300  IN  SRV    10 10 5061 sip-server-sgp.us.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+mail-dev.eu.internal.       3600  IN  CNAME  sgp-mail-srv.ap.internal.
+
+; Owner: bob.jones | Requester: sysadmin
+lon-web-75.eu.internal.     86400  IN  A      84.131.193.170
+
+; Owner: diana.prince | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: current department
+db-dev.eu.internal.         1800  IN  CNAME  syd-db-srv.global.net.
+
+; Owner: YOU | Requester: dba
+tok-db-79.eu.internal.      300  IN  A      107.31.160.16
+
+; Owner: YOU | Requester: netops
+lon-web-73.eu.internal.     1800  IN  A      23.76.115.89
+
+; Owner: bob.jones | Requester: current department
+web-test.eu.internal.       1800  IN  CNAME  tok-web-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+@                           3600 IN  MX 50  mail-relay-fra.corp.local.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.us.internal.      300  IN  SRV    10 10 5061 sip-server-nyc.us.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5061 sip-server-sgp.eu.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+_sip._tcp.corp.local.       3600  IN  SRV    10 10 5061 sip-server-lon.corp.local.
+
+; Owner: bob.jones | Requester: sysadmin
+cache-prod.eu.internal.     3600  IN  CNAME  syd-cache-srv.eu.internal.
+
+; Owner: YOU | Requester: current department
+sgp-switch-58.eu.internal.  300  IN  A      151.10.102.190
+
+; Owner: diana.prince | Requester: devops
+mail-stage.eu.internal.     300  IN  CNAME  sgp-mail-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+nyc-app-69.eu.internal.     3600  IN  A      191.150.110.38
+
+; Owner: bob.jones | Requester: current department
+cache-test.eu.internal.     3600  IN  CNAME  lon-cache-srv.us.internal.
+
+; Owner: charlie.brown | Requester: current department
+app-test.eu.internal.       1800  IN  CNAME  lon-app-srv.global.net.
+
+; Owner: YOU | Requester: current department
+@                           3600 IN  MX 10  mail-relay-nyc.global.net.
+
+; Owner: YOU | Requester: secops
+_sip._tcp.us.internal.      300  IN  SRV    10 10 5061 sip-server-fra.us.internal.
+
+; Owner: diana.prince | Requester: current department
+db-stage.eu.internal.       300  IN  CNAME  sgp-db-srv.ap.internal.
+
+; Owner: charlie.brown | Requester: devops
+internal-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: charlie.brown | Requester: current department
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: fiona.gallagher | Requester: dba
+@                           3600 IN  MX 10  mail-relay-ams.corp.local.
+
+; Owner: diana.prince | Requester: sysadmin
+switch-test.eu.internal.    1800  IN  CNAME  syd-switch-srv.ap.internal.
+
+; Owner: charlie.brown | Requester: current department
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: YOU | Requester: current department
+switch-internal.eu.internal. 3600  IN  CNAME  sgp-switch-srv.corp.local.
+
+; Owner: YOU | Requester: current department
+sgp-app-90.eu.internal.     3600  IN  A      66.105.86.121
+
+; Owner: bob.jones | Requester: current department
+internal-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: YOU | Requester: secops
+web-dev.eu.internal.        3600  IN  CNAME  sgp-web-srv.corp.local.
+
+; Owner: alice.smith | Requester: netops
+fra-db-50.eu.internal.      300  IN  A      21.33.181.114
+
+; Owner: bob.jones | Requester: netops
+prod-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: current department
+
+; Owner: bob.jones | Requester: current department
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5060 sip-server-lon.corp.local.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: netops
+cache-prod.eu.internal.     86400  IN  CNAME  tok-cache-srv.global.net.
+
+; Owner: YOU | Requester: dba
+sgp-proxy-23.eu.internal.   3600  IN  A      134.255.124.8
+
+; Owner: YOU | Requester: dba
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.eu.internal ~all"
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: alice.smith | Requester: current department
+
+; Owner: YOU | Requester: secops
+tok-cache-30.eu.internal.   3600  IN  A      179.98.152.188
+
+; Owner: YOU | Requester: devops
+
+; Owner: YOU | Requester: current department
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5061 sip-server-ams.corp.local.
+
+; Owner: charlie.brown | Requester: sysadmin
+sgp-proxy-76.eu.internal.   3600  IN  A      129.30.140.249
+
+; Owner: charlie.brown | Requester: netops
+proxy-internal.eu.internal. 1800  IN  CNAME  nyc-proxy-srv.global.net.
+
+; Owner: alice.smith | Requester: dba
+_sip._tcp.global.net.       86400  IN  SRV    10 10 5060 sip-server-tok.global.net.
+
+; Owner: YOU | Requester: devops
+app-prod.eu.internal.       3600  IN  CNAME  sgp-app-srv.global.net.
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: alice.smith | Requester: secops
+lon-app-05.eu.internal.     300  IN  A      186.30.234.153
+
+; Owner: YOU | Requester: current department
+@                           1800 IN  MX 50  mail-relay-sgp.eu.internal.
+
+; Owner: diana.prince | Requester: dba
+@                           86400 IN  MX 50  mail-relay-sgp.corp.local.
+
+; Owner: diana.prince | Requester: dba
+mail-test.eu.internal.      3600  IN  CNAME  sgp-mail-srv.global.net.
+
+; Owner: bob.jones | Requester: devops
+prod-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: YOU | Requester: current department
+stage-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: diana.prince | Requester: current department
+fra-switch-13.eu.internal.  1800  IN  A      65.165.98.93
+
+; Owner: edward.teach | Requester: secops
+proxy-dev.eu.internal.      86400  IN  CNAME  fra-proxy-srv.corp.local.
+
+; Owner: alice.smith | Requester: current department
+nyc-app-08.eu.internal.     86400  IN  A      108.136.190.50
+
+; Owner: YOU | Requester: netops
+@                           300 IN  MX 10  mail-relay-lon.corp.local.
+
+; Owner: YOU | Requester: netops
+@                           1800 IN  MX 10  mail-relay-sgp.global.net.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+proxy-prod.eu.internal.     3600  IN  CNAME  fra-proxy-srv.global.net.
+
+; Owner: charlie.brown | Requester: sysadmin
+@                           3600 IN  MX 20  mail-relay-lon.us.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+@                           300 IN  MX 20  mail-relay-nyc.us.internal.
+
+; Owner: charlie.brown | Requester: devops
+@                           1800 IN  MX 10  mail-relay-syd.eu.internal.
+
+; Owner: YOU | Requester: current department
+_sip._tcp.us.internal.      1800  IN  SRV    10 10 5061 sip-server-fra.us.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+proxy-internal.eu.internal. 300  IN  CNAME  tok-proxy-srv.ap.internal.
+
+; Owner: bob.jones | Requester: current department
+proxy-stage.eu.internal.    1800  IN  CNAME  sgp-proxy-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+nyc-db-75.eu.internal.      86400  IN  A      12.18.44.228
+
+; Owner: YOU | Requester: current department
+_sip._tcp.us.internal.      86400  IN  SRV    10 10 5060 sip-server-syd.us.internal.
+
+; Owner: YOU | Requester: netops
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: fiona.gallagher | Requester: current department
+switch-prod.eu.internal.    1800  IN  CNAME  lon-switch-srv.global.net.
+
+; Owner: bob.jones | Requester: dba
+
+; Owner: fiona.gallagher | Requester: sysadmin
+dev-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: fiona.gallagher | Requester: devops
+
+; Owner: charlie.brown | Requester: devops
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: bob.jones | Requester: current department
+nyc-db-31.eu.internal.      86400  IN  A      127.232.249.231
+
+; Owner: diana.prince | Requester: dba
+@                           300 IN  MX 10  mail-relay-tok.global.net.
+
+; Owner: diana.prince | Requester: secops
+db-internal.eu.internal.    300  IN  CNAME  lon-db-srv.us.internal.
+
+; Owner: YOU | Requester: current department
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: charlie.brown | Requester: devops
+app-prod.eu.internal.       3600  IN  CNAME  fra-app-srv.ap.internal.
+
+; Owner: edward.teach | Requester: secops
+tok-db-83.eu.internal.      300  IN  A      177.23.219.41
+
+; Owner: bob.jones | Requester: current department
+tok-proxy-03.eu.internal.   3600  IN  A      162.63.195.235
+
+; Owner: alice.smith | Requester: secops
+_sip._tcp.ap.internal.      1800  IN  SRV    10 10 5061 sip-server-lon.ap.internal.
+
+; Owner: bob.jones | Requester: secops
+_sip._tcp.us.internal.      1800  IN  SRV    10 10 5061 sip-server-fra.us.internal.
+
+; Owner: YOU | Requester: netops
+proxy-test.eu.internal.     1800  IN  CNAME  sgp-proxy-srv.corp.local.
+
+; Owner: YOU | Requester: current department
+
+; Owner: YOU | Requester: secops
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5060 sip-server-sgp.us.internal.
+
+; Owner: diana.prince | Requester: secops
+@                           3600 IN  MX 10  mail-relay-ams.ap.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+mail-prod.eu.internal.      1800  IN  CNAME  ams-mail-srv.ap.internal.
+
+; Owner: YOU | Requester: sysadmin
+lon-mail-38.eu.internal.    86400  IN  A      100.160.141.230
+
+; Owner: bob.jones | Requester: dba
+web-stage.eu.internal.      300  IN  CNAME  fra-web-srv.corp.local.
+
+; Owner: alice.smith | Requester: secops
+
+; Owner: charlie.brown | Requester: dba
+
+; Owner: YOU | Requester: secops
+@                           300 IN  MX 10  mail-relay-tok.corp.local.
+
+; Owner: diana.prince | Requester: dba
+@                           86400 IN  MX 50  mail-relay-fra.ap.internal.
+
+; Owner: diana.prince | Requester: devops
+ams-web-99.eu.internal.     86400  IN  A      125.237.99.155
+
+; Owner: bob.jones | Requester: sysadmin
+_sip._tcp.ap.internal.      86400  IN  SRV    10 10 5061 sip-server-nyc.ap.internal.
+
+; Owner: alice.smith | Requester: current department
+tok-proxy-06.eu.internal.   3600  IN  A      51.154.230.21
+
+; Owner: fiona.gallagher | Requester: devops
+@                           1800 IN  MX 10  mail-relay-tok.eu.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+proxy-prod.eu.internal.     1800  IN  CNAME  ams-proxy-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+prod-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: current department
+ams-web-82.eu.internal.     3600  IN  A      55.232.202.64
+
+; Owner: fiona.gallagher | Requester: dba
+_sip._tcp.global.net.       300  IN  SRV    10 10 5060 sip-server-lon.global.net.
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: YOU | Requester: sysadmin
+@                           3600 IN  MX 50  mail-relay-lon.corp.local.
+
+; Owner: charlie.brown | Requester: secops
+dev-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: YOU | Requester: dba
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: alice.smith | Requester: devops
+_sip._tcp.eu.internal.      3600  IN  SRV    10 10 5060 sip-server-sgp.eu.internal.
+
+; Owner: diana.prince | Requester: devops
+prod-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: alice.smith | Requester: dba
+ams-proxy-17.eu.internal.   3600  IN  A      61.202.46.165
+
+; Owner: YOU | Requester: dba
+tok-proxy-99.eu.internal.   1800  IN  A      50.84.94.178
+
+; Owner: fiona.gallagher | Requester: current department
+prod-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: YOU | Requester: current department
+tok-proxy-14.eu.internal.   86400  IN  A      53.143.46.168
+
+; Owner: fiona.gallagher | Requester: current department
+stage-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: charlie.brown | Requester: devops
+stage-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: alice.smith | Requester: netops
+mail-test.eu.internal.      3600  IN  CNAME  syd-mail-srv.eu.internal.
+
+; Owner: YOU | Requester: sysadmin
+sgp-mail-50.eu.internal.    86400  IN  A      128.109.217.22
+
+; Owner: charlie.brown | Requester: netops
+tok-web-11.eu.internal.     3600  IN  A      121.133.43.58
+
+; Owner: fiona.gallagher | Requester: sysadmin
+fra-switch-48.eu.internal.  1800  IN  A      40.232.6.161
+
+; Owner: YOU | Requester: devops
+@                           1800 IN  MX 20  mail-relay-fra.us.internal.
+
+; Owner: diana.prince | Requester: secops
+ams-cache-16.eu.internal.   3600  IN  A      11.137.199.146
+
+; Owner: charlie.brown | Requester: secops
+_sip._tcp.ap.internal.      1800  IN  SRV    10 10 5061 sip-server-tok.ap.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+sgp-web-20.eu.internal.     3600  IN  A      123.49.239.138
+
+; Owner: charlie.brown | Requester: devops
+_sip._tcp.global.net.       300  IN  SRV    10 10 5060 sip-server-ams.global.net.
+
+; Owner: bob.jones | Requester: current department
+@                           86400 IN  MX 10  mail-relay-syd.ap.internal.
+
+; Owner: diana.prince | Requester: secops
+cache-test.eu.internal.     3600  IN  CNAME  sgp-cache-srv.global.net.
+
+; Owner: YOU | Requester: secops
+internal-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: diana.prince | Requester: secops
+sgp-app-32.eu.internal.     300  IN  A      135.94.28.120
+
+; Owner: fiona.gallagher | Requester: devops
+_sip._tcp.eu.internal.      3600  IN  SRV    10 10 5060 sip-server-fra.eu.internal.
+
+; Owner: YOU | Requester: devops
+@                           86400 IN  MX 10  mail-relay-sgp.us.internal.
+
+; Owner: bob.jones | Requester: dba
+tok-switch-13.eu.internal.  3600  IN  A      107.115.163.21
+
+; Owner: alice.smith | Requester: current department
+@                           300 IN  MX 10  mail-relay-tok.corp.local.
+
+; Owner: edward.teach | Requester: netops
+syd-proxy-14.eu.internal.   1800  IN  A      92.113.125.100
+
+; Owner: alice.smith | Requester: current department
+_sip._tcp.eu.internal.      3600  IN  SRV    10 10 5060 sip-server-syd.eu.internal.
+
+; Owner: edward.teach | Requester: sysadmin
+web-internal.eu.internal.   3600  IN  CNAME  syd-web-srv.global.net.
+
+; Owner: edward.teach | Requester: sysadmin
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5060 sip-server-ams.us.internal.
+
+; Owner: YOU | Requester: current department
+fra-app-88.eu.internal.     1800  IN  A      100.229.125.184
+
+; Owner: bob.jones | Requester: sysadmin
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: bob.jones | Requester: dba
+ams-cache-09.eu.internal.   86400  IN  A      150.1.221.195
+
+; Owner: YOU | Requester: current department
+
+; Owner: YOU | Requester: dba
+syd-switch-89.eu.internal.  86400  IN  A      10.102.1.203
+
+; Owner: YOU | Requester: devops
+_sip._tcp.ap.internal.      1800  IN  SRV    10 10 5060 sip-server-ams.ap.internal.
+
+; Owner: edward.teach | Requester: dba
+switch-internal.eu.internal. 1800  IN  CNAME  tok-switch-srv.us.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+test-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: diana.prince | Requester: sysadmin
+@                           1800 IN  MX 10  mail-relay-syd.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+nyc-mail-88.eu.internal.    300  IN  A      78.84.127.130
+
+; Owner: fiona.gallagher | Requester: secops
+lon-app-07.eu.internal.     300  IN  A      91.98.96.104
+
+; Owner: alice.smith | Requester: current department
+@                           300 IN  MX 10  mail-relay-tok.ap.internal.
+
+; Owner: YOU | Requester: dba
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: edward.teach | Requester: current department
+nyc-mail-21.eu.internal.    1800  IN  A      128.137.4.38
+
+; Owner: YOU | Requester: current department
+test-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: edward.teach | Requester: current department
+@                           3600 IN  MX 20  mail-relay-sgp.corp.local.
+
+; Owner: YOU | Requester: dba
+
+; Owner: edward.teach | Requester: sysadmin
+
+; Owner: YOU | Requester: current department
+@                           3600 IN  MX 10  mail-relay-ams.eu.internal.
+
+; Owner: YOU | Requester: devops
+_sip._tcp.global.net.       300  IN  SRV    10 10 5060 sip-server-tok.global.net.
+
+; Owner: diana.prince | Requester: netops
+
+; Owner: fiona.gallagher | Requester: dba
+lon-mail-83.eu.internal.    3600  IN  A      55.22.176.1
+
+; Owner: YOU | Requester: current department
+@                           1800 IN  MX 50  mail-relay-ams.us.internal.
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: bob.jones | Requester: sysadmin
+syd-db-88.eu.internal.      86400  IN  A      105.107.145.1
+
+; Owner: edward.teach | Requester: sysadmin
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5060 sip-server-syd.corp.local.
+
+; Owner: diana.prince | Requester: dba
+
+; Owner: fiona.gallagher | Requester: current department
+cache-internal.eu.internal. 300  IN  CNAME  syd-cache-srv.global.net.
+
+; Owner: bob.jones | Requester: netops
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5061 sip-server-sgp.us.internal.
+
+; Owner: diana.prince | Requester: devops
+web-internal.eu.internal.   86400  IN  CNAME  nyc-web-srv.us.internal.
+
+; Owner: YOU | Requester: current department
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5061 sip-server-fra.eu.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+@                           3600 IN  MX 20  mail-relay-lon.eu.internal.
+
+; Owner: charlie.brown | Requester: secops
+
+; Owner: YOU | Requester: secops
+tok-web-55.eu.internal.     86400  IN  A      169.28.123.23
+
+; Owner: edward.teach | Requester: netops
+@                           300 IN  MX 10  mail-relay-fra.eu.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+mail-test.eu.internal.      1800  IN  CNAME  tok-mail-srv.corp.local.
+
+; Owner: fiona.gallagher | Requester: secops
+_sip._tcp.corp.local.       1800  IN  SRV    10 10 5061 sip-server-lon.corp.local.
+
+; Owner: diana.prince | Requester: secops
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: alice.smith | Requester: secops
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: alice.smith | Requester: devops
+
+; Owner: edward.teach | Requester: secops
+nyc-switch-68.eu.internal.  1800  IN  A      148.237.140.100
+
+; Owner: alice.smith | Requester: secops
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5061 sip-server-ams.eu.internal.
+
+; Owner: YOU | Requester: secops
+prod-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: fiona.gallagher | Requester: dba
+_sip._tcp.eu.internal.      1800  IN  SRV    10 10 5060 sip-server-sgp.eu.internal.
+
+; Owner: YOU | Requester: current department
+
+; Owner: alice.smith | Requester: netops
+@                           86400 IN  MX 50  mail-relay-nyc.eu.internal.
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: diana.prince | Requester: secops
+web-dev.eu.internal.        3600  IN  CNAME  sgp-web-srv.corp.local.
+
+; Owner: YOU | Requester: sysadmin
+
+; Owner: fiona.gallagher | Requester: sysadmin
+nyc-db-65.eu.internal.      300  IN  A      86.40.79.183
+
+; Owner: YOU | Requester: dba
+app-dev.eu.internal.        86400  IN  CNAME  sgp-app-srv.eu.internal.
+
+; Owner: edward.teach | Requester: dba
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5060 sip-server-syd.eu.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5061 sip-server-tok.eu.internal.
+
+; Owner: diana.prince | Requester: current department
+tok-mail-74.eu.internal.    3600  IN  A      19.35.51.218
+
+; Owner: diana.prince | Requester: secops
+
+; Owner: alice.smith | Requester: devops
+_sip._tcp.eu.internal.      300  IN  SRV    10 10 5061 sip-server-tok.eu.internal.
+
+; Owner: diana.prince | Requester: devops
+
+; Owner: diana.prince | Requester: sysadmin
+dev-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: edward.teach | Requester: secops
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5060 sip-server-sgp.corp.local.
+
+; Owner: fiona.gallagher | Requester: current department
+@                           1800 IN  MX 50  mail-relay-sgp.eu.internal.
+
+; Owner: YOU | Requester: sysadmin
+@                           1800 IN  MX 50  mail-relay-fra.eu.internal.
+
+; Owner: alice.smith | Requester: current department
+_sip._tcp.global.net.       300  IN  SRV    10 10 5061 sip-server-nyc.global.net.
+
+; Owner: charlie.brown | Requester: sysadmin
+_sip._tcp.us.internal.      300  IN  SRV    10 10 5060 sip-server-tok.us.internal.
+
+; Owner: diana.prince | Requester: dba
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: charlie.brown | Requester: netops
+lon-proxy-17.eu.internal.   3600  IN  A      67.141.134.200
+
+; Owner: YOU | Requester: secops
+app-internal.eu.internal.   1800  IN  CNAME  syd-app-srv.corp.local.
+
+; Owner: diana.prince | Requester: current department
+mail-test.eu.internal.      86400  IN  CNAME  ams-mail-srv.corp.local.
+
+; Owner: charlie.brown | Requester: sysadmin
+nyc-web-10.eu.internal.     3600  IN  A      124.103.135.97
+
+; Owner: bob.jones | Requester: secops
+proxy-prod.eu.internal.     1800  IN  CNAME  fra-proxy-srv.global.net.
+
+; Owner: edward.teach | Requester: current department
+@                           86400 IN  MX 10  mail-relay-syd.eu.internal.
+
+; Owner: diana.prince | Requester: devops
+switch-prod.eu.internal.    1800  IN  CNAME  tok-switch-srv.global.net.
+
+; Owner: charlie.brown | Requester: current department
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: netops
+syd-web-20.eu.internal.     86400  IN  A      41.57.156.109
+
+; Owner: diana.prince | Requester: secops
+switch-test.eu.internal.    86400  IN  CNAME  lon-switch-srv.us.internal.
+
+; Owner: alice.smith | Requester: current department
+ams-db-76.eu.internal.      300  IN  A      100.51.139.220
+
+; Owner: YOU | Requester: current department
+test-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.global.net.       86400  IN  SRV    10 10 5060 sip-server-syd.global.net.
+
+; Owner: charlie.brown | Requester: devops
+syd-web-27.eu.internal.     1800  IN  A      95.17.7.235
+
+; Owner: fiona.gallagher | Requester: netops
+web-stage.eu.internal.      86400  IN  CNAME  nyc-web-srv.us.internal.
+
+; Owner: charlie.brown | Requester: sysadmin
+fra-cache-73.eu.internal.   300  IN  A      162.44.111.185
+
+; Owner: alice.smith | Requester: dba
+sgp-proxy-20.eu.internal.   300  IN  A      167.111.112.107
+
+; Owner: edward.teach | Requester: devops
+
+; Owner: edward.teach | Requester: current department
+ams-mail-34.eu.internal.    3600  IN  A      171.144.47.134
+
+; Owner: diana.prince | Requester: secops
+
+; Owner: charlie.brown | Requester: netops
+
+; Owner: edward.teach | Requester: netops
+@                           1800 IN  MX 50  mail-relay-ams.eu.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+@                           300 IN  MX 20  mail-relay-lon.global.net.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+nyc-switch-41.eu.internal.  86400  IN  A      38.72.40.110
+
+; Owner: fiona.gallagher | Requester: dba
+
+; Owner: charlie.brown | Requester: current department
+switch-dev.eu.internal.     300  IN  CNAME  sgp-switch-srv.ap.internal.
+
+; Owner: YOU | Requester: current department
+
+; Owner: YOU | Requester: current department
+_sip._tcp.ap.internal.      3600  IN  SRV    10 10 5061 sip-server-sgp.ap.internal.
+
+; Owner: fiona.gallagher | Requester: current department
+
+; Owner: fiona.gallagher | Requester: current department
+test-verification.eu.internal. 300  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: diana.prince | Requester: sysadmin
+@                           3600 IN  MX 10  mail-relay-sgp.us.internal.
+
+; Owner: YOU | Requester: netops
+app-dev.eu.internal.        1800  IN  CNAME  sgp-app-srv.corp.local.
+
+; Owner: diana.prince | Requester: devops
+lon-switch-86.eu.internal.  300  IN  A      33.126.177.26
+
+; Owner: alice.smith | Requester: current department
+_sip._tcp.ap.internal.      3600  IN  SRV    10 10 5060 sip-server-fra.ap.internal.
+
+; Owner: alice.smith | Requester: sysadmin
+@                           1800 IN  MX 20  mail-relay-syd.global.net.
+
+; Owner: YOU | Requester: current department
+
+; Owner: YOU | Requester: sysadmin
+@                           3600 IN  MX 20  mail-relay-sgp.global.net.
+
+; Owner: YOU | Requester: devops
+sgp-app-88.eu.internal.     300  IN  A      133.141.53.205
+
+; Owner: edward.teach | Requester: current department
+_sip._tcp.ap.internal.      300  IN  SRV    10 10 5061 sip-server-sgp.ap.internal.
+
+; Owner: bob.jones | Requester: sysadmin
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5060 sip-server-tok.corp.local.
+
+; Owner: YOU | Requester: sysadmin
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: bob.jones | Requester: current department
+ams-cache-09.eu.internal.   300  IN  A      137.120.192.146
+
+; Owner: YOU | Requester: current department
+syd-app-70.eu.internal.     1800  IN  A      182.219.136.3
+
+; Owner: charlie.brown | Requester: devops
+_sip._tcp.ap.internal.      86400  IN  SRV    10 10 5061 sip-server-lon.ap.internal.
+
+; Owner: YOU | Requester: devops
+@                           86400 IN  MX 50  mail-relay-sgp.global.net.
+
+; Owner: YOU | Requester: netops
+
+; Owner: fiona.gallagher | Requester: current department
+dev-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: charlie.brown | Requester: netops
+syd-web-77.eu.internal.     1800  IN  A      92.230.138.66
+
+; Owner: bob.jones | Requester: dba
+cache-test.eu.internal.     1800  IN  CNAME  sgp-cache-srv.ap.internal.
+
+; Owner: YOU | Requester: netops
+proxy-prod.eu.internal.     86400  IN  CNAME  ams-proxy-srv.eu.internal.
+
+; Owner: fiona.gallagher | Requester: devops
+
+; Owner: diana.prince | Requester: current department
+syd-proxy-23.eu.internal.   3600  IN  A      10.46.201.102
+
+; Owner: fiona.gallagher | Requester: dba
+_sip._tcp.corp.local.       300  IN  SRV    10 10 5060 sip-server-fra.corp.local.
+
+; Owner: charlie.brown | Requester: secops
+
+; Owner: YOU | Requester: netops
+cache-internal.eu.internal. 300  IN  CNAME  syd-cache-srv.global.net.
+
+; Owner: diana.prince | Requester: current department
+app-internal.eu.internal.   86400  IN  CNAME  tok-app-srv.ap.internal.
+
+; Owner: bob.jones | Requester: devops
+dev-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: YOU | Requester: sysadmin
+@                           1800 IN  MX 10  mail-relay-syd.ap.internal.
+
+; Owner: charlie.brown | Requester: current department
+
+; Owner: diana.prince | Requester: dba
+@                           3600 IN  MX 10  mail-relay-fra.us.internal.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+internal-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: bob.jones | Requester: netops
+test-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: edward.teach | Requester: netops
+fra-db-52.eu.internal.      300  IN  A      128.63.190.243
+
+; Owner: fiona.gallagher | Requester: secops
+app-internal.eu.internal.   86400  IN  CNAME  sgp-app-srv.ap.internal.
+
+; Owner: YOU | Requester: current department
+internal-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: edward.teach | Requester: devops
+prod-verification.eu.internal. 86400  IN  TXT    "v=spf1 include:_spf.us.internal ~all"
+
+; Owner: bob.jones | Requester: devops
+proxy-stage.eu.internal.    1800  IN  CNAME  fra-proxy-srv.ap.internal.
+
+; Owner: charlie.brown | Requester: current department
+mail-stage.eu.internal.     300  IN  CNAME  tok-mail-srv.ap.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+switch-test.eu.internal.    86400  IN  CNAME  nyc-switch-srv.corp.local.
+
+; Owner: YOU | Requester: current department
+proxy-test.eu.internal.     300  IN  CNAME  nyc-proxy-srv.global.net.
+
+; Owner: edward.teach | Requester: devops
+@                           300 IN  MX 50  mail-relay-tok.eu.internal.
+
+; Owner: alice.smith | Requester: current department
+mail-stage.eu.internal.     3600  IN  CNAME  lon-mail-srv.us.internal.
+
+; Owner: fiona.gallagher | Requester: netops
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.ap.internal ~all"
+
+; Owner: alice.smith | Requester: netops
+fra-cache-97.eu.internal.   1800  IN  A      184.30.197.63
+
+; Owner: diana.prince | Requester: current department
+_sip._tcp.corp.local.       86400  IN  SRV    10 10 5060 sip-server-fra.corp.local.
+
+; Owner: YOU | Requester: secops
+
+; Owner: YOU | Requester: current department
+@                           1800 IN  MX 10  mail-relay-lon.global.net.
+
+; Owner: fiona.gallagher | Requester: sysadmin
+_sip._tcp.eu.internal.      1800  IN  SRV    10 10 5061 sip-server-syd.eu.internal.
+
+; Owner: fiona.gallagher | Requester: secops
+_sip._tcp.global.net.       1800  IN  SRV    10 10 5061 sip-server-ams.global.net.
+
+; Owner: charlie.brown | Requester: secops
+test-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: edward.teach | Requester: secops
+
+; Owner: YOU | Requester: sysadmin
+_sip._tcp.global.net.       1800  IN  SRV    10 10 5061 sip-server-nyc.global.net.
+
+; Owner: edward.teach | Requester: current department
+sgp-web-55.eu.internal.     86400  IN  A      167.252.123.92
+
+; Owner: YOU | Requester: secops
+
+; Owner: alice.smith | Requester: devops
+tok-app-22.eu.internal.     1800  IN  A      62.183.167.142
+
+; Owner: edward.teach | Requester: current department
+prod-verification.eu.internal. 3600  IN  TXT    "v=spf1 include:_spf.global.net ~all"
+
+; Owner: YOU | Requester: devops
+dev-verification.eu.internal. 1800  IN  TXT    "v=spf1 include:_spf.corp.local ~all"
+
+; Owner: fiona.gallagher | Requester: devops
+_sip._tcp.global.net.       300  IN  SRV    10 10 5061 sip-server-syd.global.net.
+
+; Owner: charlie.brown | Requester: netops
+_sip._tcp.us.internal.      3600  IN  SRV    10 10 5061 sip-server-tok.us.internal.
+
+; Owner: YOU | Requester: netops
+db-prod.eu.internal.        86400  IN  CNAME  ams-db-srv.ap.internal.
+
+; Owner: charlie.brown | Requester: current department
+_sip._tcp.eu.internal.      86400  IN  SRV    10 10 5061 sip-server-nyc.eu.internal.
+
+; Owner: edward.teach | Requester: current department
+@                           300 IN  MX 20  mail-relay-sgp.eu.internal.
+
+; Owner: fiona.gallagher | Requester: netops
+_sip._tcp.ap.internal.      300  IN  SRV    10 10 5061 sip-server-fra.ap.internal.
+
+; Owner: alice.smith | Requester: netops
+sgp-app-69.eu.internal.     1800  IN  A      103.117.4.15
+
+; Owner: alice.smith | Requester: dba
+proxy-stage.eu.internal.    3600  IN  CNAME  tok-proxy-srv.corp.local.
+

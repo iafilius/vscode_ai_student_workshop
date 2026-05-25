@@ -1,0 +1,42 @@
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+graph TD
+  Core["AMS-CORE-01"]
+  Dist1["AMS-DIST-01"]
+  Dist2["AMS-DIST-02"]
+  
+  Core --- Dist1
+  Core --- Dist2
+  Dist1 --- Dist2
+  
+  subgraph VLAN_10 ["VLAN 10 (Users)"]
+    Acc1["AMS-ACC-01"]
+    Acc2["AMS-ACC-02"]
+  end
+  
+  subgraph VLAN_20 ["VLAN 20 (VoIP)"]
+    Acc3["AMS-ACC-03"]
+    Acc4["AMS-ACC-04"]
+  end
+  
+  Acc1 --- Dist1
+  Acc1 --- Dist2
+  Acc2 --- Dist1
+  Acc2 --- Dist2
+  
+  Acc3 --- Dist1
+  Acc3 --- Dist2
+  Acc4 --- Dist1
+  Acc4 --- Dist2
+
+  %% Style overrides for straight line visual excellence & colorful hierarchy
+  style Core fill:#D32F2F,stroke:#9E0000,stroke-width:2px,color:#fff
+  style Dist1 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+  style Dist2 fill:#1976D2,stroke:#0D47A1,stroke-width:2px,color:#fff
+  
+  style Acc1 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+  style Acc2 fill:#388E3C,stroke:#1B5E20,stroke-width:2px,color:#fff
+  style Acc3 fill:#F57C00,stroke:#E65100,stroke-width:2px,color:#fff
+  style Acc4 fill:#F57C00,stroke:#E65100,stroke-width:2px,color:#fff
+  
+  style VLAN_10 fill:#E8F5E9,stroke:#81C784,stroke-width:1px
+  style VLAN_20 fill:#FFE0B2,stroke:#FFB74D,stroke-width:1px

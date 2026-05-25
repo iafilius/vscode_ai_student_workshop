@@ -1,0 +1,25 @@
+{
+  "azure_firewall": "azfw-hub",
+  "location": "westeurope",
+  "threat_intel_mode": "Block",
+  "application_rules": [
+    {
+      "name": "app-allow-github",
+      "target_fqdns": [
+        "*.github.com"
+      ],
+      "protocols": [
+        "HTTPS"
+      ]
+    }
+  ],
+  "network_rules": [
+    {
+      "name": "rule-allow-dns",
+      "protocol": "UDP",
+      "source": "10.0.0.0/8",
+      "destination": "8.8.8.8",
+      "port": "53"
+    }
+  ]
+}

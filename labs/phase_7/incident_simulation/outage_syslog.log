@@ -1,0 +1,13 @@
+May 23 13:58:12 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to down
+May 23 13:58:13 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to down
+May 23 13:58:15 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - Interface flapping
+May 23 13:58:22 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to up
+May 23 13:58:23 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to up
+May 23 13:58:45 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Up 
+May 23 13:59:02 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - MTU path discovery check failed
+May 23 13:59:12 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to down
+May 23 13:59:13 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to down
+May 23 13:59:22 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to up
+May 23 13:59:23 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to up
+May 23 13:59:45 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Up
+May 23 14:00:03 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - Keepalive expired due to large MTU size packet dropped

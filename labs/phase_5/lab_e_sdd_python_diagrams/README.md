@@ -1,0 +1,68 @@
+# Phase 5 Lab E: Spec-Driven Python Diagrams
+
+## Objective
+Apply the principles of Spec-Driven Development (SDD) to programmatically generate professional infrastructure drawings using the Python `diagrams` library. In Phase 2, you prompted the AI to write a Python script for a Dual Datacenter. Now, you will use rigid specifications to generate that same script deterministically, and then scale it up to a massive Multi-Region Cloud Native Architecture.
+
+## Online References
+- [Python diagrams Library Official Documentation](https://diagrams.mingrammer.com/)
+- [Graphviz Layout Visualization Tool](https://graphviz.org/)
+- [OpenSpec Documentation](https://github.com/Fission-AI/OpenSpec)
+
+---
+
+## Step-by-Step Lab Tasks
+
+### Task 1: Initialize the SDD Change Context
+1. Open your terminal in the workspace root and initialize a new OpenSpec change:
+   ```bash
+   openspec new change "sdd-python-graphics"
+   ```
+2. Open `openspec/changes/sdd-python-graphics/proposal.md` and define the scope:
+   *   **Why:** Programmatic, repeatable network documentation is required to avoid drift between physical infrastructure and visual topology drawings.
+   *   **Capabilities:** Introduce a new capability `python-graphics-automation`.
+
+### Task 2: Part 1 - The Dual-Datacenter Topology
+1. Open the specification file: `openspec/changes/sdd-python-graphics/specs/python-graphics-automation/spec.md`.
+2. Write clear, testable requirements mapping out the Dual-DC layout from Phase 2:
+   *   **Requirement:** The script MUST programmatically represent two Datacenters: DC1 and DC2 using the `diagrams` Cluster grouping.
+   *   **Requirement:** Each DC MUST contain a Spine Layer (2 switches) and a Compute Leaf Layer (4 switches).
+   *   **Requirement:** The script MUST use `diagrams.generic.network.Switch`.
+   *   **Requirement:** The script MUST be written in Python, using the `diagrams` library to generate a PNG file named `dual_dc_topology.png`.
+3. Check the status and compile the change metadata:
+   ```bash
+   openspec status --change "sdd-python-graphics"
+   ```
+4. Run the OpenSpec agent capability tool to generate the code:
+   ```bash
+   /opsx-apply "sdd-python-graphics"
+   ```
+5. Install the required Python library and run the script locally to render the drawing:
+   ```bash
+   pip install diagrams
+   python dual_dc_builder.py
+   ```
+   *(Note: This library relies on Graphviz. If local Graphviz is not installed, install it via `brew install graphviz`).*
+
+### Task 3: Part 2 - The Complex Cloud Scale-Up
+1. Return to your `spec.md` and **delete** the old requirements.
+2. Write **new** requirements for a complex AWS Cloud-Native scale-up:
+   *   **Requirement:** The script MUST represent a Global Multi-Region AWS Architecture.
+   *   **Requirement:** There MUST be two regions: `us-east-1` and `eu-west-1`.
+   *   **Requirement:** Each region MUST contain a VPC Cluster, with a public subnet (containing an ALB) and a private subnet (containing an ASG of EC2 instances and an RDS database).
+   *   **Requirement:** A global Route53 DNS node MUST load balance traffic between the two ALBs.
+   *   **Requirement:** The script MUST use specific AWS nodes (e.g. `diagrams.aws.network.Route53`, `diagrams.aws.network.ELB`, `diagrams.aws.compute.EC2`, `diagrams.aws.database.RDS`).
+   *   **Requirement:** The script MUST generate a PNG named `global_aws_topology.png`.
+3. Re-run `/opsx-apply "sdd-python-graphics"`.
+4. **Audit the output:** Run the generated script. Did the agent successfully import the AWS node namespaces and cluster them correctly?
+
+### Task 4: Validate Your Work
+Run the local self-checking validation tool in your terminal:
+```bash
+python verify.py
+```
+
+---
+
+## Expected Output
+
+You should see both a `dual_dc_topology.png` and a `global_aws_topology.png` rendered locally by your Python scripts.

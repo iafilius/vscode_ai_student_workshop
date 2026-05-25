@@ -1,0 +1,14 @@
+{
+  "network_security_group": "nsg-app-tier",
+  "resource_group": "rg-prod-network",
+  "security_rules": [
+    {
+      "name": "Allow-App",
+      "priority": 70000,
+      "direction": "Inbound",
+      "access": "Permit",
+      "protocol": "Tcp",
+      "destination_port_range": "8080"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "interface": "GigabitEthernet1/0/1",
+  "description": "uplink-to-core",
+  "switchport": {
+    "mode": "trunking",
+    "trunk_allowed_vlans": [
+      10,
+      20,
+      30
+    ]
+  },
+  "mtu": "9216",
+  "lldp": {
+    "transmit": true,
+    "receive": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "security_group": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "vpc": {
+      "type": "string"
+    },
+    "inbound_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "protocol": {
+            "type": "string",
+            "enum": [
+              "TCP",
+              "UDP",
+              "ICMP",
+              "ALL"
+            ]
+          },
+          "port": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 65535
+          },
+          "source": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "protocol",
+          "source"
+        ]
+      }
+    },
+    "outbound_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "protocol": {
+            "type": "string"
+          },
+          "port": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "destination": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "protocol",
+          "destination"
+        ]
+      }
+    },
+    "tags": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "security_group",
+    "vpc"
+  ]
+}

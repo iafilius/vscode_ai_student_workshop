@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "virtual_servers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "destination": {
+            "type": "string"
+          },
+          "pool": {
+            "type": "string"
+          },
+          "profiles": {
+            "type": "object",
+            "properties": {
+              "client": {
+                "type": "string"
+              },
+              "server": {
+                "type": "string"
+              }
+            }
+          },
+          "snat": {
+            "type": "string"
+          },
+          "persistence": {
+            "type": "string"
+          },
+          "irule": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "destination",
+          "pool"
+        ]
+      }
+    }
+  }
+}

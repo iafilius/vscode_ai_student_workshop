@@ -1,0 +1,8 @@
+{
+  "title": "BGP External Peering Architecture",
+  "version": "1.0.0",
+  "owner": "Enterprise Network Engineering",
+  "references": [
+    "artifact.md"
+  ]
+}

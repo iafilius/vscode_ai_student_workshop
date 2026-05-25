@@ -1,0 +1,9 @@
+{
+  "title": "Datacenter 1 Spine-Leaf Network Fabric",
+  "version": "1.0.0",
+  "owner": "Enterprise Network Engineering",
+  "summary": "Authoritative network topology allocation and fabric layout parameters for Datacenter 1.",
+  "references": [
+    "artifact.md"
+  ]
+}

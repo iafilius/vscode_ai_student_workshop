@@ -1,0 +1,24 @@
+Network Security Group: nsg-app-tier
+  Resource Group: rg-prod-network
+  Location: westeurope
+  Tags:
+    CostCenter: "12345"
+  Security Rules:
+    - Name: Allow-App
+      Priority: 100
+      Direction: Inbound
+      Access: Allow
+      Protocol: Tcp
+      SourcePortRange: *
+      DestinationPortRange: 8080
+      SourceAddressPrefix: 10.0.0.0/8
+      DestinationAddressPrefix: *
+    - Name: Deny-Internet
+      Priority: 4096
+      Direction: Outbound
+      Access: Deny
+      Protocol: *
+      SourcePortRange: *
+      DestinationPortRange: *
+      SourceAddressPrefix: *
+      DestinationAddressPrefix: Internet

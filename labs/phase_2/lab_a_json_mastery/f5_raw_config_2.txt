@@ -1,0 +1,14 @@
+Virtual Server: vs_web_prod
+  Destination: 10.10.10.5:443
+  Pool: pool_web_servers
+  Profile (Client): clientssl_wildcard
+  Profile (Server): serverssl_default
+  SNAT: Automap
+  Persistence: cookie_persistence
+  iRule: irule_redirect_http_to_https
+
+Virtual Server: vs_api_prod
+  Destination: 10.10.10.6:443
+  Pool: pool_api_servers
+  Profile (Client): clientssl_api
+  SNAT: Automap
