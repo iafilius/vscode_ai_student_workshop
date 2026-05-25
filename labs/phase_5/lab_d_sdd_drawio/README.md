@@ -11,27 +11,21 @@ Apply the principles of Spec-Driven Development (SDD) to programmatically genera
 
 ## Step-by-Step Lab Tasks
 
-### Task 1: Initialize the SDD Change Context
-1. Open your terminal in the workspace root and initialize a new OpenSpec change:
-   ```bash
-   openspec new change "sdd-drawio-xml"
-   ```
-2. Open `openspec/changes/sdd-drawio-xml/proposal.md` and define the scope:
-   *   **Why:** Generating raw XML vector diagrams through unstructured chat results in overlapping shapes and floating lines. We need strict SDD constraints to govern coordinate mapping.
-   *   **Capabilities:** Introduce a new capability `drawio-xml-automation`.
+### Task 1: Auto-Propose the SDD Change Context via AI
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and specifications.
+1. Run the propose command in Copilot Chat:
+   > *"/opsx-propose Create a sdd-drawio-xml change for a drawio-xml-automation capability. Generating raw XML vector diagrams through unstructured chat results in overlapping shapes; we need strict SDD constraints. The output MUST be a valid Draw.io XML file named topology.drawio in labs/phase_5/lab_d_sdd_drawio/. It MUST contain 1 Cloud Edge Firewall (Red), 2 Application Load Balancers (Purple), 4 Web Servers (Blue), and a Primary/Standby DB Cluster (Green cylinders). All shapes MUST have explicitly calculated, non-overlapping x and y geometry coordinates. All connections MUST be explicitly mapped using proper source and target vertex IDs."*
+2. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 2: Part 1 - The Simple Web Topology
+### Task 2: Part 1 - Review Specs and Generate The Simple Web Topology
 1. Open the specification file: `openspec/changes/sdd-drawio-xml/specs/drawio-xml-automation/spec.md`.
-2. Write clear, testable requirements mapping out the simple AWS architecture from Phase 2:
-   *   **Requirement:** The output MUST be a valid Draw.io XML file named `topology.drawio` in the `labs/phase_5/lab_d_sdd_drawio/` directory.
-   *   **Requirement:** It MUST contain 1 Cloud Edge Firewall (Red), 2 Application Load Balancers (Purple), 4 Web Servers (Blue), and a Primary/Standby DB Cluster (Green cylinders).
-   *   **Requirement:** All shapes MUST have explicitly calculated, non-overlapping `x` and `y` geometry coordinates.
-   *   **Requirement:** All connections MUST be explicitly mapped using proper `source` and `target` vertex IDs.
-3. Validate the change and apply it:
+2. Review the generated requirements mapping out the simple AWS architecture from Phase 2. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly 4 hashtags (`#### Scenario:`) for scenarios. Adjust the requirements manually if necessary.
+3. Validate and apply the change:
    ```bash
    openspec status --change "sdd-drawio-xml"
-   /opsx-apply "sdd-drawio-xml"
    ```
+   *Then run this in Copilot Chat:*
+   > *"/opsx-apply sdd-drawio-xml"*
 4. **Compare:** Open the generated `topology.drawio` in VS Code (with the Draw.io extension installed) or web. Are the shapes still overlapping like they did in Phase 2? Or did the rigid spec constraints force the AI to do the coordinate math correctly?
 
 ### Task 3: Part 2 - The Complex Scale-Up

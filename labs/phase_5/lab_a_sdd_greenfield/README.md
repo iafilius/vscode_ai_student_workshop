@@ -11,24 +11,17 @@ Learn the lifecycle of Spec-Driven Development (SDD) by proposing, designing, sp
 
 ## Step-by-Step Lab Tasks
 
-### Task 1: Propose the Greenfield Scan Tool
-OpenSpec enforces a strict, robust requirement and design loop before any code is generated.
+### Task 1: Auto-Propose the Greenfield Scan Tool
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and specifications.
 1. Navigate your terminal to the current directory: `labs/phase_5/lab_a_sdd_greenfield/`.
-2. Propose a new change using the CLI:
-   ```bash
-   openspec new change "greenfield-network-scanner"
-   ```
-3. Open the newly created proposal file: `openspec/changes/greenfield-network-scanner/proposal.md` and describe the scanning script:
-   * **Why:** Need a lightweight, local scanning utility to check availability of host SSH (22) and HTTP (80) ports across standard subnets.
-   * **Capabilities:** Add a new capability `network-scan-utility`.
-4. Open the design file: `openspec/changes/greenfield-network-scanner/design.md`. Document the design choice to use Python's built-in `socket` module (avoiding external dependencies like `nmap` to keep runtime environments simple).
+2. Run the propose command in Copilot Chat:
+   > *"/opsx-propose Create a greenfield-network-scanner change for a network-scan-utility capability. We need a lightweight, local scanning utility to check availability of host SSH (22) and HTTP (80) ports across standard subnets. It should use Python's built-in socket module. The script SHALL iterate through a given CIDR block attempting to open socket connections on port 22 and 80. The timeout for each connection attempt SHALL be limited to 0.5 seconds."*
+3. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 2: Write Specifications
+### Task 2: Review and Refine Specifications
 1. Open the spec file: `openspec/changes/greenfield-network-scanner/specs/network-scan-utility/spec.md`.
-2. Add normative requirements detailing port verification:
-   * **Requirement:** The script SHALL iterate through a given CIDR block, attempting to open socket connections on port 22 and 80.
-   * **Requirement:** The timeout for each connection attempt SHALL be limited to `0.5` seconds to ensure fast scanning.
-   * Add a `#### Scenario:` block detailing successful scan outcomes.
+2. Review the generated requirements detailing port verification.
+3. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly 4 hashtags (`#### Scenario:`) for scenario blocks. Adjust the requirements manually if the AI missed any nuance.
 
 ### Task 3: Compile and Apply the Change
 1. Validate the OpenSpec change:

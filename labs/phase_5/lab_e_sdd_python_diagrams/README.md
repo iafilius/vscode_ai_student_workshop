@@ -12,30 +12,21 @@ Apply the principles of Spec-Driven Development (SDD) to programmatically genera
 
 ## Step-by-Step Lab Tasks
 
-### Task 1: Initialize the SDD Change Context
-1. Open your terminal in the workspace root and initialize a new OpenSpec change:
-   ```bash
-   openspec new change "sdd-python-graphics"
-   ```
-2. Open `openspec/changes/sdd-python-graphics/proposal.md` and define the scope:
-   *   **Why:** Programmatic, repeatable network documentation is required to avoid drift between physical infrastructure and visual topology drawings.
-   *   **Capabilities:** Introduce a new capability `python-graphics-automation`.
+### Task 1: Auto-Propose the SDD Change Context via AI
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and specifications.
+1. Run the propose command in Copilot Chat:
+   > *"/opsx-propose Create a sdd-python-graphics change for a python-graphics-automation capability. Programmatic, repeatable network documentation is required. The script MUST programmatically represent two Datacenters: DC1 and DC2 using the diagrams Cluster grouping. Each DC MUST contain a Spine Layer (2 switches) and a Compute Leaf Layer (4 switches). The script MUST use diagrams.generic.network.Switch. The script MUST be written in Python, using the diagrams library to generate a PNG file named dual_dc_topology.png."*
+2. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 2: Part 1 - The Dual-Datacenter Topology
+### Task 2: Part 1 - Review Specs and Generate The Dual-Datacenter Topology
 1. Open the specification file: `openspec/changes/sdd-python-graphics/specs/python-graphics-automation/spec.md`.
-2. Write clear, testable requirements mapping out the Dual-DC layout from Phase 2:
-   *   **Requirement:** The script MUST programmatically represent two Datacenters: DC1 and DC2 using the `diagrams` Cluster grouping.
-   *   **Requirement:** Each DC MUST contain a Spine Layer (2 switches) and a Compute Leaf Layer (4 switches).
-   *   **Requirement:** The script MUST use `diagrams.generic.network.Switch`.
-   *   **Requirement:** The script MUST be written in Python, using the `diagrams` library to generate a PNG file named `dual_dc_topology.png`.
-3. Check the status and compile the change metadata:
+2. Review the generated requirements mapping out the Dual-DC layout. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly 4 hashtags (`#### Scenario:`) for scenarios. Adjust the requirements manually if necessary.
+3. Validate and apply the change:
    ```bash
    openspec status --change "sdd-python-graphics"
    ```
-4. Run the OpenSpec agent capability tool to generate the code:
-   ```bash
-   /opsx-apply "sdd-python-graphics"
-   ```
+   *Then run this in Copilot Chat:*
+   > *"/opsx-apply sdd-python-graphics"*
 5. Install the required Python library and run the script locally to render the drawing:
    ```bash
    pip install diagrams

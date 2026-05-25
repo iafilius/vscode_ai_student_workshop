@@ -15,22 +15,16 @@ Learn how to use Spec-Driven Development to maintain and upgrade legacy, poorly-
 1. Navigate to the `labs/phase_5/lab_b_sdd_brownfield/` folder.
 2. Open and inspect the messy legacy script: [legacy_parser.py](legacy_parser.py). It parses basic IPv4 subnet ranges but lacks robust checks or any IPv6 support.
 
-### Task 2: Propose the Subnet Parser Upgrade
-1. In your terminal, initialize a new change:
-   ```bash
-   openspec new change "brownfield-parser-refinement"
-   ```
-2. Open `openspec/changes/brownfield-parser-refinement/proposal.md` and define the scope:
-   * **Why:** The core datacenter is expanding to dual-stack operations. We must upgrade our subnet parser tool to support IPv6 range validation.
-   * **Modified Capabilities:** List the existing `legacy-subnet-parser` capability.
+### Task 2: Auto-Propose the Subnet Parser Upgrade
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and reverse-engineer the legacy script into a formal specification.
+1. In Copilot Chat, run the propose command:
+   > *"/opsx-propose Create a brownfield-parser-refinement change for the legacy-subnet-parser capability. Reverse-engineer an OpenSpec spec.md file based on the existing legacy_parser.py script in labs/phase_5/lab_b_sdd_brownfield/. Add a new requirement: The parsing function MUST accept an IPv6 address string and validate its CIDR formatting (e.g. 2001:db8::/32)."*
+2. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 3: Reverse-Engineer and Modify Specifications
-1. Ask the AI in Copilot Chat to reverse-engineer a spec file from the legacy script:
-   > *"@workspace Reverse-engineer an OpenSpec spec.md file based on the legacy_parser.py script in labs/phase_5/lab_b_sdd_brownfield/. Define its existing behavior as a capability named 'legacy-subnet-parser'. Ensure you follow the strict OpenSpec format (SHALL/MUST, #### Scenarios)."*
-2. Save this generated spec to `openspec/changes/brownfield-parser-refinement/specs/legacy-subnet-parser/spec.md`.
-3. Add the new IPv6 requirement under the `## ADDED Requirements` header:
-   * **Requirement:** The parsing function MUST accept an IPv6 address string and validate its CIDR formatting (e.g. `2001:db8::/32`).
-   * Add a corresponding `#### Scenario: IPv6 validation` block.
+### Task 3: Review and Refine Specifications
+1. Open the generated file: `openspec/changes/brownfield-parser-refinement/specs/legacy-subnet-parser/spec.md`.
+2. Review the reverse-engineered requirements and the new IPv6 requirement. 
+3. Ensure the AI followed the strict OpenSpec format (SHALL/MUST keywords, exactly 4 hashtags `####` for Scenarios). Refine it if necessary.
 
 ### Task 4: Compile and Refactor
 1. Verify the change status:

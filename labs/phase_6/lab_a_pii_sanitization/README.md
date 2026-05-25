@@ -22,23 +22,18 @@ Establish a Spec-Driven configuration sanitizer that ingests a high-risk Cisco I
    - Private production IPs (e.g. `10.120.45.1` and `10.120.100.1`)
 3. Sending this file directly to public AI tools is a severe corporate security policy violation. We must build a local script to sanitize it automatically.
 
-### Task 2: Initialize the OpenSpec Sanitizer Change
-1. Open your terminal at the root of the project and initialize a new change:
-   ```bash
-   openspec new change "secret-sanitizer"
-   ```
-2. Open `openspec/changes/secret-sanitizer/proposal.md` and define the purpose:
-   * **Why:** Corporate compliance requires automatic credential redaction and IP address masking before configuration details are sent to external LLMs.
-   * **Capabilities:** Add a new capability `cisco-configuration-sanitizer`.
+### Task 2: Auto-Propose the Sanitizer via AI
+Instead of creating files manually, let the AI generate the entire OpenSpec scaffolding using the `/opsx-propose` command.
+1. Run this command in Copilot Chat:
+   > *"/opsx-propose Create a secret-sanitizer change with a cisco-configuration-sanitizer capability. The script MUST read sensitive_config.cfg and output sanitized_config.cfg. It MUST redact 'password <secret>' and 'secret 5 <hash>' with [REDACTED_PASSWORD]. It MUST redact 'snmp-server community <string>' with [REDACTED_SNMP]. It MUST translate 10.120.x.x private IPs to safe 192.168.100.x IPs."*
+2. Watch as the AI automatically generates the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts in sequence!
 
-### Task 3: Define Sanitization Specifications
-1. Open `openspec/changes/secret-sanitizer/specs/cisco-configuration-sanitizer/spec.md`.
-2. Add the formal requirements:
-   * **Requirement:** The script MUST read `sensitive_config.cfg` and output a clean configuration to `sanitized_config.cfg`.
-   * **Requirement:** The script MUST find any occurrences of username passwords (`password <secret>`) or enable secrets (`secret 5 <hash>`) and redact the secret token with `[REDACTED_PASSWORD]`.
-   * **Requirement:** The script MUST find any SNMP community string definitions (`snmp-server community <string>`) and redact the community key with `[REDACTED_SNMP]`.
-   * **Requirement:** The script MUST translate all occurrences of private IPs matching `10.120.x.x` to equivalent safe `192.168.100.x` test ranges (e.g. `10.120.45.1` becomes `192.168.100.1`).
-3. Check the status and compile the change metadata:
+### Task 3: Review and Refine Specifications
+Because the AI generates the initial draft of the `spec.md`, you MUST verify it before applying the code.
+1. Open the generated file: `openspec/changes/secret-sanitizer/specs/cisco-configuration-sanitizer/spec.md`.
+2. Review the `## ADDED Requirements` section. 
+3. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly included the redaction strings (`[REDACTED_PASSWORD]`, `[REDACTED_SNMP]`). Adjust the requirements manually if the AI missed any nuance.
+4. Verify the syntax is valid:
    ```bash
    openspec status --change "secret-sanitizer"
    ```

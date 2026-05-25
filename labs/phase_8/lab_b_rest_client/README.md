@@ -11,31 +11,16 @@ Apply the Spec-Driven Development flow to construct a lightweight, fully working
 
 ## Step-by-Step Lab Tasks
 
-### Task 1: Initialize the API Client Spec Context
-1. Open your terminal at the workspace root and initialize the OpenSpec change:
-   ```bash
-   openspec new change "rest-api-client"
-   ```
-2. Open `openspec/changes/rest-api-client/proposal.md` and define the integration scope:
-   *   **Why:** Modern NetOps rely heavily on REST APIs to retrieve inventory, allocate IP addresses, and configure network controllers (like Cisco DNAC, NetBox, or F5 BIG-IP).
-   *   **Capabilities:** Define `rest-api-integration`.
+### Task 1: Auto-Propose the API Client Context via AI
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and specifications.
+1. Run the propose command in Copilot Chat:
+   > *"/opsx-propose Create a rest-api-client change for a rest-api-integration capability. Modern NetOps rely heavily on REST APIs. The script MUST perform a GET request to the public JSONPlaceholder users endpoint (https://jsonplaceholder.typicode.com/users). The script MUST parse the response and filter user objects, extracting only those whose location city contains a specified keyword or whose company.name contains 'Group'. The script MUST perform a POST request to https://jsonplaceholder.typicode.com/posts transmitting a JSON-formatted configuration update payload with title 'Config-Sync-Status'. The script MUST output the resulting HTTP status code (expected 201 Created) and the returned server response payload. The script MUST include robust exception handling to capture HTTP status errors, connection timeouts, and DNS failures."*
+2. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 2: Define Spec Requirements
-1. Open `openspec/changes/rest-api-client/specs/rest-api-integration/spec.md`.
-2. Write requirements detailing the Python REST client application:
-   *   **Requirement:** The script MUST perform a GET request to the public JSONPlaceholder users endpoint: `https://jsonplaceholder.typicode.com/users` (representing a mock network device/technician inventory).
-   *   **Requirement:** The script MUST parse the response and filter user objects, extracting only those whose location `city` contains a specified keyword (e.g., "Gwenborough" or "McKenziehaven") or whose `company.name` contains "Group".
-   *   **Requirement:** The script MUST perform a POST request to `https://jsonplaceholder.typicode.com/posts` transmitting a JSON-formatted configuration update payload:
-       ```json
-       {
-         "title": "Config-Sync-Status",
-         "body": "BGP Session restored on AMS-CORE-01. Port Eth1/1 brought up.",
-         "userId": 1
-       }
-       ```
-   *   **Requirement:** The script MUST output the resulting HTTP status code (expected `201 Created`) and the returned server response payload.
-   *   **Requirement:** The script MUST include robust exception handling to capture HTTP status errors, connection timeouts, and DNS failures.
-3. Validate the spec:
+### Task 2: Review and Refine Specifications
+1. Open the specification file: `openspec/changes/rest-api-client/specs/rest-api-integration/spec.md`.
+2. Review the generated requirements for the REST API client. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly 4 hashtags (`#### Scenario:`) for scenarios. Adjust the requirements manually if necessary (e.g. adding the specific JSON payload string for the POST request if the AI missed it).
+3. Validate and apply the change:
    ```bash
    openspec status --change "rest-api-client"
    ```

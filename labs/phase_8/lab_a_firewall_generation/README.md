@@ -11,30 +11,16 @@ Fabricate an OpenSpec specification and develop a Python rule generator that acc
 
 ## Step-by-Step Lab Tasks
 
-### Task 1: Initialize the OpenSpec Change
-1. Open your terminal at the workspace root and initialize the firewall automation change:
-   ```bash
-   openspec new change "policy-based-firewall-automation"
-   ```
-2. Open `openspec/changes/policy-based-firewall-automation/proposal.md` and define the automation scope:
-   *   **Why:** Cloud-native and hybrid multi-cloud firewalls require programmatic policy compilation to guarantee that security zone boundaries are never violated.
-   *   **Capabilities:** Define `policy-based-firewall-compilation`.
+### Task 1: Auto-Propose the OpenSpec Change via AI
+Instead of manually creating OpenSpec files, we will use the AI to generate the proposal and specifications.
+1. Run the propose command in Copilot Chat:
+   > *"/opsx-propose Create a policy-based-firewall-automation change for a policy-based-firewall-compilation capability. Cloud-native and hybrid multi-cloud firewalls require programmatic policy compilation. The script MUST load network_topology_data.json dynamically from the filesystem. The script MUST accept name-based source and destination connectivity queries. The script MUST perform lookups in the ipCard map to resolve logical names. The script MUST validate if the requested connection is explicitly allowed under the networkSecurityPolicy list. If the connection crosses zone boundaries without an explicit permit rule, it MUST return a status of DENIED. The script MUST output a single JSON telemetry block containing traceId, status, resolvedSourceIp, resolvedDestinationIp, enforcementPoints, and compiledRules."*
+2. Wait for the AI to auto-generate the `proposal.md`, `design.md`, `tasks.md`, and `spec.md` artifacts.
 
-### Task 2: Design the Specification Requirements
-1. Open `openspec/changes/policy-based-firewall-automation/specs/policy-based-firewall-compilation/spec.md`.
-2. Write formal requirements indicating how the firewall generator must compile rules:
-   *   **Requirement:** The script MUST load `network_topology_data.json` dynamically from the filesystem.
-   *   **Requirement:** The script MUST accept name-based source and destination connectivity queries (e.g., `aws-app-servers` -> `on-prem-db-tier` on port `5432`).
-   *   **Requirement:** The script MUST perform lookups in the `ipCard` map to resolve logical names to their physical IPv4 and IPv6 prefixes, security zones, and protecting firewall platforms.
-   *   **Requirement:** The script MUST validate if the requested connection is explicitly allowed under the `networkSecurityPolicy` list. If the connection crosses zone boundaries without an explicit permit rule, it MUST return a status of `DENIED`.
-   *   **Requirement:** The script MUST output a single JSON telemetry block containing:
-       - `traceId`: a unique generated string (UUID v4 or SHA256 of the request context).
-       - `status`: `ALLOWED` or `DENIED`.
-       - `resolvedSourceIp`: resolved IP prefix.
-       - `resolvedDestinationIp`: resolved IP prefix.
-       - `enforcementPoints`: list of firewall device names (where `isFirewall` is true) guarding the source or destination IP spaces.
-       - `compiledRules`: a compiled vendor-specific rule block corresponding to the target platform (e.g., AWS Security Group inbound rule, Cisco ASA ACL command lines, or NSX-T segments).
-3. Validate and compile the spec:
+### Task 2: Review and Refine Specifications
+1. Open the specification file: `openspec/changes/policy-based-firewall-automation/specs/policy-based-firewall-compilation/spec.md`.
+2. Review the generated requirements for the firewall compiler. Ensure the AI used strict normative language (`MUST` or `SHALL`) and exactly 4 hashtags (`#### Scenario:`) for scenarios. Adjust the requirements manually if necessary.
+3. Validate and apply the change:
    ```bash
    openspec status --change "policy-based-firewall-automation"
    ```
