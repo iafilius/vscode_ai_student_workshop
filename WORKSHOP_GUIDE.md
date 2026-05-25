@@ -23,29 +23,6 @@ This workshop is a comprehensive, progressive, full-day training guide designed 
 
 ---
 
-## 🗺️ System Storage Pathways for AI Agents
-
-To collaborate effectively with agentic AI systems, engineers must understand exactly where configurations, context, and capabilities are stored. Ensure you are familiar with these paths:
-
-### 1. Spec-Driven Development (OpenSpec)
-OpenSpec stores specification-driven development files locally inside the active project directory:
-*   **Project Context Config:** `openspec/config.yaml` (Defines developer workflows, project scope, and per-artifact rules).
-*   **Active Changes:** `openspec/changes/<change-name>/` (Temporary directories housing active proposals, designs, specs, and checklists).
-*   **Compiled Master Specs:** `openspec/specs/<capability>/spec.md` (Permanent specs reflecting the master state of the codebase).
-
-### 2. Agent SKILLs (Custom Capabilities)
-SKILLs are packages of markdown instructions and Python utilities that expand what an AI agent can do:
-*   **Workspace-Local Skills:** `.agent/skills/<skill-name>/` (Project-specific skills, synced via git).
-*   **Global User Skills:** `~/.agent/skills/` (Shared globally across all local projects for a developer).
-*   **Global Plugins:** `~/.agent/plugins/` (Bundles of specialized subagents, tools, and configurations).
-
-### 3. Knowledge Items (KIs)
-Knowledge Items allow agentic systems to persist key repository decisions, facts, and states across isolated sessions:
-*   **Workspace Knowledge Directory:** `knowledge/` (Contains workspace-specific KIs tied to the current codebase).
-*   **Global Knowledge Directory:** `~/.agent/knowledge/` (Contains global KIs shared across all projects).
-
----
-
 ## 🚀 Phase 1: Environment Setup & Prompting Basics (09:30 - 10:15)
 
 ### 1. Environment and Access Control Setup
