@@ -1,6 +1,8 @@
 # Phase 5 Lab B: Brownfield Refinement (OpenSpec)
 
 ## Objective
+> **Context:** Greenfield development is easy. Now let's tackle a harder problem: taking a legacy, poorly-documented parsing utility and reverse-engineering its requirements into an OpenSpec specification.
+
 Learn how to use Spec-Driven Development to maintain and upgrade legacy, poorly-documented network code. You will reverse-engineer a specification from a legacy subnet parsing script, and then execute a change to support IPv6 address validation.
 
 ## Online Documentation Reference
@@ -53,3 +55,13 @@ $ python legacy_parser.py --ip "2001:db8::1" --mask "32"
 Subnet: 2001:db8::/32 - VALID IPv6 Subnet Allocation.
 Hosts in Subnet: 79228162514264337593543950336
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

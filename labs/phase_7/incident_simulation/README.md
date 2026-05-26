@@ -90,3 +90,13 @@ ams-core-switch-01(config-if)# mtu 9216
 ams-core-switch-01(config-if)# end
 ams-core-switch-01# copy running-config startup-config
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

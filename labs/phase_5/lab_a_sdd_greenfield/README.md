@@ -76,3 +76,13 @@ Scanning 127.0.0.1/32...
 [+] 127.0.0.1: Port 80 (HTTP) - ACTIVE
 Scan complete. 1 host scanned.
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

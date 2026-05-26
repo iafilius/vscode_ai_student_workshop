@@ -1,6 +1,8 @@
-# Phase 2 Lab D: Draw.io XML Prompting
+# Phase 2 Lab D (Bonus): Draw.io XML Prompting
 
 ## Objective
+> **Context:** Taking visual generation a step further, let's learn how to instruct the AI to generate raw XML schema data compatible with Draw.io.
+
 Explore the limitations of AI coordinate mapping when generating complex, vector-based XML diagrams. You will prompt the AI to generate raw XML compatible with the **Draw.io** schema, then import the result to audit spatial alignment and overlapping.
 
 ## Online References

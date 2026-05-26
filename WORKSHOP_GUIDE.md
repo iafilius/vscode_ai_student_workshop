@@ -26,14 +26,9 @@ This workshop is a comprehensive, progressive, full-day training guide designed 
 ## 🚀 Phase 1: Environment Setup & Prompting Basics (09:30 - 10:15)
 
 ### 1. Environment and Access Control Setup
-Complete these steps to establish connectivity and prepare your workspace:
-*   **Access Activation:** Ensure the `Role-VSCode-AI-Explorer` role is requested and approved in SailPoint IdentityNow.
-*   **VS Code Installation:** Verify your local install or download from the [macOS Setup Guide](https://code.visualstudio.com/docs/setup/mac) or [Windows Setup Guide](https://code.visualstudio.com/docs/setup/windows).
-*   **Copilot Extension:** Install the **GitHub Copilot Chat** extension from the VS Code Marketplace ([Copilot Online Docs](https://docs.github.com/en/copilot)).
-*   **OpenSpec CLI Installation:**
-    *   **macOS:** `brew install openspec`
-    *   **Windows:** `npm install -g openspec`
-    *   *Universal Fallback (On-Demand):* `npx openspec init .` ([OpenSpec Documentation](https://github.com/Fission-AI/OpenSpec)).
+**The Concept:** Ensure your local VS Code environment is fully configured, tools are installed, and you are ready for the intensive AI workloads ahead.
+*   **Directory:** `labs/phase_1_setup/` ([Open README](./labs/phase_1_setup/README.md))
+    *   *Open as workspace (Mac & Windows):* `code labs/phase_1_setup/`
 
 ### 2. Prompting 101 for NetOps Engineers
 To achieve high-quality results from Copilot, use structured prompting techniques:
@@ -69,12 +64,12 @@ To achieve high-quality results from Copilot, use structured prompting technique
 *   **Directory:** `labs/phase_2/lab_c_mermaid/` ([Open README](./labs/phase_2/lab_c_mermaid/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_2/lab_c_mermaid/`
 
-### 🟢 Lab D: Draw.io XML Prompting
+### 🟢 Lab D (Bonus): Draw.io XML Prompting
 **The Concept:** Instructing the AI to generate raw XML schema data compatible with Draw.io, introducing the complexity of programmatic coordinate alignment.
 *   **Directory:** `labs/phase_2/lab_d_drawio/` ([Open README](./labs/phase_2/lab_d_drawio/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_2/lab_d_drawio/`
 
-### 🟢 Lab E: Python Diagrams (diagrams package)
+### 🟢 Lab E (Bonus): Python Diagrams (diagrams package)
 **The Concept:** Writing Python automation scripts that automatically calculate routing topography math and generate high-fidelity PNG architecture diagrams.
 *   **Directory:** `labs/phase_2/lab_e_python_diagrams/` ([Open README](./labs/phase_2/lab_e_python_diagrams/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_2/lab_e_python_diagrams/`
@@ -151,12 +146,12 @@ Spec-Driven Development ensures your codebase remains strictly aligned with docu
 *   **Directory:** `labs/phase_5/lab_c_sdd_mermaid/` ([Open README](./labs/phase_5/lab_c_sdd_mermaid/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_5/lab_c_sdd_mermaid/`
 
-### 🟢 Lab D: Spec-Driven Draw.io XML
+### 🟢 Lab D (Bonus): Spec-Driven Draw.io XML
 **The Concept:** Using OpenSpec to generate Draw.io XML programmatically, scaling from a simple block diagram to a large SD-WAN overlay representation.
 *   **Directory:** `labs/phase_5/lab_d_sdd_drawio/` ([Open README](./labs/phase_5/lab_d_sdd_drawio/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_5/lab_d_sdd_drawio/`
 
-### 🟢 Lab E: Spec-Driven Python Diagrams
+### 🟢 Lab E (Bonus): Spec-Driven Python Diagrams
 **The Concept:** Using OpenSpec to design network architecture specifications, and running code-generation to write scalable Python scripts utilizing the `diagrams` library.
 *   **Directory:** `labs/phase_5/lab_e_sdd_python_diagrams/` ([Open README](./labs/phase_5/lab_e_sdd_python_diagrams/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_5/lab_e_sdd_python_diagrams/`
@@ -204,6 +199,16 @@ In this final phase, learn how to build complex security orchestrators and rapid
 *   **Directory:** `labs/phase_8/lab_b_rest_client/` ([Open README](./labs/phase_8/lab_b_rest_client/README.md))
     *   *Open as workspace (Mac & Windows):* `code labs/phase_8/lab_b_rest_client/`
 
+
+---
+
+## 🚑 AI Troubleshooting Cheat Sheet
+
+AI tools occasionally get stuck in loops, lose context, or experience latency. Use these break-glass procedures:
+1. **Clear Copilot Context:** If the AI is giving completely irrelevant answers, type `/clear` in Copilot Chat or open a new Chat panel to reset its memory window.
+2. **Select Another Model:** If the AI is struggling with complex reasoning, switch models (e.g., from `GPT-4o-mini` to `Claude 3.5 Sonnet` or `GPT-4o`) using the model dropdown in the chat input box.
+3. **OpenSpec Errors:** If `openspec` fails or acts out of sync, run `openspec status --json` to diagnose. If all else fails, you can carefully delete the hidden `.openspec.yaml` file to reset state.
+4. **The Nuclear Option (IDE Restart):** If the extension hangs completely, press `Cmd+Shift+P` (`Ctrl+Shift+P` on Windows) and run `Developer: Reload Window`.
 
 ---
 

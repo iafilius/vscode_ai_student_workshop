@@ -1,6 +1,8 @@
 # Phase 5 Lab C: Spec-Driven Mermaid Flowcharting
 
 ## Objective
+> **Context:** Spec-Driven Development isn't just for code. Let's use OpenSpec to massively scale a Mermaid topology drawing to a complex Multi-DC design.
+
 Apply the principles of Spec-Driven Development (SDD) to programmatically generate Mermaid Flowcharts. You will compare this structured, deterministic approach to the raw, unstructured prompting approach you experienced in Phase 2. First, you will recreate the simple office topology. Then, you will instantly scale it up to a complex Multi-DC Spine-Leaf fabric simply by updating your specifications.
 
 ## Online References

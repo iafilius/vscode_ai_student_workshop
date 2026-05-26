@@ -1,4 +1,6 @@
-# Lab E: Python Diagrams (Diagrams Package)
+# Lab E (Bonus): Python Diagrams (Diagrams Package)
+
+> **Context:** For the ultimate visual automation, let's write Python automation scripts that automatically calculate routing topography and generate diagrams.
 
 Welcome to **Phase 2, Lab E**! 
 
@@ -74,3 +76,13 @@ The `diagrams` library supports a huge variety of cloud providers (AWS, Azure, G
 * **ModuleNotFoundError:** If the script fails with `No module named 'diagrams'`, ensure you ran `pip3 install diagrams`.
 * **ExecutableNotFound:** If the script fails with `ExecutableNotFound: failed to execute PosixPath('dot')`, you missed the Graphviz OS-level installation (`brew install graphviz`).
 * **Sneak Peek:** Want to see what the ultimate setup looks like? Check out the `solutions` folder for a reference implementation!
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

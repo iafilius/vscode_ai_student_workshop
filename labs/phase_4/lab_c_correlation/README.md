@@ -1,6 +1,8 @@
 # Phase 4 Lab C: Multi-Domain Knowledge Correlation
 
 ## Objective
+> **Context:** Knowledge Items aren't just for single facts. Let's prove the AI can dynamically search and correlate across multiple disconnected Knowledge Items simultaneously.
+
 Scale your use of Native Knowledge Items (KIs). Prove that an AI Agent can cross-reference multiple disparate documentation domains (e.g., Firewall rules, BGP configurations, and IPAM tables) simultaneously to troubleshoot complex network issues without requiring massive prompt engineering.
 
 ---
@@ -34,3 +36,13 @@ Agent: Yes, the firewall will permit the BGP session. Here is the correlation ac
 2. **BGP (External Peering Architecture):** The Primary Peer IP is 10.255.1.2.
 3. **Firewall (Perimeter Egress Policies):** Rule `FW-ALLOW-BGP` explicitly PERMITS TCP port 179 traffic from Source IP 10.250.0.1 to Destination IP 10.255.1.2.
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

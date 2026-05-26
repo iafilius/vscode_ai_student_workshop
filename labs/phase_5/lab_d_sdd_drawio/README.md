@@ -1,6 +1,8 @@
-# Phase 5 Lab D: Spec-Driven Draw.io XML
+# Phase 5 Lab D (Bonus): Spec-Driven Draw.io XML
 
 ## Objective
+> **Context:** Let's use OpenSpec to generate Draw.io XML programmatically, scaling to a large SD-WAN overlay representation.
+
 Apply the principles of Spec-Driven Development (SDD) to programmatically generate complex Draw.io XML schemas. In Phase 2, you saw how raw prompting fails spectacularly at calculating absolute X/Y spatial coordinates. Here, you will see how OpenSpec specifications can enforce coordinate mathematical logic to build clean, un-overlapped diagrams.
 
 ## Online References
@@ -51,3 +53,13 @@ python verify.py
 ## Expected Output
 
 You should see both a `topology.drawio` and an `sdwan_overlay.drawio` file generated directly into this directory. When opened, the shapes should have distinct, calculated spatial coordinates rather than stacking awkwardly in the corner of the canvas.
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

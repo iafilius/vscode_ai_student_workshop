@@ -1,6 +1,8 @@
-# Phase 5 Lab E: Spec-Driven Python Diagrams
+# Phase 5 Lab E (Bonus): Spec-Driven Python Diagrams
 
 ## Objective
+> **Context:** For the ultimate SDD workflow, let's design network architecture specifications and run code-generation to write scalable Python scripts.
+
 Apply the principles of Spec-Driven Development (SDD) to programmatically generate professional infrastructure drawings using the Python `diagrams` library. In Phase 2, you prompted the AI to write a Python script for a Dual Datacenter. Now, you will use rigid specifications to generate that same script deterministically, and then scale it up to a massive Multi-Region Cloud Native Architecture.
 
 ## Online References
@@ -57,3 +59,13 @@ python verify.py
 ## Expected Output
 
 You should see both a `dual_dc_topology.png` and a `global_aws_topology.png` rendered locally by your Python scripts.
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

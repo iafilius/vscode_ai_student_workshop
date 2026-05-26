@@ -1,6 +1,8 @@
 # Phase 8 Lab B: Automated REST Client Base App
 
 ## Objective
+> **Context:** Let's apply the Spec-Driven Development flow to construct a lightweight, fully working Python REST API consumer application querying free public internet mock endpoints.
+
 Apply the Spec-Driven Development flow to construct a lightweight, fully working Python REST API consumer application in under five minutes. You will target a public mock REST endpoint to query, filter, and post structured telemetry records, establishing a reusable baseline for API integrations.
 
 ## Online References
@@ -101,3 +103,13 @@ if __name__ == "__main__":
     fetch_and_filter_users()
     post_telemetry_status()
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

@@ -1,4 +1,5 @@
 # Lab C: Writing a SKILL from Scratch
+> **Context:** Instead of just modifying an existing SKILL, let's write a custom text-based skill from scratch to parse notorious Cisco routing logs.
 
 Now it's time to codify your own domain knowledge. As a Network Engineer, you know that Cisco routing tables are notoriously hard for standard LLMs to parse reliably without hallucinating next-hop IP addresses. 
 
@@ -31,3 +32,13 @@ You can author a skill manually, or you can use your AI to write it for you. Cho
 You have successfully taken a complex piece of network engineering logic and modularized it into a repeatable AI capability! 
 
 However, running a text skill via prompt is still slow and costs thousands of tokens per execution. In **Lab D**, we are going to graduate this logic into a lightning-fast Python script.
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

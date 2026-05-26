@@ -86,7 +86,36 @@ Learn how to use AI prompting to take raw network device configuration text, con
 
 ---
 
-### Task 5: Free-Form Challenge — Schema Your Own Device 🏆
+### Task 5: From Validation to API Contract (OpenAPI)
+In modern Network Operations, you need two types of schemas:
+1. **JSON Schema:** Validates the raw data structure itself (used locally by scripts).
+2. **OpenAPI Specification (OAS 3.0):** Defines the REST API endpoints that external systems use to submit that data (used by Swagger/Postman).
+
+| JSON Schema (draft-07) | OpenAPI Spec (OAS 3.0) |
+|------------------------|------------------------|
+| Validates the payload | Defines the API endpoints |
+| Used by local scripts | Used by API Clients / Postman |
+| "Is this data valid?" | "How do I send this data over the network?" |
+
+1. In your Copilot Chat session, ask the AI to wrap your validated Cisco JSON Schema into an OpenAPI contract:
+   > *"Now, generate an OpenAPI 3.0 YAML specification for a REST API. Create a POST endpoint at `/api/v1/switchports` that accepts our switch port configuration. Embed the JSON Schema you just generated into the request body definition."*
+2. Save the final YAML output to `cisco_openapi.yaml`.
+
+> 💡 **Note:** The OpenAPI file is a capstone demonstration. For the rest of this lab (Tasks 6-10), we will focus exclusively on evolving the JSON Schema!
+
+<details>
+<summary>🚀 <b>Pro-Tips: The Power of OpenAPI Contracts</b> (click to expand)</summary>
+
+Once you have an OpenAPI specification, you unlock powerful NetOps automation capabilities:
+* **Instant Mock Servers:** Use tools like Prism or Postman to instantly spin up a mock REST API server. Other teams can start building against your network API before you've written a single line of backend code.
+* **Reverse Engineering:** Feed the AI a handful of raw `curl` requests or PCAP JSON dumps from a legacy, undocumented appliance, and ask it to reverse-engineer a complete OpenAPI specification in seconds.
+* **Automated SDKs:** Feed your OpenAPI YAML into OpenAPI Generator to instantly create strongly-typed Python or Go SDKs to programmatically interact with your network devices.
+* **Docs-as-Code:** Paste your YAML into Swagger UI or Redocly to instantly generate a beautiful, interactive, and searchable documentation portal.
+</details>
+
+---
+
+### Task 6: Free-Form Challenge — Schema Your Own Device 🏆
 Now do it on your own. Pick **one** of the remaining input files and generate its complete JSON + JSON Schema from scratch using only Copilot.
 
 | Pick a file | Device type |
@@ -111,7 +140,7 @@ Now do it on your own. Pick **one** of the remaining input files and generate it
 
 ---
 
-### Task 6: Guided Schema Evolution (Cisco)
+### Task 7: Guided Schema Evolution (Cisco)
 Configurations evolve over time. Let's update our Cisco schema to support a new version of the configuration.
 1. Drag both `cisco_raw_config.txt` (v1) and the new `cisco_raw_config_2.txt` (v2) into Copilot Chat.
 2. Submit the prompt:
@@ -119,14 +148,14 @@ Configurations evolve over time. Let's update our Cisco schema to support a new 
 
 ---
 
-### Task 7: Free-Form Schema Evolution
-Now, take the device you selected in Task 5 and evolve its schema to v2!
+### Task 8: Free-Form Schema Evolution
+Now, take the device you selected in Task 6 and evolve its schema to v2!
 1. Drag both the v1 and v2 raw config files for your chosen device (e.g., `f5_raw_config.txt` and `f5_raw_config_2.txt`) into Copilot.
 2. Instruct the AI to generate a unified `[device]_schema_v2.json`.
 
 ---
 
-### Task 8: Schema Validation in Action (Cisco)
+### Task 9: Schema Validation in Action (Cisco)
 The true power of a JSON Schema is validating unstructured or user-provided data.
 1. Drag the `cisco_unvalidated.json` file (which contains 3 subtle, planted errors) and your newly created `cisco_schema_v2.json` into Copilot Chat.
 2. Submit the prompt:
@@ -134,8 +163,8 @@ The true power of a JSON Schema is validating unstructured or user-provided data
 
 ---
 
-### Task 9: Free-Form Schema Validation
-Now, repeat the validation exercise for the device you evolved in Task 7.
+### Task 10: Free-Form Schema Validation
+Now, repeat the validation exercise for the device you evolved in Task 8.
 1. Drag your `[device]_unvalidated.json` and your `[device]_schema_v2.json` into Copilot Chat.
 2. Ask for a validation report highlighting the exact errors.
 3. *Check your work:* Cross-reference the errors Copilot found with the [solutions/error_keys.md](solutions/error_keys.md) file!

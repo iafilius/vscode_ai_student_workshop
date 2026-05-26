@@ -1,4 +1,5 @@
 # Lab D: The Python Booster (Caching)
+> **Context:** Text-based skills are great, but they consume tokens and time. Let's graduate to a Python-cached SKILL (Booster) to solve this bottleneck.
 
 In Lab C, you built a text-based SKILL. While text-based skills are incredibly flexible for mapping contexts, relying on the LLM to execute them line-by-line is **slow** and **expensive**. It consumes thousands of tokens per run.
 
@@ -48,3 +49,13 @@ Python-Cached Skill:   0.002 seconds (Cost: 0 tokens!)
 ================================
 Status: Graduated successfully. Repeatability: 100% stable.
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

@@ -1,6 +1,8 @@
 # Phase 2 Lab C: Mermaid Flowcharting
 
 ## Objective
+> **Context:** Now that we understand basic prompting, let's explore using code generation to create visual topology diagrams.
+
 Practice leveraging generative AI to build clean, maintainable logical network topology diagrams using the **Mermaid** script markup language. You will audit the AI's ability to automatically group network nodes into functional blocks and subgraphs.
 
 ## References & Documentation

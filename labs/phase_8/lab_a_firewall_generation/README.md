@@ -110,3 +110,13 @@ Verify that your firewall script handles all of the following scenarios:
   ]
 }
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

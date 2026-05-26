@@ -1,4 +1,5 @@
 # Lab B: Updating an Agent SKILL
+> **Context:** Now that you know how to invoke a SKILL, let's learn how to modify its behavior on the fly without retraining.
 
 In Lab A, you triggered a SKILL and watched the AI follow its strict instructions. But what if the instructions aren't exactly what you need? What if your manager wants the output formatted differently?
 
@@ -22,3 +23,13 @@ One of the greatest strengths of SKILLs is that they are **hot-swappable**. You 
 You just fundamentally altered the AI's behavior by changing a few lines of text. This is how you iterate and improve Agent automation workflows. 
 
 Next, let's create a SKILL entirely from scratch in **Lab C**.
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

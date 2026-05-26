@@ -1,6 +1,8 @@
 # Phase 2 Lab B: Network Hot Potatoes & Prompting Tasks
 
 ## Objective
+> **Context:** Building on our foundational prompting skills from Lab A, we will now tackle common operational NetOps tasks.
+
 Apply advanced prompting techniques (personas, constraints, few-shot examples) to solve three standard daily Network Operations tasks: DNS zone migration, firewall security rule drafting, and IPAM allocation validation.
 
 ## Online Documentation Reference

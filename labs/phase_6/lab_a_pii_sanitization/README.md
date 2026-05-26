@@ -101,3 +101,13 @@ $ python verify.py
 =====================================================
 Status: 100% compliant. Configuration safe for external AI chats.
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**

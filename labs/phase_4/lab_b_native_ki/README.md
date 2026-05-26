@@ -1,6 +1,8 @@
 # Phase 4 Lab B: Native IDE Knowledge Items (KIs)
 
 ## Objective
+> **Context:** Now that we have experienced the AI's "amnesia", let's fix it by natively persisting the IPAM table as a Knowledge Item.
+
 Understand the concept of Knowledge Items (KIs) and learn how to use them to persist key repository architecture decisions, configurations, and network facts across isolated conversation sessions.
 
 ## Online Documentation Reference
@@ -68,3 +70,13 @@ User: Based on the registered Knowledge Items, what is the VM subnet for Leaf-02
 
 Agent: According to the 'Datacenter 1 Spine-Leaf Network Fabric' Knowledge Item in your workspace, the VM subnet for Leaf-02 is 10.250.11.0/24.
 ```
+
+---
+
+## Lab Retrospective
+
+Take a moment to reflect on this lab session:
+* **What went OK?**
+* **What could be improved?**
+* **Was the AI helpful?**
+* **What prompting techniques proved most effective?**
