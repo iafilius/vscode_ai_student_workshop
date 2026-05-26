@@ -52,6 +52,12 @@ Verify that your firewall script handles all of the following scenarios:
 
 ---
 
+## Pro-Tip
+
+**Pipeline Automation:** Agents don't just live in the IDE. You can integrate these exact same SKILLs and KIs into your CI/CD pipelines (e.g., GitHub Actions, GitLab CI) to automatically audit firewall policy Pull Requests against your security baselines before human review.
+
+---
+
 ## Expected Output
 
 ### Expected JSON Telemetry Rule Output:

@@ -42,6 +42,12 @@ In Lab A, you saw the AI forget the IPAM table. We will fix this by persisting t
 
 ---
 
+## Pro-Tip
+
+**Global Version Control:** Version-controlling your `knowledge/` folder across your organization means a senior architect can codify a standard (like a complex network schema or security policy) once, and junior engineers globally will instantly inherit that domain expertise in their local IDEs via the shared repository.
+
+---
+
 ## Expected Output
 
 ### Expected Metadata.json:

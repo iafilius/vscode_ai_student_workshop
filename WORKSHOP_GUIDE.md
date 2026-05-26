@@ -16,8 +16,8 @@ This workshop is a comprehensive, progressive, full-day training guide designed 
 | **11:45 - 12:45** | **☕ Phase 3: Agent SKILLs (Know-How Automation)** | Designing custom capabilities using markdown templates and Python-cached boosters. |
 | **12:45 - 13:30** | **🍱 Lunch Break** | Intermission. |
 | **13:30 - 14:30** | **🛡️ Phase 4: Knowledge Items (KIs) & Fact Retention** | Querying and storing localized repository facts to persist state across sessions. |
-| **14:30 - 16:30** | **📐 Phase 5: Spec-Driven Development & OpenSpec** | Spec-driven code construction (Greenfield, Brownfield, Python Diagrams, and ASCII Graphics). |
-| **16:30 - 17:00** | **🛡️ Phase 6: Operational Case Studies** | Event log parsing, PII sanitization, and multi-model strategic selection. |
+| **14:30 - 16:30** | **📐 Phase 5: Spec-Driven Development & OpenSpec** | Spec-driven code construction (Greenfield, Brownfield, Mermaid Flowcharting, Draw.io XML, and Python Diagrams). |
+| **16:30 - 17:00** | **🛡️ Phase 6: Operational Case Studies** | PII configuration sanitization and secret redaction. |
 | **17:00 - 17:30** | **🏆 Phase 7: The AI-Driven Incident Simulation (Game Day!)** | Diagnose and resolve a simulated network outage under time constraints. |
 | **17:30 - 18:30** | **🔌 Phase 8: Advanced Integration & Security Automation** | Automated firewall rule generation using Policy-as-Code datasets, and Python REST API clients. |
 

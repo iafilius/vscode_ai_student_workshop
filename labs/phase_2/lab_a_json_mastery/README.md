@@ -172,6 +172,12 @@ Your completed `cisco_schema.json` should pass all `verify.py` checks.
 
 ---
 
+## Pro-Tip
+
+**LLM Prompt Caching:** In enterprise environments, repeatedly sending large, complex JSON schemas or XML templates in every prompt gets expensive and slow. By utilizing **LLM Prompt Caching** (pinning the schema/template in the AI's memory cache), you can reduce token consumption by up to 90% and drop response latency to milliseconds when generating configurations at scale.
+
+---
+
 ## Lab Retrospective
 
 Take a moment to reflect on this lab session:

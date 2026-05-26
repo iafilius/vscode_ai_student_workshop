@@ -1,9 +1,330 @@
+May 23 00:03:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 00:07:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/43
+May 23 00:09:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/7
+May 23 00:13:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 00:17:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 00:21:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 00:22:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 00:25:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.7 on GigabitEthernet1/0/26 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 00:28:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 00:31:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.157 on GigabitEthernet1/0/20 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 00:35:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 00:36:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.49 on GigabitEthernet1/0/16 from LOADING to FULL, Loading Done
+May 23 00:39:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.202 on GigabitEthernet1/0/18 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 00:43:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.169 on GigabitEthernet1/0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 00:47:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.139] [localport: 22]
+May 23 00:51:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 00:55:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.119 on GigabitEthernet1/0/36 from LOADING to FULL, Loading Done
+May 23 00:58:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.52 on GigabitEthernet1/0/29 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 01:01:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.81
+May 23 01:04:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 01:07:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.226 on GigabitEthernet1/0/42 from LOADING to FULL, Loading Done
+May 23 01:10:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/11
+May 23 01:14:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.65 on GigabitEthernet1/0/13 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 01:17:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.132 on GigabitEthernet1/0/13 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 01:18:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.149 on GigabitEthernet1/0/46 from LOADING to FULL, Loading Done
+May 23 01:22:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/14
+May 23 01:26:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 01:27:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 01:29:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 01:31:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 01:35:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.8 on GigabitEthernet1/0/21 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 01:38:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.132
+May 23 01:40:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 01:41:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.25
+May 23 01:44:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 01:46:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 01:48:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.124] [localport: 22]
+May 23 01:52:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 01:53:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 01:55:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.129
+May 23 01:56:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 01:57:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/39
+May 23 02:01:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 02:05:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 02:07:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.171 on GigabitEthernet1/0/12 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 02:11:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.65] [localport: 22]
+May 23 02:15:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 02:18:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.86 on GigabitEthernet1/0/20 from LOADING to FULL, Loading Done
+May 23 02:22:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.51 on GigabitEthernet1/0/15 from LOADING to FULL, Loading Done
+May 23 02:25:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 02:29:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.91] [localport: 22]
+May 23 02:32:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.17
+May 23 02:35:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.7
+May 23 02:38:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 02:42:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 02:45:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.28 on GigabitEthernet1/0/6 from LOADING to FULL, Loading Done
+May 23 02:48:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 02:52:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 02:56:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.43
+May 23 03:00:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 03:03:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.172 on GigabitEthernet1/0/6 from LOADING to FULL, Loading Done
+May 23 03:07:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/14
+May 23 03:11:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 03:14:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/31
+May 23 03:15:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.51] [localport: 22]
+May 23 03:18:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 03:20:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/7
+May 23 03:24:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 03:28:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.14 on GigabitEthernet1/0/40 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 03:32:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 03:33:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 03:34:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.30 on GigabitEthernet1/0/3 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 03:36:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.184] [localport: 22]
+May 23 03:37:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.251 on GigabitEthernet1/0/2 from LOADING to FULL, Loading Done
+May 23 03:40:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/29
+May 23 03:41:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.61
+May 23 03:42:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/8
+May 23 03:45:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 03:46:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 03:47:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/15
+May 23 03:49:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.151 on GigabitEthernet1/0/17 from LOADING to FULL, Loading Done
+May 23 03:53:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.103
+May 23 03:57:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 03:59:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.241] [localport: 22]
+May 23 04:03:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/47
+May 23 04:04:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 04:08:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 04:11:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/40
+May 23 04:14:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/16
+May 23 04:18:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/47
+May 23 04:19:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.110] [localport: 22]
+May 23 04:21:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 04:23:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 04:24:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.114
+May 23 04:28:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.40 on GigabitEthernet1/0/17 from LOADING to FULL, Loading Done
+May 23 04:30:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/14
+May 23 04:31:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.3] [localport: 22]
+May 23 04:34:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.46
+May 23 04:37:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.29 on GigabitEthernet1/0/15 from LOADING to FULL, Loading Done
+May 23 04:41:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.191 on GigabitEthernet1/0/47 from LOADING to FULL, Loading Done
+May 23 04:44:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.75] [localport: 22]
+May 23 04:45:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.119
+May 23 04:48:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/8
+May 23 04:52:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.26 on GigabitEthernet1/0/20 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 04:54:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 04:58:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.160 on GigabitEthernet1/0/46 from LOADING to FULL, Loading Done
+May 23 04:59:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 05:02:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 05:06:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.139] [localport: 22]
+May 23 05:09:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/17
+May 23 05:10:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 05:11:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 05:15:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.50 on GigabitEthernet1/0/45 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 05:18:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.11] [localport: 22]
+May 23 05:21:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 05:22:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.174
+May 23 05:25:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 05:26:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.101 on GigabitEthernet1/0/10 from LOADING to FULL, Loading Done
+May 23 05:28:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.136 on GigabitEthernet1/0/39 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 05:32:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/44
+May 23 05:34:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.121] [localport: 22]
+May 23 05:35:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.156 on GigabitEthernet1/0/12 from LOADING to FULL, Loading Done
+May 23 05:38:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 05:40:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 05:43:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.235 on GigabitEthernet1/0/25 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 05:44:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.27] [localport: 22]
+May 23 05:47:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 05:49:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.86] [localport: 22]
+May 23 05:53:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 05:56:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 05:58:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 06:01:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.153
+May 23 06:02:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.148 on GigabitEthernet1/0/7 from LOADING to FULL, Loading Done
+May 23 06:03:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.6
+May 23 06:06:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.158
+May 23 06:10:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.242 on GigabitEthernet1/0/44 from LOADING to FULL, Loading Done
+May 23 06:12:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.50] [localport: 22]
+May 23 06:15:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.185] [localport: 22]
+May 23 06:16:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 06:20:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.192
+May 23 06:22:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/41
+May 23 06:25:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.133 on GigabitEthernet1/0/27 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 06:29:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 06:30:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 06:32:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.229
+May 23 06:35:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 06:36:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.209
+May 23 06:40:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 06:42:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.229] [localport: 22]
+May 23 06:46:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.126] [localport: 22]
+May 23 06:50:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.229
+May 23 06:54:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/29
+May 23 06:56:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.191] [localport: 22]
+May 23 06:58:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/15
+May 23 07:02:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.178 on GigabitEthernet1/0/22 from LOADING to FULL, Loading Done
+May 23 07:06:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.161 on GigabitEthernet1/0/37 from LOADING to FULL, Loading Done
+May 23 07:10:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/33
+May 23 07:13:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.103] [localport: 22]
+May 23 07:14:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 07:15:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 07:18:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.9 on GigabitEthernet1/0/43 from LOADING to FULL, Loading Done
+May 23 07:19:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/20
+May 23 07:23:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.180] [localport: 22]
+May 23 07:25:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/3
+May 23 07:27:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 07:30:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 07:31:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.186 on GigabitEthernet1/0/29 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 07:33:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.29 on GigabitEthernet1/0/46 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 07:36:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.42 on GigabitEthernet1/0/32 from LOADING to FULL, Loading Done
+May 23 07:39:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.152] [localport: 22]
+May 23 07:42:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 07:43:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.234] [localport: 22]
+May 23 07:47:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 07:48:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 07:49:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/47
+May 23 07:53:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/24
+May 23 07:54:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 07:57:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.165 on GigabitEthernet1/0/10 from LOADING to FULL, Loading Done
+May 23 08:01:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.150] [localport: 22]
+May 23 08:03:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/8
+May 23 08:04:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.57
+May 23 08:05:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 08:08:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.158
+May 23 08:11:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.77
+May 23 08:14:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 08:16:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.63 on GigabitEthernet1/0/33 from LOADING to FULL, Loading Done
+May 23 08:17:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.16
+May 23 08:18:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.45] [localport: 22]
+May 23 08:22:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 08:26:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.209] [localport: 22]
+May 23 08:27:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.106 on GigabitEthernet1/0/46 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 08:31:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.16 on GigabitEthernet1/0/2 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 08:33:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.186] [localport: 22]
+May 23 08:35:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/12
+May 23 08:36:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.67 on GigabitEthernet1/0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 08:38:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 08:42:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 08:45:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.254 on GigabitEthernet1/0/24 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 08:47:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.86] [localport: 22]
+May 23 08:51:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 08:55:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/19
+May 23 08:56:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 08:57:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.113 on GigabitEthernet1/0/15 from LOADING to FULL, Loading Done
+May 23 09:00:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.10
+May 23 09:01:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.146] [localport: 22]
+May 23 09:05:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/23
+May 23 09:07:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.41 on GigabitEthernet1/0/5 from LOADING to FULL, Loading Done
+May 23 09:09:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 09:11:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 09:15:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.101
+May 23 09:19:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/16
+May 23 09:21:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 09:24:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 09:26:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 09:28:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.181
+May 23 09:32:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 09:36:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.50
+May 23 09:40:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.107 on GigabitEthernet1/0/34 from LOADING to FULL, Loading Done
+May 23 09:41:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/40
+May 23 09:43:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.122 on GigabitEthernet1/0/32 from LOADING to FULL, Loading Done
+May 23 09:47:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 09:48:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.125 on GigabitEthernet1/0/38 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 09:49:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.73] [localport: 22]
+May 23 09:50:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/6
+May 23 09:53:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 09:54:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 09:55:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/33
+May 23 09:58:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 09:59:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 10:02:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.169 on GigabitEthernet1/0/9 from LOADING to FULL, Loading Done
+May 23 10:06:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 10:07:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.106 on GigabitEthernet1/0/40 from LOADING to FULL, Loading Done
+May 23 10:08:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/36
+May 23 10:11:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.226 on GigabitEthernet1/0/30 from LOADING to FULL, Loading Done
+May 23 10:14:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 10:18:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/17
+May 23 10:22:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 10:23:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 10:27:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.13
+May 23 10:31:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.140
+May 23 10:32:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.227 on GigabitEthernet1/0/38 from LOADING to FULL, Loading Done
+May 23 10:36:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 10:40:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.139
+May 23 10:42:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.211
+May 23 10:44:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 10:48:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 10:49:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 10:53:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 10:56:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/42
+May 23 10:59:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.103 on GigabitEthernet1/0/43 from LOADING to FULL, Loading Done
+May 23 11:01:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.29 on GigabitEthernet1/0/18 from LOADING to FULL, Loading Done
+May 23 11:02:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/40
+May 23 11:05:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.18] [localport: 22]
+May 23 11:07:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/45
+May 23 11:09:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.253] [localport: 22]
+May 23 11:10:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.125] [localport: 22]
+May 23 11:11:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.193 on GigabitEthernet1/0/35 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 11:15:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.225 on GigabitEthernet1/0/21 from LOADING to FULL, Loading Done
+May 23 11:18:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 11:20:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.233 on GigabitEthernet1/0/3 from LOADING to FULL, Loading Done
+May 23 11:23:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 11:24:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 11:25:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.116] [localport: 22]
+May 23 11:26:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.25
+May 23 11:30:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 11:31:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 11:35:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 11:37:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.206 on GigabitEthernet1/0/32 from LOADING to FULL, Loading Done
+May 23 11:41:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.51] [localport: 22]
+May 23 11:45:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.28
+May 23 11:47:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.249 on GigabitEthernet1/0/13 from LOADING to FULL, Loading Done
+May 23 11:49:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.127
+May 23 11:50:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 11:54:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 11:58:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 12:01:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 12:05:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 12:09:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.41
+May 23 12:11:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 12:15:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/9
+May 23 12:16:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 12:19:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/15
+May 23 12:20:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 12:21:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/44
+May 23 12:25:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.120] [localport: 22]
+May 23 12:27:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 12:31:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.188 on GigabitEthernet1/0/29 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 12:34:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/32
+May 23 12:35:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.37] [localport: 22]
+May 23 12:39:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 12:42:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 12:46:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.133 on GigabitEthernet1/0/48 from LOADING to FULL, Loading Done
+May 23 12:49:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.166] [localport: 22]
+May 23 12:53:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.178 on GigabitEthernet1/0/44 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 12:56:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 12:58:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.49 on GigabitEthernet1/0/18 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 12:59:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 13:00:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/9
+May 23 13:04:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.153
+May 23 13:05:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 13:07:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/5
+May 23 13:10:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.42 on GigabitEthernet1/0/18 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 13:14:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/14
+May 23 13:16:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.90 on GigabitEthernet1/0/39 from LOADING to FULL, Loading Done
+May 23 13:20:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.25] [localport: 22]
+May 23 13:23:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.101 on GigabitEthernet1/0/16 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 13:24:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 13:26:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.19
+May 23 13:28:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.172 on GigabitEthernet1/0/41 from LOADING to FULL, Loading Done
+May 23 13:31:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.123 on GigabitEthernet1/0/30 from LOADING to FULL, Loading Done
+May 23 13:33:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 13:34:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/46
+May 23 13:38:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/48
+May 23 13:41:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.180 on GigabitEthernet1/0/14 from LOADING to FULL, Loading Done
+May 23 13:45:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 13:47:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.152 on GigabitEthernet1/0/5 from LOADING to FULL, Loading Done
+May 23 13:48:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.174 on GigabitEthernet1/0/9 from LOADING to FULL, Loading Done
+May 23 13:52:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 13:53:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/5
+May 23 13:57:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/4
 May 23 13:58:12 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to down
 May 23 13:58:13 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to down
 May 23 13:58:15 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - Interface flapping
 May 23 13:58:22 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to up
 May 23 13:58:23 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to up
-May 23 13:58:45 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Up 
+May 23 13:58:45 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Up
+May 23 13:59:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.119
 May 23 13:59:02 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - MTU path discovery check failed
 May 23 13:59:12 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to down
 May 23 13:59:13 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/12, changed state to down
@@ -11,3 +332,212 @@ May 23 13:59:22 ams-core-switch-01 %LINK-3-UPDOWN: Interface GigabitEthernet1/0/
 May 23 13:59:23 ams-core-switch-01 %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/12, changed state to up
 May 23 13:59:45 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Up
 May 23 14:00:03 ams-core-switch-01 %BGP-5-ADJCHANGE: neighbor 10.250.12.2 Down - Keepalive expired due to large MTU size packet dropped
+May 23 14:03:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.169 on GigabitEthernet1/0/41 from LOADING to FULL, Loading Done
+May 23 14:06:12 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:07:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.102 on GigabitEthernet1/0/16 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 14:08:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.50] [localport: 22]
+May 23 14:09:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.140
+May 23 14:11:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.120 on GigabitEthernet1/0/20 from LOADING to FULL, Loading Done
+May 23 14:12:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.93 on GigabitEthernet1/0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 14:12:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.4 on GigabitEthernet1/0/22 from LOADING to FULL, Loading Done
+May 23 14:13:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 14:13:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/1
+May 23 14:15:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:16:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:17:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.218] [localport: 22]
+May 23 14:20:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.59 on GigabitEthernet1/0/44 from LOADING to FULL, Loading Done
+May 23 14:21:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 14:24:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.136
+May 23 14:24:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.237] [localport: 22]
+May 23 14:26:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 14:27:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.55] [localport: 22]
+May 23 14:29:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 14:31:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.91
+May 23 14:32:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.243 on GigabitEthernet1/0/11 from LOADING to FULL, Loading Done
+May 23 14:33:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.106 on GigabitEthernet1/0/4 from LOADING to FULL, Loading Done
+May 23 14:33:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/24
+May 23 14:35:12 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 14:37:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:38:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.14] [localport: 22]
+May 23 14:39:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.138 on GigabitEthernet1/0/24 from LOADING to FULL, Loading Done
+May 23 14:40:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 14:42:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:43:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.167 on GigabitEthernet1/0/11 from LOADING to FULL, Loading Done
+May 23 14:44:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:46:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.108
+May 23 14:47:12 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:50:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 14:51:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/38
+May 23 14:52:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/42
+May 23 14:53:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.14] [localport: 22]
+May 23 14:56:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.212 on GigabitEthernet1/0/20 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 14:56:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.137] [localport: 22]
+May 23 14:58:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.20
+May 23 15:00:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/41
+May 23 15:02:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.46] [localport: 22]
+May 23 15:02:12 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 15:05:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:06:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.138 on GigabitEthernet1/0/17 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 15:06:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.188] [localport: 22]
+May 23 15:07:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.133
+May 23 15:10:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.227] [localport: 22]
+May 23 15:10:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.33 on GigabitEthernet1/0/48 from LOADING to FULL, Loading Done
+May 23 15:11:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:12:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.149] [localport: 22]
+May 23 15:13:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.57
+May 23 15:15:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:17:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/32
+May 23 15:19:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/45
+May 23 15:21:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:21:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.122
+May 23 15:22:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/35
+May 23 15:22:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:23:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/24
+May 23 15:24:12 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.53] [localport: 22]
+May 23 15:25:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.224 on GigabitEthernet1/0/11 from LOADING to FULL, Loading Done
+May 23 15:26:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.5 on GigabitEthernet1/0/31 from LOADING to FULL, Loading Done
+May 23 15:27:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.128] [localport: 22]
+May 23 15:27:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.223 on GigabitEthernet1/0/37 from LOADING to FULL, Loading Done
+May 23 15:28:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/48
+May 23 15:30:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:31:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 15:33:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 15:33:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.18
+May 23 15:35:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.107 on GigabitEthernet1/0/6 from LOADING to FULL, Loading Done
+May 23 15:37:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.155] [localport: 22]
+May 23 15:37:12 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/33
+May 23 15:40:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.113
+May 23 15:41:12 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 15:42:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 15:44:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:45:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 15:46:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 15:46:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.141 on GigabitEthernet1/0/2 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 15:48:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.83] [localport: 22]
+May 23 15:48:12 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 15:50:12 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 15:51:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/20
+May 23 15:53:12 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.127
+May 23 15:55:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.240] [localport: 22]
+May 23 15:56:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.168 on GigabitEthernet1/0/9 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 15:57:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 15:57:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.162 on GigabitEthernet1/0/43 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:00:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/45
+May 23 16:00:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 16:03:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:04:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:04:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.65 on GigabitEthernet1/0/13 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:05:12 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 16:07:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.154 on GigabitEthernet1/0/26 from LOADING to FULL, Loading Done
+May 23 16:08:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:10:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:10:12 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 16:11:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.58 on GigabitEthernet1/0/10 from LOADING to FULL, Loading Done
+May 23 16:13:12 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.191 on GigabitEthernet1/0/39 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:14:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 16:18:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.99 on GigabitEthernet1/0/4 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:19:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:20:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 16:22:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 16:26:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.226 on GigabitEthernet1/0/22 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:29:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.15
+May 23 16:33:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.216
+May 23 16:35:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/44
+May 23 16:36:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/27
+May 23 16:39:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.23
+May 23 16:42:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 16:46:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 16:48:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.204 on GigabitEthernet1/0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 16:51:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.190 on GigabitEthernet1/0/47 from LOADING to FULL, Loading Done
+May 23 16:55:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 16:58:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 17:01:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.61 on GigabitEthernet1/0/46 from LOADING to FULL, Loading Done
+May 23 17:02:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/3
+May 23 17:03:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.48
+May 23 17:06:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 17:10:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 17:13:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.107 on GigabitEthernet1/0/20 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:16:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 17:19:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 17:22:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.187 on GigabitEthernet1/0/31 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:26:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.7 on GigabitEthernet1/0/23 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:28:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.203] [localport: 22]
+May 23 17:30:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 17:32:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.195
+May 23 17:35:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.75
+May 23 17:38:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.102 on GigabitEthernet1/0/5 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:39:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.207] [localport: 22]
+May 23 17:40:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 17:44:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.74 on GigabitEthernet1/0/1 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:48:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/37
+May 23 17:50:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 17:54:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.189
+May 23 17:56:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.180 on GigabitEthernet1/0/32 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 17:57:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/23
+May 23 17:58:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.83 on GigabitEthernet1/0/20 from LOADING to FULL, Loading Done
+May 23 18:00:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:04:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 18:07:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.235] [localport: 22]
+May 23 18:11:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:14:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:18:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 18:21:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 18:24:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.88] [localport: 22]
+May 23 18:27:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:29:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.52 on GigabitEthernet1/0/5 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 18:30:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 18:32:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.176] [localport: 22]
+May 23 18:35:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.134] [localport: 22]
+May 23 18:38:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 18:40:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:43:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 18:46:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.230] [localport: 22]
+May 23 18:50:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 18:52:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.216] [localport: 22]
+May 23 18:54:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/7
+May 23 18:56:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 18:58:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.197 on GigabitEthernet1/0/18 from LOADING to FULL, Loading Done
+May 23 19:00:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/13
+May 23 19:03:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.21] [localport: 22]
+May 23 19:06:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 19:07:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/47
+May 23 19:10:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 19:14:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.148 on GigabitEthernet1/0/11 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 19:17:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.142
+May 23 19:21:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 19:24:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.106] [localport: 22]
+May 23 19:26:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.19 on GigabitEthernet1/0/31 from LOADING to FULL, Loading Done
+May 23 19:28:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.172 on GigabitEthernet1/0/7 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 19:29:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.154 on GigabitEthernet1/0/21 from LOADING to FULL, Loading Done
+May 23 19:30:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.83 on GigabitEthernet1/0/29 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 19:32:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/47
+May 23 19:36:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/8
+May 23 19:39:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.9 on GigabitEthernet1/0/7 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 19:43:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.178
+May 23 19:47:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.76] [localport: 22]
+May 23 19:49:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/43
+May 23 19:50:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/11
+May 23 19:51:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.113 on GigabitEthernet1/0/12 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 19:52:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/22
+May 23 19:54:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.88] [localport: 22]
+May 23 19:58:00 ams-core-switch-01 %ENVMON-5-FAN_SPEED_NORMAL: Fan tray 1 speed returned to normal
+May 23 19:59:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.73 on GigabitEthernet1/0/32 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:01:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.23 on GigabitEthernet1/0/29 from LOADING to FULL, Loading Done
+May 23 20:02:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/9
+May 23 20:06:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.119 on GigabitEthernet1/0/28 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:08:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.55 on GigabitEthernet1/0/40 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:12:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.39] [localport: 22]
+May 23 20:15:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.50 on GigabitEthernet1/0/46 from LOADING to FULL, Loading Done
+May 23 20:16:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.48 on GigabitEthernet1/0/2 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:19:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/36
+May 23 20:21:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.48 on GigabitEthernet1/0/22 from LOADING to FULL, Loading Done
+May 23 20:23:00 ams-core-switch-01 %ENVMON-4-FAN_SPEED_HIGH: Fan tray 1 speed increased due to transient temperature
+May 23 20:24:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.186 on GigabitEthernet1/0/5 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:26:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.178 on GigabitEthernet1/0/45 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:30:00 ams-core-switch-01 %OSPF-5-ADJCHG: Process 1, Nbr 10.250.11.81 on GigabitEthernet1/0/38 from FULL to DOWN, Neighbor Down: Dead timer expired
+May 23 20:34:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 20:35:00 ams-core-switch-01 %SYS-5-CONFIG_I: Configured from console by admin
+May 23 20:38:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.214
+May 23 20:42:00 ams-core-switch-01 %SPANTREE-5-TOPOTCN: Topology Change Notice received on GigabitEthernet1/0/7
+May 23 20:46:00 ams-core-switch-01 %NTP-5-PEERSYNC: NTP synchronized to peer 10.0.0.250
+May 23 20:47:00 ams-core-switch-01 %SEC_LOGIN-4-LOGIN_FAILED: Login failed [user: root] [Source: 198.51.100.216] [localport: 22]

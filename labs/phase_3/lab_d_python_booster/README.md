@@ -31,6 +31,12 @@ This is where the magic happens. We aren't just going to run the script ourselve
 
 ---
 
+## Pro-Tip
+
+**The Goldfish Memory:** To temper expectations, remember that the AI is stateless across sessions—it has a "Goldfish Memory." By moving deterministic logic *out* of the AI prompt and *into* traditional code (using the AI merely to generate the script, as you did here), you make operations exponentially faster, 100% predictable, and vastly cheaper.
+
+---
+
 ## Expected Output
 
 When your script runs successfully, it should output these metrics to prove the value of caching:

@@ -66,6 +66,12 @@ Because the AI generates the initial draft of the `spec.md`, you MUST verify it 
 
 ---
 
+## Pro-Tip
+
+**Local Offline Agents:** Utilizing local, offline-capable agents guarantees that highly sensitive configuration files and PII never leave your secure perimeter. This makes AI viable for high-compliance environments like finance and healthcare where transmitting data to external third-party cloud models is strictly prohibited.
+
+---
+
 ## Expected Output
 
 ### Expected Scorecard:

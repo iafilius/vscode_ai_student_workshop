@@ -25,15 +25,17 @@ A customer ticket has been escalated reporting massive packet drops on transacti
 ### Task 1: Load Your Custom SKILL
 1. Open your chat assistant and make sure it has the context of the Cisco route parser SKILL you created in Phase 3 (`labs/phase_3/skills_automation/basic_text_skill/SKILL.md`).
 
-### Task 2: Correlate Logs to Diagnose the Flap
-1. Open the [outage_syslog.log](outage_syslog.log) and [bgp_state.txt](bgp_state.txt) files.
-2. Select the contents of both files, open Copilot Chat, and submit the following correlation prompt:
-   > *"Correlate the syslog lines in outage_syslog.log and the BGP session metrics in bgp_state.txt. 1. Identify which peer is flapping. 2. Identify the exact physical interface causing the BGP flaps. 3. Deduce the exact root cause of the drops (Hint: Look at interface configurations and MTU parameters)."*
+### Task 2: Filter the Noise
+The provided `outage_syslog.log` is a massive 500+ line log file full of operational noise (SSH failures, topology changes, etc.) typical of a real enterprise network. 
+1. Open the [outage_syslog.log](outage_syslog.log), [bgp_state.txt](bgp_state.txt), and [interface_state.txt](interface_state.txt) files.
+2. Select all three files and ask Copilot to summarize the anomalies. 
+   *(Notice how the AI might get distracted by the SSH login failures or spanning-tree changes!)*
+3. **Iterative Prompting:** Refine your prompt to instruct the AI to filter out security and environmental logs, and strictly focus on Layer 2 and Layer 3 routing protocol state changes. Ask it to identify which specific physical interface and BGP peer is flapping.
 
-### Task 3: Draft the CLI Remediation Commands
-1. Ask the AI to write the exact Cisco CLI commands to repair the mismatch and prevent further BGP flaps on the Core Switch:
-   > *"Based on your diagnostic, generate the exact Cisco IOS configuration command sequence to configure the flapping interface to allow Jumbo Frames (MTU 9216) matching the other active trunks."*
-2. Save these commands in a new file named `remediation.cfg` in this lab directory.
+### Task 3: Deduce the Root Cause and Remediate
+1. Now that the AI has isolated the flapping interface, ask it to look at the interface configurations in `interface_state.txt` to deduce *why* the packets are dropping. (Do not give it the answer!)
+2. Once the AI correctly identifies the configuration mismatch, ask it to generate the exact Cisco IOS CLI commands to fix the issue on the core switch.
+3. Save these commands in a new file named `remediation.cfg` in this lab directory.
 
 ### Task 4: Validate Your Solution
 1. Run the local self-checking validation tool:
@@ -41,6 +43,14 @@ A customer ticket has been escalated reporting massive packet drops on transacti
    python verify.py
    ```
 2. Verify that your configuration passes the diagnostic checks!
+
+### Task 5: Extract a Repeatable Diagnostic SKILL and KI
+1. Now that you have the exact prompt sequence to isolate BGP flap logs, create a new SKILL file (e.g., `parse_bgp_flap/SKILL.md`) that codifies these instructions.
+2. Inside your SKILL, instruct the AI to use **prompt caching** (e.g., using `[CACHE]` directives or explicit system instructions) so that future 500-line log ingestions are lightning fast.
+3. Next, create a Knowledge Item (KI) in `knowledge/mtu_standards/artifacts/standard.md`. In this file, explicitly define the domain knowledge that "Jumbo MTU for Trunks = 9216".
+4. By doing this, you ensure the AI "remembers" the MTU standard and has a high-speed parsing tool ready for the next incident!
+5. **Pro-Tip**: Consider this the foundation of your own autonomous troubleshooting collection! While AI helped you create these assets, once they are codified and cached, they can potentially be executed standalone (e.g. by local, offline agents) independently of expensive online AI services.
+6. **Pro-Tip**: SKILLs and Knowledge Items are just text files in standard formats, meaning they can easily be shared! If you build a great diagnostic workflow, you can commit it to version control and share it across your entire team or organization.
 
 ---
 
