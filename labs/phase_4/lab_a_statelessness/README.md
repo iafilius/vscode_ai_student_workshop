@@ -1,5 +1,15 @@
 # Phase 4 Lab A: The "Goldfish" Memory (AI Statelessness)
 
+## 🌟 Introduction
+**What this phase brings:** Long-term memory for your AI environment.
+**Why we are doing this:** Resolving the "Goldfish Problem" requires the AI to have access to absolute facts (like an IPAM table or Datacenter topology) without you needing to paste them into the chat every time.
+**What you will practice:**
+- Registering local Knowledge Items natively in the IDE
+- Cross-referencing KIs to solve network routing issues
+- Persisting state across isolated chat sessions
+
+---
+
 ## Objective
 Experience the fundamental limitation of conversational AI: **Statelessness**. By default, an AI agent only remembers what is currently in its active conversation buffer. When you start a new session, its memory is completely wiped.
 

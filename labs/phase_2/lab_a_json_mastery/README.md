@@ -1,5 +1,17 @@
 # Phase 2 Lab A: JSON Schema Mastery & Network Device Configuration
 
+## 🌟 Introduction
+**What this phase brings:** Core techniques for commanding the AI to perform complex data transformations and diagram generation reliably.
+**Why we are doing this:** Zero-shot prompting often yields inconsistent results. Mastering structured prompting ensures you get exactly the JSON schemas, IPAM tables, and diagrams you need on the first try.
+**What you will practice:** 
+- Extracting structured JSON from raw configurations
+- Enforcing enterprise constraints via JSON Schema
+- Generating Mermaid flowcharts and Draw.io XML
+
+**Deep Dive (Optional):** [Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/courses)
+
+---
+
 ## Objective
 Learn how to use AI prompting to take raw network device configuration text, convert it to a structured JSON file, then generate a valid JSON Schema draft-07 document enforcing enterprise parameters. Finish by picking an unfamiliar device type and creating its schema independently.
 

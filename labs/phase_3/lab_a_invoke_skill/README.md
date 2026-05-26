@@ -1,5 +1,16 @@
-# Lab A: Invoking an Agent SKILL
+# Phase 3 Lab A: Invoking an Agent SKILL
 
+## 🌟 Introduction
+**What this phase brings:** The ability to teach the AI *how* to perform your specific operational workflows.
+**Why we are doing this (The Goldfish Problem):** AI models have a "Goldfish Memory"—they forget everything between chat sessions and don't inherently know your team's standard operating procedures. By defining SKILLs, we create repeatable, automated playbooks.
+**What you will practice:**
+- Creating Markdown-based SKILL templates
+- Invoking custom capabilities in Copilot
+- Upgrading SKILLs with Python-cached boosters to save time and tokens
+
+---
+
+## Objective
 Welcome to Phase 3! In Phase 2, we learned how to instruct an AI using conversational prompting. But what if you have a complex set of instructions you want the AI to follow consistently, every single time, without re-typing it? 
 
 That's where **Agent SKILLs** come in. A SKILL is a pre-packaged set of rules and logic that you can give to an AI agent to permanently extend its capabilities.

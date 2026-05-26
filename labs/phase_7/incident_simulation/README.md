@@ -1,5 +1,15 @@
 # Phase 7: The AI-Driven Incident Simulation (Game Day!)
 
+## 🌟 Introduction
+**What this phase brings:** A high-pressure, simulated network outage where you must combine everything you've learned.
+**Why we are doing this:** Knowledge is best solidified under pressure. You will need to rely on the SKILLs and KIs you built in previous phases to diagnose the issue faster than humanly possible.
+**What you will practice:**
+- Rapid log parsing and correlation
+- Invoking your custom SKILLs during an active incident
+- Synthesizing KIs to find the root cause
+
+---
+
 ## Objective
 Put your newly acquired AI prompting, Agent SKILLs, and Knowledge Items context into action to solve a live simulated datacenter outage under a tight timeframe!
 

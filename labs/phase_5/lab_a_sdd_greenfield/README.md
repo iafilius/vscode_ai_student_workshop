@@ -1,5 +1,15 @@
 # Phase 5 Lab A: Greenfield Development (OpenSpec)
 
+## 🌟 Introduction
+**What this phase brings:** A formal, specification-driven approach to AI code generation.
+**Why we are doing this:** While many AI workflow tools exist (like Cursor, GitHub Copilot Workspaces, Aider), today we will practice with **OpenSpec** because it enforces a strict, auditable path from Proposal -> Design -> Specs -> Code. This prevents the AI from "hallucinating" architecture.
+**What you will practice:**
+- Using `/opsx-propose` to generate artifacts
+- The standard workflow: Propose -> Review Specs -> Apply -> Verify
+- Using `/opsx-explore` for open-ended brainstorming
+
+---
+
 ## Objective
 Learn the lifecycle of Spec-Driven Development (SDD) by proposing, designing, spec'ing, and automatically implementing a brand-new internal network scanning utility from scratch using the OpenSpec CLI tool.
 

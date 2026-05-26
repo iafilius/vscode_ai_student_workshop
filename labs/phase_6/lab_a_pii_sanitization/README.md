@@ -1,5 +1,15 @@
 # Phase 6 Lab A: AI Security Sanitizer & Configuration Redaction
 
+## 🌟 Introduction
+**What this phase brings:** Practical application of AI for high-stakes security operations.
+**Why we are doing this:** Sending sensitive production configurations (with cleartext passwords and IPs) to external cloud AI providers is a severe security violation. We need automated ways to redact this data *before* it leaves our perimeter.
+**What you will practice:**
+- Building an automated PII/Configuration sanitizer
+- Using regex to scrub secrets and mask IP addresses
+- Validating configurations for compliance
+
+---
+
 ## Objective
 Establish a Spec-Driven configuration sanitizer that ingests a high-risk Cisco IOS configuration (`sensitive_config.cfg`) containing cleartext passwords and SNMP communities, and programmatically redacts all secrets and translates private production IP bindings. This ensures configurations are fully compliant with security standards before being fed into external generative AI chats.
 
